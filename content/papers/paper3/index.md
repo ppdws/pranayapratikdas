@@ -6,12 +6,12 @@ author: ["Pranaya Patik Das", "Biplab Ganguli"]
 description: "This paper published in the European Physical Journal D, 2021."
 summary: "The paper explores how exponential growth in OTOCs can occur even in the absence of classical indicators like potential maxima, revealing that such growth is instead closely linked to local density of states and the curvature of the potential's slope, rather than to chaos itself."
 cover:
-    image: "paper4.png"
+    image: "paper3.png"
     alt: "Effect of potential landscapes on the behaviour of OTOCs"
     relative: true
 editPost:
-    URL: "https://github.com/pmichaillat/hugo-website"
-    Text: "Journal of Socio-Experimental Psychology"
+    URL: "https://link.springer.com/article/10.1140/epjd/s10053-025-01025-7"
+    Text: "The European Physical Journal D"
 
 ---
 
