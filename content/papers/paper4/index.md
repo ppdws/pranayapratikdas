@@ -3,8 +3,10 @@ title: "Out-of-Time-Order Correlation in perturbed quantum wells"
 date: 2025-06-28
 tags: ["Complexity","Nonlinear Dynamics and Chaos Theory","Quantum Physics","OTOC","INO"]
 author: ["Pranaya Patik Das", "Biplab Ganguli"]
-description: "This paper describes the inner hedgehog, a psychological condition widespread in academia. Published in the Journal of Socio-Experimental Psychology, 2021." 
-summary: "Using several case studies, this paper describes the inner hedgehog, a psychological condition widespread in academic occupations. The condition has lasting consequences and no known cure." 
+<!--
+description: "This paper describes the inner hedgehog, a psychological condition widespread in academia. Published in the Journal of Socio-Experimental Psychology, 2021." -->
+<!--
+summary: "Using several case studies, this paper describes the inner hedgehog, a psychological condition widespread in academic occupations. The condition has lasting consequences and no known cure." -->
 cover:
     image: "paper4.png"
     alt: "Effect of potential landscapes on the behaviour of OTOCs"
@@ -20,7 +22,9 @@ editPost:
 ##### Download
 
 + [Paper](paper4.pdf)
+<!--
 + [Raw data](https://github.com/pmichaillat/michez-rule)
+-->
 
 ---
 
@@ -48,6 +52,8 @@ Pranaya Pratik Das, and Biplab Ganguli. 2025. "Out-of-Time-Order Correlation in 
 
 ---
 
+<!--
 ##### Related material
 
 + [Nontechnical summary](https://www.alexandermccallsmith.com/book/your-inner-hedgehog)
+-->
