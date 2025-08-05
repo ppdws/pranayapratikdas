@@ -1,16 +1,16 @@
 ---
-title: "Unusual Uses For Olive Oil" 
-date: 2013-01-15
+title: "Dynamics of a charged Thomas oscillator in an external magnetic field" 
+date: 2022-10-27
 tags: ["philology","oleic science","history of oil","Mediterranean world"]
 author: ["Detlev Amadeus Unterholzer","Moritz-Maria von Igelfeld"]
-description: "This paper reviews unusual uses for olive oil throughout the Mediterranean world. Published in the Journal of Oleic Science, 2013." 
-summary: "This paper reviews unusual uses for olive oil throughout the Mediterranean world. It highlights in particular the challengs arising from excessive or unorthodox consumption of olive oil." 
+description: "This paper was ublished in the Physica Scripta IOP Publishing, 2022." 
+summary: "The study examines a charged particle modelled by a modified Thomas oscillator in uniform magnetic fields—showing transitions between adiabatic confinement, quasi‑periodic motion, and chaos governed by field strength and damping—revealing how external field parameters control the interplay between limit cycles, bifurcations, and chaotic regimes." 
 cover:
     image: "paper1.png"
-    alt: "Some Uses For Olive Oil"
+    alt: "Artistic representation of the attractor with magnetic field lines."
     relative: true
 editPost:
-    URL: "https://github.com/pmichaillat/hugo-website"
+    URL: "https://iopscience.iop.org/article/10.1088/1402-4896/ac99ab/meta"
     Text: "Journal of Oleic Science"
 
 ---
@@ -20,14 +20,12 @@ editPost:
 ##### Download
 
 + [Paper](paper1.pdf)
-+ [Online appendix](appendix1.pdf)
-+ [Code and data](https://github.com/pmichaillat/feru)
 
 ---
 
 ##### Abstract
 
-This paper reviews unusual uses for olive oil throughout the Mediterranean world. It highlights in particular the challengs arising from excessive or unorthodox consumption of olive oil. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+In this letter, we provide a detailed numerical examination of the dynamics of a charged Thomas oscillator in an external magnetic field. We do so by adopting and then modifying the cyclically symmetric Thomas oscillator to study the dynamics of a charged particle in an external magnetic field. These dynamical behaviours for weak and strong field strength parameters fall under two categories; conservative and dissipative. The system shows a complex quasi-periodic attractor whose topology depends on initial conditions for high field strengths in the conservative regime. There is a transition from adiabatic motion to chaos on decreasing the field strength parameter. In the dissipative regime, the system is chaotic for weak field strength and weak damping but shows a limit cycle for high field strengths. Such behaviour is due to an additional negative feedback loop that comes into action at high field strengths and forces the system dynamics to be stable in periodic oscillations. For weak damping and weak field strength, the system dynamics mimic Brownian motion via chaotic walks. We claim that the modified Thomas oscillator is a prototypical model to understand the dynamics of an active particle.
 
 ---
 
@@ -39,23 +37,18 @@ This paper reviews unusual uses for olive oil throughout the Mediterranean world
 
 ##### Citation
 
-Unterholzer, Detlev A., and  Moritz-Maria von Igelfeld. 2013. "Unusual Uses For Olive Oil." *Journal of Oleic Science* 34 (1): 449–489. http://www.alexandermccallsmith.com/book/unusual-uses-for-olive-oil.
+Vinesh Vijayan, and Pranaya Pratik Das. 2022. "Dynamics of a charged Thomas oscillator in an external magnetic field." *Physica Scripta* 97(11), p.115207. https://iopscience.iop.org/article/10.1088/1402-4896/ac99ab/.
 
 ```BibTeX
-@article{UI13,
-author = {Detlev A. Unterholzer and Moritz-Maria von Igelfeld},
-year = {2013},
-title ={Unusual Uses For Olive Oil},
-journal = {Journal of Oleic Science},
-volume = {34},
-number = {1},
-pages = {449--489},
-url = {http://www.alexandermccallsmith.com/book/unusual-uses-for-olive-oil}}
+@article{vijayan2022dynamics,
+  title={Dynamics of a charged Thomas oscillator in an external magnetic field},
+  author={Vijayan, Vinesh and Das, Pranaya Pratik},
+  journal={Physica Scripta},
+  volume={97},
+  number={11},
+  pages={115207},
+  year={2022},
+  publisher={IOP Publishing}}
 ```
 
 ---
-
-##### Related material
-
-+ [Presentation slides](presentation1.pdf)
-+ [Summary of the paper](https://www.penguinrandomhouse.com/books/110403/unusual-uses-for-olive-oil-by-alexander-mccall-smith/)
