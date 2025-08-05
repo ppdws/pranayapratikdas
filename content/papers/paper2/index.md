@@ -1,17 +1,17 @@
 ---
 title: "Interplay between the Lyapunov exponents and phase transitions of charged AdS black holes" 
-date: 2004-12-28
+date: 2024-07-25
 tags: ["zoology","sausage dogs","canine pulmonary efficiency","canine science","experimental zoology"]
 author: ["Bhaskar Shukla", " Pranaya Pratik Das",  "David Dudal", "Subhash Mahapatra"]
-description: "This paper was published in the Journal of Canine Science, 2004." 
-summary: "This paper studies the pulmonary efficiency of sausage dogs through several experiments." 
+description: "This paper was published in the Phys. Rev. D, 2024." 
+summary: "The paper investigates the dynamics of a charged Thomas oscillator under an external uniform magnetic field, uncovering how varying field strength and damping drive transitions between confined, quasi‑periodic, and chaotic regimes." 
 cover:
     image: "paper2.png"
     alt: "Dimensions of a sausage dog"
     relative: true
 editPost:
     URL: "https://doi.org/10.1103/PhysRevD.110.024068"
-    Text: "Journal of Canine Science"
+    Text: "American Physical Society"
 
 ---
 
