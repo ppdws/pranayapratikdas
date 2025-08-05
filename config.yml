@@ -80,8 +80,8 @@ params:
           url: PPD_CV.pdf
         - name: Email
           url: mailto:pranaya.phy@outlook.com
-        - name: Zoom
-          url: https://www.zoom.us/my/igelfeld
+        - name: Instagram 
+          url: https://www.instagram.com/pranaya.pratik.das
         - name: Location
           url: location/
         - name: Office Hours
@@ -104,6 +104,7 @@ params:
     cover:
         hiddenInList: false
         hiddenInSingle: true
+	responsiveImages: false
     label:
       text: "Pranaya Pratik Das"
       icon: favicon.ico
