@@ -104,7 +104,6 @@ params:
     cover:
         hiddenInList: false
         hiddenInSingle: true
-	responsiveImages: false
     label:
       text: "Pranaya Pratik Das"
       icon: favicon.ico
