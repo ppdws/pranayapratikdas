@@ -35,8 +35,8 @@ params:
     DateFormat: "January 2006"
     defaultTheme: auto
     hideFooter: false
-    disableThemeToggle: true
-    ShowShareButtons: false
+    disableThemeToggle: false
+    ShowShareButtons: true
     ShowReadingTime: false
     disableSpecial1stPost: true
     disableAnchoredHeadings: true
