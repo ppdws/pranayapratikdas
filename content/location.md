@@ -11,7 +11,7 @@ description: "Pranaya Pratik Das's mailing and office addresses at the National 
 #### Mailing address
 
 Pranaya Pratik Das  
-Department of Physics and Astronomy
+Department of Physics and Astronomy  
 National Institute Technology, Rourkela  
 Odisha, India
 
@@ -19,9 +19,9 @@ Odisha, India
 
 #### Office address
 
-Room MC -308
-Computational Physics Lab.
-Department of Physics and Astronomy
+Room MC -308  
+Computational Physics Lab.  
+Department of Physics and Astronomy  
 National Institute Technology, Rourkela 
 
 ---
