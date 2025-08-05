@@ -4,7 +4,7 @@ date: 2024-07-25
 tags: ["zoology","sausage dogs","canine pulmonary efficiency","canine science","experimental zoology"]
 author: ["Bhaskar Shukla", " Pranaya Pratik Das",  "David Dudal", "Subhash Mahapatra"]
 description: "This paper was published in the Phys. Rev. D, 2024." 
-summary: "The paper investigates the dynamics of a charged Thomas oscillator under an external uniform magnetic field, uncovering how varying field strength and damping drive transitions between confined, quasi‑periodic, and chaotic regimes." 
+summary: "The authors demonstrate that the Lyapunov exponent associated with unstable circular geodesics around various charged AdS black holes behaves distinctly across small‑ and large‑black‑hole thermodynamic phases—mirroring van der Waals–type transitions—and near the critical point the Lyapunov exponent serves as an order parameter with a universal critical exponent ≃1/2." 
 cover:
     image: "paper2.png"
     alt: "Dimensions of a sausage dog"
