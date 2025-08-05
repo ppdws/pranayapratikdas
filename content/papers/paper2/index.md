@@ -7,7 +7,7 @@ description: "This paper was published in the Phys. Rev. D, 2024."
 summary: "The authors demonstrate that the Lyapunov exponent associated with unstable circular geodesics around various charged AdS black holes behaves distinctly across small‑ and large‑black‑hole thermodynamic phases—mirroring van der Waals–type transitions—and near the critical point the Lyapunov exponent serves as an order parameter with a universal critical exponent ≃1/2." 
 cover:
     image: "paper2.png"
-    alt: "Dimensions of a sausage dog"
+    alt: "Gravitational lensing due to presence of a black hole"
     relative: true
 editPost:
     URL: "https://doi.org/10.1103/PhysRevD.110.024068"
@@ -28,7 +28,7 @@ editPost:
 We study the relationship between the standard or extended thermodynamic phase structure of various anti–de Sitter black holes and the Lyapunov exponents associated with the null and timelike geodesics. We consider dyonic, Bardeen, Gauss-Bonnet, and Lorentz-symmetry breaking massive gravity black holes and calculate the Lyapunov exponents of massless and massive particles in unstable circular geodesics close to the black hole. We find that the thermal profile of the Lyapunov exponents exhibits distinct behavior in the small and large black hole phases and can encompass certain aspects of the van der Waals type small/large black hole phase transition. We further analyze the properties of Lyapunov exponents as an order parameter and find that its critical exponent is 1/2, near the critical point for all black holes considered here.
 ---
 
-##### Figure 2: Dimensions of a sausage dog
+##### Figure 2: Gravitational lensing due to presence of a black hole
 
 ![](paper2.png)
 
