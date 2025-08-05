@@ -11,7 +11,7 @@ cover:
     relative: true
 editPost:
     URL: "https://iopscience.iop.org/article/10.1088/1402-4896/ac99ab/meta"
-    Text: "Journal of Oleic Science"
+    Text: "IOP Publishing"
 
 ---
 
@@ -29,7 +29,7 @@ In this letter, we provide a detailed numerical examination of the dynamics of a
 
 ---
 
-##### Figure 6: Some Uses For Olive Oil
+##### Figure 6: Artistic representation of the attractor with magnetic field lines.
 
 ![](paper1.png)
 
