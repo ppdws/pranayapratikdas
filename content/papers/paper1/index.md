@@ -29,7 +29,7 @@ In this letter, we provide a detailed numerical examination of the dynamics of a
 
 ---
 
-##### Figure 6: Artistic representation of the attractor with magnetic field lines.
+##### Figure 1: Artistic representation of the attractor with magnetic field lines.
 
 ![](paper1.png)
 
