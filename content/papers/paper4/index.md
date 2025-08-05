@@ -4,6 +4,7 @@ date: 2025-06-28
 tags: ["Complexity","Nonlinear Dynamics and Chaos Theory","Quantum Physics","OTOC","INO"]
 author: ["Pranaya Patik Das", "Biplab Ganguli"]
 description: "This paper published in the European Physical Journal D, 2021."
+summary: "The paper explores how exponential growth in OTOCs can occur even in the absence of classical indicators like potential maxima, revealing that such growth is instead closely linked to local density of states and the curvature of the potential's slope, rather than to chaos itself."
 cover:
     image: "paper4.png"
     alt: "Effect of potential landscapes on the behaviour of OTOCs"
