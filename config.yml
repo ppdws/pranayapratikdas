@@ -102,7 +102,6 @@ params:
     assets:
         disableScrollBarStyle: true
     cover:
-	image: "picture.jpeg"
         hiddenInList: false
         hiddenInSingle: true
     label:
