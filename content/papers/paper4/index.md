@@ -3,8 +3,7 @@ title: "Out-of-Time-Order Correlation in perturbed quantum wells"
 date: 2025-06-28
 tags: ["Complexity","Nonlinear Dynamics and Chaos Theory","Quantum Physics","OTOC","INO"]
 author: ["Pranaya Patik Das", "Biplab Ganguli"]
-<!--
-description: "This paper published in the European Physical Journal D, 2021." -->
+description: "This paper published in the European Physical Journal D, 2021."
 cover:
     image: "paper4.png"
     alt: "Effect of potential landscapes on the behaviour of OTOCs"
