@@ -1,8 +1,8 @@
 ---
 title: "Dynamics of a charged Thomas oscillator in an external magnetic field" 
 date: 2022-10-27
-tags: ["philology","oleic science","history of oil","Mediterranean world"]
-author: ["Detlev Amadeus Unterholzer","Moritz-Maria von Igelfeld"]
+tags: ["Complex dynamics","adiabatic motion","chaos","quasi-periodicity", "nonlinear resonance", "active particle"]
+author: ["Vinesh Vijayan","Pranaya Pratik Das"]
 description: "This paper was ublished in the Physica Scripta IOP Publishing, 2022." 
 summary: "The study examines a charged particle modelled by a modified Thomas oscillator in uniform magnetic fields—showing transitions between adiabatic confinement, quasi‑periodic motion, and chaos governed by field strength and damping—revealing how external field parameters control the interplay between limit cycles, bifurcations, and chaotic regimes." 
 cover:
