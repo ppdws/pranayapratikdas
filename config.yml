@@ -33,10 +33,10 @@ params:
     author: Pranaya Pratik Das
     # googleAnalyticsID: "G-XXXXX"
     DateFormat: "January 2006"
-    defaultTheme: auto
+    defaultTheme: light
     hideFooter: false
     disableThemeToggle: false
-    ShowShareButtons: true
+    ShowShareButtons: false
     ShowReadingTime: false
     disableSpecial1stPost: true
     disableAnchoredHeadings: true
@@ -80,7 +80,7 @@ params:
           url: PPD_CV.pdf
         - name: Email
           url: mailto:pranaya.phy@outlook.com
-        - name: Instagram 
+        - name: Instagram
           url: https://www.instagram.com/pranaya.pratik.das
         - name: Location
           url: location/
