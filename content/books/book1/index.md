@@ -6,12 +6,12 @@ author: ["Dr. D"]
 description: "."
 summary: "."
 cover:
-    image: "book1.png"
+    image: "book1.jpeg"
     alt: ""
     relative: true
 editPost:
-    URL: "https://github.com/pmichaillat/hugo-website"
-    Text: "Regensburg University Press"
+    URL: ""
+    Text: ""
 showToc: false
 disableAnchoredHeadings: false
 
@@ -37,9 +37,5 @@ disableAnchoredHeadings: false
 
 #+ [Chapter 1:](chapter1.pdf)
 ---
-
-#### Excerpt from Chapter 1: Basic mathematical results from Portuguese philology
-
-
 
 ---
