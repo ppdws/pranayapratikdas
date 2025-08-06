@@ -78,7 +78,7 @@ params:
           url: https://scholar.google.com/citations?user=lutErqEAAAAJ&hl=en
         - name: Researchgate
           url: https://www.researchgate.net/profile/Pranaya-Das
-       - name: ORCID
+#       - name: ORCID
 #          url: https://orcid.org/0000-0002-6025-7719
 
     assets:
