@@ -1,7 +1,7 @@
 ---
 title: "Cyclically Symmetric Thomas Oscillators As Swarmalators: A paradigm for Active Fluids \& Pattern Formation" 
 date: 2022-11-18
-tags: ["social psychology","inner hedgehog","academia","experimental psychology","invasive thoughts"]
+tags: ["swarming","acive colloidals","hexatic parameter","chaos"]
 author: ["Vinesh Vijayan", "Pranaya Pratik Das","K Hariprasad","P Sathish Kumar"]
 description: "This paper is under peer review." 
 summary: "This article introduce a cyclically symmetric Thomas oscillator model coupled with Kuramoto‑type phase dynamics—dubbed “swarmalators”—that self‑organise into both crystalline and chaotic spatiotemporal patterns, offering a versatile paradigm for active fluids and pattern formation in active matter systems." 
@@ -46,5 +46,3 @@ Vinesh Vijayan and Pranaya Pratik Das. 2022. "Cyclically Symmetric Thomas Oscill
   journal={arXiv preprint arXiv:2211.00336},
   year={2022}}
 ```
-
----
