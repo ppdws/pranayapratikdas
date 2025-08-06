@@ -102,7 +102,7 @@ markup:
             unsafe: true
     highlight:
         guessSyntax: true
-        style: dracula 
+        style: autumn 
     tableOfContents:
         endLevel: 2
         ordered: false
