@@ -17,12 +17,6 @@ editPost:
 
 ---
 
-##### Download
-
-+ [Paper](paper3.pdf)
-
----
-
 ##### Abstract
 
 Out-of-Time-Order Correlator (OTOC) and Loschmidt Echo (LE) are commonly regarded as diagnostic tools for chaos, although they may yield misleading results, as we observe. Previous studies have concluded that OTOC shows exponential growth in the neighbourhood of a local maximum. If this statement holds true, the exponential growth should break off once the local maximum is no longer present within the system. By applying a small symmetry-breaking perturbation, we notice that the behaviour of the OTOCs remains remarkably resilient even in the absence of a maximum. Besides this, we also notice that with the increase in perturbation strength, the broken symmetric region expands, causing a broader range of eigenstates to engage in the exponential growth of OTOCs. Therefore, the critical factor lies not in the presence of a local maximum, but in the dynamic nature of the density of states in the broken symmetry regions. Our examination, spanning diverse one- dimensional potential landscapes, reveals the universality of this phenomenon. We also use other chaos diagnostic tool, LE. Interestingly, it also gives a false signal of chaos. 
@@ -32,6 +26,12 @@ Out-of-Time-Order Correlator (OTOC) and Loschmidt Echo (LE) are commonly regarde
 ##### Figure 3: Effect of potential landscapes on the behaviour of OTOCs.
 
 ![](paper3.png)
+
+---
+
+##### Download
+
++ [Paper](paper3.pdf)
 
 ---
 
