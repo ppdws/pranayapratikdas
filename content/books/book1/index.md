@@ -1,5 +1,5 @@
 ---
-title: "" 
+title: "#" 
 date: 2025-12-22
 tags: ["sci-si","adventure","fantasy","philosophy"]
 author: ["Dr. D"]
@@ -7,11 +7,11 @@ description: "."
 summary: "."
 cover:
     image: "book1.jpeg"
-    alt: ""
+    alt: "#"
     relative: true
 editPost:
-    URL: ""
-    Text: ""
+    URL: "#"
+    Text: "#"
 showToc: false
 disableAnchoredHeadings: false
 
