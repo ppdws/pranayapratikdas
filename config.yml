@@ -77,7 +77,9 @@ params:
         - name: Google Scholar
           url: https://scholar.google.com/citations?user=lutErqEAAAAJ&hl=en
         - name: Researchgate
-          url: https://www.researchgate.net/profile/Pranaya-DasS
+          url: https://www.researchgate.net/profile/Pranaya-Das
+        - name: orcid
+          url: https://orcid.org/0000-0002-6025-7719
 
     assets:
         disableScrollBarStyle: true
