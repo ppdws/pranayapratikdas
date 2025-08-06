@@ -3,8 +3,5 @@ title: "Papers"
 description: "Preprints and articles by Pranaya Pratik Das."
 ---
 
-#### Under Process
+## Publications
 
-* **Pranaya Pratik Das** and Biplab Ganguli, "OTOC".
-
-<br><br>
