@@ -58,8 +58,8 @@ params:
               url: papers/
             - name: Books
               url: books/
-#	    - name: Newsletter
-#	      url: newsletter/
+#	    - name: Newsletters
+#	      url: newsletters/
             - name: Tags
               url: tags/
             - name: Archive
