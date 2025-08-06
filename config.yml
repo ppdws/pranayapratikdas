@@ -49,7 +49,7 @@ params:
     profileMode:
           enabled: true
           title: Pranaya Pratik Das
-          subtitle: "I am a Senior Research Fellow in the Department of Physics and Astronomy at [NIT Rourkela](https://www.nitrkl.ac.in/PH) and I am about to complete my PhD in Theoretical Physics. My work explores the intricate signatures of chaos in both classical and quantum systems, spanning diverse domains such as black hole thermodynamics, billiard systems with mixed curvature, and time-dependent quantum correlations. With a keen interest in emergent behavior and collective dynamics, I also investigates pattern formation in active media and the role of symmetry in nonlinear oscillators. I bring a multidisciplinary approach to complex systems, aiming to deepen our understanding of how chaos manifests across physical scales and geometries."
+          subtitle: "I am a Senior Research Fellow in the Department of Physics and Astronomy at <u><a href='https://www.nitrkl.ac.in/PH' target='_blank'> NIT Rourkela</a> </u>and I am about to complete my PhD in Theoretical Physics. My work explores the intricate signatures of chaos in both classical and quantum systems, spanning diverse domains such as black hole thermodynamics, billiard systems with mixed curvature, and time-dependent quantum correlations. With a keen interest in emergent behavior and collective dynamics, I also investigates pattern formation in active media and the role of symmetry in nonlinear oscillators. I bring a multidisciplinary approach to complex systems, aiming to deepen our understanding of how chaos manifests across physical scales and geometries."
           imageUrl: "pp.jpg"
           imageWidth: 160
           imageHeight: 160
