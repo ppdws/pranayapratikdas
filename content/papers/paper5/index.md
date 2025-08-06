@@ -12,6 +12,8 @@ cover:
 editPost:
     URL: "https://doi.org/10.48550/arXiv.2501.08839"
     Text: "arXiv Preprint"
+disableAnchoreHeadings: false
+hideSummary: false
 
 ---
 
@@ -29,7 +31,7 @@ The boundary of a billiard system plays a crucial role in shaping its dynamics, 
 ---
 ##### Figure 5: Bean and Cassini curves as Toric sections.
 
-![](paper5.png)
+![](paper5.jpg)
 
 ---
 
