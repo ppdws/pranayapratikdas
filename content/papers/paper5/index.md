@@ -8,7 +8,7 @@ summary: "The paper explores how exponential growth in OTOCs can occur even in t
 cover:
     image: "paper5.jpg"
     alt: "Bean and Cassini curves as Toric sections."
-    relative: true
+    relative: false
 editPost:
     URL: "https://doi.org/10.48550/arXiv.2501.08839"
     Text: "arXiv Preprint"
