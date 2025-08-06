@@ -87,14 +87,18 @@ params:
       icon: favicon.ico
       iconHeight: 22
 
+language:
+	en:
+		languageName: "English"
+
 markup:
     goldmark:
         renderer:
             unsafe: true
     highlight:
         guessSyntax: true
-        style: autumn 
+        style: dracula 
     tableOfContents:
         endLevel: 2
         ordered: false
-        startLevel: 2
+        startLevel: 1
