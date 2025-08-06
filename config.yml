@@ -14,7 +14,7 @@ menu:
     main:
         - name: Books
           url: books/
-          weight: 5
+          weight: 1
         - name: Papers
           url: papers/
           weight: 2
