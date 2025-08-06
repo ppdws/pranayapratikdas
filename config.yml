@@ -14,10 +14,10 @@ menu:
     main:
         - name: Books
           url: books/
-          weight: 5 
+          weight: 2
         - name: Papers
           url: papers/
-          weight: 2
+          weight: 1
       #  - name: Courses
       #   url: courses/
       #  weight: 3
