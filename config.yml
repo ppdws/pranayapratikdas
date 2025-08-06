@@ -18,6 +18,9 @@ menu:
         - name: Papers
           url: papers/
           weight: 1
+	-name: Newsletter
+	url: newsletter/
+	weight: 3
       #  - name: Courses
       #   url: courses/
       #  weight: 3
@@ -38,7 +41,7 @@ params:
     ShowBreadCrumbs: false
     ShowCodeCopyButtons: true
     ShowAllPagesInArchive: false
-    MainSections: ["books","papers"]
+    MainSections: ["books","papers","newsletter"]
     ShowToc: false
     disableScrollToTop: true
     TocOpen: true
@@ -58,6 +61,8 @@ params:
               url: papers/
             - name: Books
               url: books/
+	    -name: Newsletter
+	      url: newsletter/
             - name: Tags
               url: tags/
             - name: Archive
