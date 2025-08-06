@@ -29,7 +29,6 @@ The boundary of a billiard system plays a crucial role in shaping its dynamics, 
 
 ---
 
-
 ##### Download
 
 + [Paper](paper5.pdf)
