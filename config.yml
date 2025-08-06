@@ -1,6 +1,6 @@
 baseURL: "https://phy.github.io" 
 title: Pranaya Pratik Das
-theme: PaperMod
+theme: aafu
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
