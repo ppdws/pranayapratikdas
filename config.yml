@@ -92,9 +92,6 @@ params:
       icon: favicon.ico
       iconHeight: 22
 
-language:
-	en:
-		languageName: "English"
 
 markup:
     goldmark:
@@ -106,4 +103,4 @@ markup:
     tableOfContents:
         endLevel: 2
         ordered: false
-        startLevel: 1
+        startLevel: 2
