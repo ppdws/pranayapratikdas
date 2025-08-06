@@ -6,8 +6,8 @@
     --header-height: 44px;
     --footer-height: 70px;
     --radius: 8px;
-    --theme: rgb(255, 255, 255);
-    --entry: rgb(255, 255, 255);
+    --theme: rgb(239, 222, 205);
+    --entry: rgb(239, 222, 205);
     --primary: rgb(30, 30, 30);
     --secondary: rgb(108, 108, 108);
     --tertiary: rgb(214, 214, 214);
@@ -17,7 +17,7 @@
     --code-bg: rgb(245, 245, 245);
     --border: rgb(238, 238, 238);
     --darkcolor: #ffbf00;
-    --lightcolor: #cbd1de;
+    --lightcolor: #ffbf00;
     --semibold: 500;
     --homesize: 16px;
     --textsize: 18px;
