@@ -1,5 +1,6 @@
 ---
-title: "#" 
+title: "3 STAR" 
+subtitle: "Shadows of the Light"
 date: 2025-12-22
 tags: ["sci-si","adventure","fantasy","philosophy"]
 author: ["Dr. D"]
@@ -7,7 +8,7 @@ description: "."
 summary: "."
 cover:
     image: "book1.jpeg"
-    alt: "#"
+    alt: "Five Friends"
     relative: true
 editPost:
     URL: "#"
