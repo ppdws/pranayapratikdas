@@ -7,12 +7,12 @@ author: ["Pranaya Pratik Das", "Biplab Ganguli"]
 description: "Paper description for search engines (less than 155 characters)" 
 summary: "Paper summary for list page (less than 265 characters)"
 cover:
-    image: "paper_figure.png"
+    image: ""
     alt: "Figure title (preferably 1280x720 pixels)"
    relative: true
 editPost:
-   URL: "https://doi.org/paper_doi"
-   Text: "Journal/Repository Name"
+   URL: ""
+   Text: ""
 
 ---
 
@@ -31,7 +31,7 @@ editPost:
 
 ##### Download:
 
-+[Paper]()
+#+[Paper]()
 
 ---
 
