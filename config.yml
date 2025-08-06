@@ -18,9 +18,9 @@ menu:
         - name: Papers
           url: papers/
           weight: 1
-	- name: News
-	  url: data/
-	  weight: 3
+#	- name: News
+#	  url: data/
+#	  weight: 3
 
 params:
     description: "I am a Senior Research Fellow in the Department of Physics and Astronomy at NIT Rourkela and I am about to complete my PhD in Theoretical Physics. My research focuses on Quantum Chaos. "
@@ -58,8 +58,8 @@ params:
               url: papers/
             - name: Books
               url: books/
-	    - name: News
-	      url: data/
+#	    - name: News
+#	      url: news/
             - name: Tags
               url: tags/
             - name: Archive
@@ -78,7 +78,7 @@ params:
           url: https://scholar.google.com/citations?user=lutErqEAAAAJ&hl=en
         - name: Researchgate
           url: https://www.researchgate.net/profile/Pranaya-Das
-#       - name: orcid
+#       - name: ORCID
 #          url: https://orcid.org/0000-0002-6025-7719
 
     assets:
