@@ -3,7 +3,7 @@ title: "Manifestations of chaos in billiards: the role of mixed curvature"
 date: 2025-06-28
 tags: ["Complexity","Nonlinear Dynamics and Chaos Theory","Quantum Physics","OTOC","INO"]
 author: ["Pranaya Patik Das", "Tanmayee Patra", "Biplab Ganguli"]
-description: "This paper published in the European Physical Journal D, 2021."
+description: "This paper is under peer review."
 summary: "The paper explores how exponential growth in OTOCs can occur even in the absence of classical indicators like potential maxima, revealing that such growth is instead closely linked to local density of states and the curvature of the potential's slope, rather than to chaos itself."
 cover:
     image: "paper5.jpg"
