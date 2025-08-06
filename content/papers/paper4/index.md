@@ -34,14 +34,13 @@ In this letter, we demonstrate the cyclically symmetric Thomas oscillators as sw
 
 ---
 
-
 ##### Citation
 
 Vinesh Vijayan and Pranaya Pratik Das. 2022. "Cyclically Symmetric Thomas Oscillators As Swarmalators: A paradigm for Active Fluids \& Pattern Formation." ** arXiv preprint arXiv:2211.00336 (2022)..
 
 ```BibTeX
 @article{vijayan2022cyclically,
-  title={Cyclically Symmetric Thomas Oscillators As Swarmalators: A paradigm for Active Fluids \& Pattern Formation},
+  title={Cyclically Symmetric Thomas Oscillators As Swarmalators: A paradigm for Active Fluids & Pattern Formation},
   author={Vijayan, Vinesh and Das, Pranaya Pratik},
   journal={arXiv preprint arXiv:2211.00336},
   year={2022}}
