@@ -1,6 +1,8 @@
 baseURL: "https://phy.github.io" 
 title: Pranaya Pratik Das
 theme: aafu
+	showAttribute: true
+	singlePage: false
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
