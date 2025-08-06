@@ -17,12 +17,6 @@ editPost:
 
 ---
 
-##### Download
-
-+ [Paper](paper2.pdf)
-
----
-
 ##### Abstract
 
 We study the relationship between the standard or extended thermodynamic phase structure of various anti–de Sitter black holes and the Lyapunov exponents associated with the null and timelike geodesics. We consider dyonic, Bardeen, Gauss-Bonnet, and Lorentz-symmetry breaking massive gravity black holes and calculate the Lyapunov exponents of massless and massive particles in unstable circular geodesics close to the black hole. We find that the thermal profile of the Lyapunov exponents exhibits distinct behavior in the small and large black hole phases and can encompass certain aspects of the van der Waals type small/large black hole phase transition. We further analyze the properties of Lyapunov exponents as an order parameter and find that its critical exponent is 1/2, near the critical point for all black holes considered here.
@@ -34,6 +28,11 @@ We study the relationship between the standard or extended thermodynamic phase s
 
 ---
 
+##### Download
+
++ [Paper](paper2.pdf)
+
+---
 ##### Citation
 
 Bhaskar Shukla, Pranaya Pratik Das, David Dudal and Subhash Mahapatra. 2024. "Interplay between the Lyapunov exponents and phase transitions of charged AdS black holes." *Phys. Rev. D* 110 (2) p.024068. https://link.aps.org/doi/10.1103/PhysRevD.110.024068.
