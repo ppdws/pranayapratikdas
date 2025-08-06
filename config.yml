@@ -18,9 +18,9 @@ menu:
         - name: Papers
           url: papers/
           weight: 1
-	- name: News
-	  url: news/
-	  weight: 3
+#	- name: News
+#	  url: news/
+#	  weight: 3
 
 params:
     description: "I am a Senior Research Fellow in the Department of Physics and Astronomy at NIT Rourkela and I am about to complete my PhD in Theoretical Physics. My research focuses on Quantum Chaos. "
@@ -58,8 +58,8 @@ params:
               url: papers/
             - name: Books
               url: books/
-	    - name: News
-	      url: news/
+#	    - name: News
+#	      url: news/
             - name: Tags
               url: tags/
             - name: Archive
