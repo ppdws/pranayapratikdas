@@ -62,14 +62,14 @@ params:
               url: papers/
             - name: Books
               url: books/
-	    - name: News
-	      url: news/
             - name: Courses
               url: courses/
             - name: Tags
               url: tags/
             - name: Archive
               url: archive/
+	    - name: News
+	      url: news/
 
     socialIcons:
         - name: CV
