@@ -1,4 +1,4 @@
-### **Research Interests**
+## **Research Interests:**
 
 I am interested in everything related to the intersection of **Chaos Theory** and **Black Hole**.
 
