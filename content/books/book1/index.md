@@ -1,5 +1,5 @@
 ---
-title: "3 STAR: Shadows of the Light" 
+title: "Working Title: Friends of  Cockatiel" 
 #date: 2025-12-12
 tags: ["sci-fi","fantasy","philosophy","Adventure", "Dystopian"]
 author: ["Pranaya Pratik Das"]
