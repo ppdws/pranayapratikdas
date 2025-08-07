@@ -1,4 +1,11 @@
 ---
 title: "Courses"
-description: "Courses on philology by Professor Dr von Igelfeld and esteemed colleagues. For undergraduate and graduate students."
+description: "Courses on philology by Pranaya Pratik Das. For undergraduate and graduate students."
 ---
+
+I had the privilege of serving as a Teaching Assistant (TA) under some of the most esteemed faculty members in the Department of Physics and Astronomy at NIT Rourkela. During this time, I was actively involved in conducting and supervising several undergraduate physics laboratory courses. This role allowed me not only to reinforce my own conceptual understanding through teaching but also to engage with a diverse group of enthusiastic students, many of whom were a pleasure to mentor and assist in their academic journey.
+
+---
+## NIT Rourkela
+
+* **PH**
