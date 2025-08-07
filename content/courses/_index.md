@@ -22,12 +22,12 @@ I had the privilege of serving as a Teaching Assistant (TA) under some of the mo
 #### Postgraduate Research Projects:
 
 * **M.Sc. Research Project: 2023-24**  <br>
-	Student Name: Zubair Ahmad Kumar & Vivek Sheoran
+	Student Names: Zubair Ahmad Kumar & Vivek Sheoran
  <br>
 
 
 * **M.Sc. Research Project: 2022-23** <br>
-	Student Name: Karishma Kujur & Ayush Sahu
+	Student Names: Karishma Kujur & Ayush Sahu
  <br>
 
 
