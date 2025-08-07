@@ -7,7 +7,7 @@ description: "News of Pranaya Pratik Das."
 
 #### Academic Events
 
-* **[2025]** <br>
+* **[2025]**: <br>
 	
  <br>
 
@@ -15,13 +15,8 @@ description: "News of Pranaya Pratik Das."
 
 #### Life Events
 
-* **[2024]**  <br>
+* **[2024]**:  <br>
 
- <br>
-
-
-* **M.Sc. Research Project: 2022-23** <br>
-	Student Names: Karishma Kujur & Ayush Sahu
  <br>
 
 
