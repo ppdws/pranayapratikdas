@@ -10,7 +10,7 @@ I had the privilege of serving as a Teaching Assistant (TA) under some of the mo
 #### Undergraduate Labs:
 
 * **PH-1070: B.Tech Lab** <br>
-	Session: Autumn''21, Spring''21, Autumn'22, Spring'22 <br>
+	Session: Autumn'21, Spring'21, Autumn'22, Spring'22 <br>
 	Instructors: [Prof.  Pitamber Mahanandia ](https://www.nitrkl.ac.in/FacultyStaff/FacultyProfile/pitam), [Dr. Susanta K. Bisoi ](https://www.nitrkl.ac.in/FacultyStaff/FacultyProfile/bisois), [Dr. Indrani Banerjee](https://www.nitrkl.ac.in/FacultyStaff/FacultyProfile/banerjeein), & [Prof. Biplab Ganguli](https://www.nitrkl.ac.in/FacultyStaff/FacultyProfile/biplabg)
 
  <br>
