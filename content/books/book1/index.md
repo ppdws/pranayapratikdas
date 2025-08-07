@@ -22,21 +22,17 @@ disableAnchoredHeadings: false
 
 #### Description
 
-
-#[^1]: 
-#[^2]: 
-
 ---
 
 #### Praise
 
-#> There is nothing more to be said on this subject. Nothing – Anonymous reviewer
+> There is nothing more to be said on this subject. Nothing – Anonymous reviewer
 
 ---
 
 #### View
 
-#+ [Chapter 1:](chapter1.pdf)
++ [Chapter 1:]()
 ---
 
 ---
