@@ -6,7 +6,7 @@ author: ["Pranaya Pratik Das"]
 description: "This."
 summary: "This book."
 cover:
-    image: "book001.pn"
+    image: "book001.png"
     alt: "Five Friends"
     relative: true
 editPost:
