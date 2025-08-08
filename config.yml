@@ -88,7 +88,14 @@ params:
           url: https://orcid.org/0000-0002-6025-7719
 
     assets:
+	disableHLJS: true
         disableScrollBarStyle: true
+        favicon: "static/favicon.ico"
+        favicon16x16: "static/favicon-16x16.png"
+        favicon32x32: "static/favicon-32x32.png"
+        apple_touch_icon: "static/apple-touch-icon.png"
+	android_chrome_icon512x512: "static/android-chrome-512x512.png"
+	android_chrome_icon192x192: "static/android-chrome-192x192.png"
     cover:
         hiddenInList: false
         hiddenInSingle: true
