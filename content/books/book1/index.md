@@ -16,6 +16,7 @@ showToc: false
 disableAnchoredHeadings: false
 
 ---
+![](book0001.png)
 
 ---
 
