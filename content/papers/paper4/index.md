@@ -13,7 +13,7 @@ cover:
 editPost:
     URL: "https://doi.org/10.48550/arXiv.2211.00336"
     Text: "ACCEPTED in CNSNS"
-showToc: true
+# howToc: true
 disableAnchoredHeadings: false
 hideSummary: false
 weight: 5
