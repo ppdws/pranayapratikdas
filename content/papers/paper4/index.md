@@ -1,6 +1,6 @@
 ---
 title: "Cyclically symmetric Thomas oscillators as swarmalators: a model for active fluids and pattern formation" 
-date: 2022-11-18
+date: 2025-08-11
 tags: ["swarming","acive colloidals","hexatic parameter","chaos"]
 author: ["Vinesh Vijayan", "Pranaya Pratik Das","K Hariprasad","P Sathish Kumar"]
 description: "This paper is under peer review." 
