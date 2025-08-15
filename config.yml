@@ -22,7 +22,7 @@ menu:
         - name: Courses
           url: courses/
           weight: 3
-        - name: Projects
+        - name: News
           url: /projects/
           weight: 4
 #	- name: News
@@ -71,7 +71,7 @@ params:
               url: tags/
             - name: Archive
               url: archive/
-            - name: Projects
+            - name: News
               url: projects/
 #	    - name: News
 #	      url: news/
