@@ -4,4 +4,4 @@ description: "Academic and Research Projects."
 
 ---
 <!-- ---
-## Human-AI Collaboration -->
+## Physics Collaboration -->

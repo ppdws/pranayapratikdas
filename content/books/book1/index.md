@@ -13,7 +13,7 @@ editPost:
     URL: ""
     Text: ""
 showToc: false
-disableAnchoredHeadings: false
+disableAnchoredHeadin4: false
 
 ---
 ![](book0001.png)
