@@ -3,15 +3,20 @@ title: "Cyclically symmetric Thomas oscillators as swarmalators: a model for act
 date: 2025-08-11
 tags: ["swarming","acive colloidals","hexatic parameter","chaos"]
 author: ["Vinesh Vijayan", "Pranaya Pratik Das","K Hariprasad","P Sathish Kumar"]
-description: "This paper is under peer review." 
+description: "This paper is accepted in CNSNS." 
+image: "/paper4.png"
 summary: "This article introduce a cyclically symmetric Thomas oscillator model coupled with Kuramoto‑type phase dynamics—dubbed “swarmalators”—that self‑organise into both crystalline and chaotic spatiotemporal patterns, offering a versatile paradigm for active fluids and pattern formation in active matter systems." 
 cover:
     image: "paper4.png"
     alt: "Swarming in 3D space for b=0.1 in the Thomas oscillator at randomly selected time points."
-    relative: true
+    relative: false
 editPost:
     URL: "https://doi.org/10.48550/arXiv.2211.00336"
     Text: "ACCEPTED in CNSNS"
+showToc: true
+disableAnchoredHeadings: false
+hideSummary: false
+weight: 5
 
 ---
 
