@@ -1,5 +1,5 @@
 ---
-title: "Cyclically Symmetric Thomas Oscillators As Swarmalators: A paradigm for Active Fluids & Pattern Formation" 
+title: "Cyclically symmetric Thomas oscillators as swarmalators: a model for active fluids and pattern formation" 
 date: 2022-11-18
 tags: ["swarming","acive colloidals","hexatic parameter","chaos"]
 author: ["Vinesh Vijayan", "Pranaya Pratik Das","K Hariprasad","P Sathish Kumar"]
@@ -11,7 +11,7 @@ cover:
     relative: true
 editPost:
     URL: "https://doi.org/10.48550/arXiv.2211.00336"
-    Text: "arXiv Preprint"
+    Text: "ACCEPTED in CNSNS"
 
 ---
 
@@ -19,8 +19,7 @@ editPost:
 
 ##### Abstract
 
-In this letter, we demonstrate the cyclically symmetric Thomas oscillators as swarmalators and describe their possible collective dynamics. We achieve this by sewing Kuromoto-type phase dynamics to particle dynamics represented by the Thomas model. More precisely, this is equivalent to a non-linear particle aggregation model with cyclic symmetry of coordinates and position-dependent phase dynamics. The non-linear equations describe spatiotemporal patterns of crystalline order and chaotic randomness at two extreme values of the system parameter. This pattern is the outcome of non-linear self-organization, which leads to a new class of turbulent flow - active turbulence. We claim that this model can capture the dynamics of many naturally occurring microorganisms and micro-swimmers. The model described in this letter can be a prototypical model for understanding active systems and may shed light on the possibility of making novel materials(active matter) with exciting biomedical and industrial applications. The key to this is the understanding and control over the complex dynamics of active systems, an out-of-equilibrium system, which is potentially helpful in making functional materials, nano and micromachines. 
----
+In this study, we demonstrate that cyclically symmetric Thomas oscillators can serve as swarmalators\textemdash agents exhibiting both swarming and phase synchronization\textemdash when coupled with Kuramoto-type phase dynamics. The resulting model represents a nonlinear particle aggregation system, characterised by cyclic spatial symmetry and position-dependent phase evolution. This coupling gives rise to rich spatio-temporal phenomena, including pre-hexatic or hexatic $2D$ structures, as well as chaotic turbulence under extreme parameter regimes. These emergent patterns result from nonlinear self-organization, manifesting as a form of active turbulence. Our analysis reveals that the nature and strength of inter-particle interactions, controlled by key system parameters, dictate the organization and dynamical behavior of the swarm. As a representative active, non-equilibrium system, this framework provides insights into the fundamental mechanisms of collective motion and offers applications in the design of synthetic active materials and coordinated microscale systems.---
 
 ##### Figure 4: Swarming in 3D space for b=0.1 in the Thomas oscillator at randomly selected time points.
 
