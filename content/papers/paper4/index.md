@@ -36,6 +36,8 @@ In this study, we demonstrate that cyclically symmetric Thomas oscillators can s
 
 + [Paper](paper4.pdf)
 
++[Supplementary Information](Supplementary Information.pdfs)
+
 ---
 
 ##### Citation
