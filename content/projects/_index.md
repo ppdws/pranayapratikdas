@@ -12,7 +12,7 @@ Date: 21-07-2024  to 26-07-2024<br>
 Organiser: IIT Mandi, India  <br>
 
 * **HPC Symposium** <br>
-Date: 24-02-2024  to 275-02-2024<br>
+Date: 24-02-2024  to 25-02-2024<br>
 Organiser: NIT Rourkela, India  <br>
 
 
