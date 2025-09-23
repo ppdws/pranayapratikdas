@@ -1,4 +1,5 @@
 baseURL: "https://phy.github.io" 
+languageCode= "en-gb"
 title: Pranaya Pratik Das
 theme: PaperMod
 
