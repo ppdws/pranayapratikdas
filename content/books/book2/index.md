@@ -8,8 +8,9 @@ cover:
     image: "chaos.jpg"
     alt: "Chaos Book"
     relative: true
-buyLink:
-	URL: "https://www.amazon.co.uk/dp/0749386061"
+editPost:
+    URL: "https://www.amazon.co.uk/dp/0749386061"
+    Text: ""
 showToc: false
 disableAnchoredHeadin4: false
 
