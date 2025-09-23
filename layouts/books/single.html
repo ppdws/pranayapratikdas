@@ -1,0 +1,12 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+<div class="books-grid">
+    {{ range .Params.books }}
+    <div class="book-card">
+        <img src="{{ .cover }}" alt="Cover of {{ .title }}">
+        <h3>{{ .title }}</h3>
+        <p>By {{ .author }}</p>
+    </div>
+    {{ end }}
+</div>
+{{ end }}
