@@ -1,5 +1,4 @@
 baseURL: "https://phy.github.io" 
-languageCode= "en-gb"
 title: Pranaya Pratik Das
 theme: PaperMod
 
@@ -38,8 +37,8 @@ params:
     defaultTheme: light
     hideFooter: false
     disableThemeToggle: false
-    ShowShareButtons: true
-    ShowReadingTime: true
+    ShowShareButtons: false
+    ShowReadingTime: false
     disableSpecial1stPost: true
     disableAnchoredHeadings: true
     ShowPostNavLinks: false
