@@ -1,4 +1,4 @@
 ---
 title: "Books"
-description: "Books by Dr D."
+description: "A curated collection of books I think are worth reading"
 ---
