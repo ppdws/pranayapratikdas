@@ -1,7 +1,7 @@
 ---
 title: "Chaos: Making a New Science"
 author: "James Gleick"
-cover: "chaos.jpg"
+cover: "images/books/chaos.jpg"
 summary: "A brilliant introduction to chaos theory, tracing its discovery and implications."
 tags: ["nonlinear-dynamics", "popular-science"]
 rating: 4.5
