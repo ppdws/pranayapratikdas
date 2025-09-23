@@ -6,7 +6,7 @@ description: "A brilliant introduction to chaos theory, tracing its discovery an
 summary: "This book."
 cover:
     image: "images/books/chaos.jpg"
-    alt: "Cahos Book"
+    alt: "Chaos Book"
     relative: true
 editPost:
     URL: "https://www.amazon.co.uk/dp/0749386061"
