@@ -12,3 +12,7 @@ showToc: false
 disableAnchoredHeadin4: false
 
 ---
+_build:
+	render: never
+	list: false
+---
