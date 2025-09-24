@@ -8,7 +8,7 @@ cover:
     image: "chaos.jpg"
     alt: "Chaos Book"
     relative: true
-rating: 4.5
+rating: 4
 link: "https://www.amazon.co.uk/dp/0749386061"
 showToc: false
 disableAnchoredHeadin4: false
