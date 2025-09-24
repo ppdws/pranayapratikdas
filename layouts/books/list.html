@@ -80,7 +80,16 @@
                         color: #666;
                         font-size: 0.9rem;
                     ">
-                        By {{ if .Params.author }}{{ .Params.author }}{{ else }}Unknown Author{{ end }}
+                         By 
+   			 {{- if .Params.authors -}}
+   			     {{- range $index, $author := .Params.authors -}}
+            			{{- if gt $index 0 }}, {{ end -}}{{ $author }}
+        		{{- end -}}
+    			{{- else if .Params.author -}}
+        			{{ .Params.author }}
+   				 {{- else -}}
+   				     Unknown Author
+    			{{- end }}
                     </p>
                     
                     <!-- Rating (Optional) -->
