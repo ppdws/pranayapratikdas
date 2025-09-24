@@ -67,10 +67,14 @@
             background-position: center;
             background-repeat: no-repeat;
             display: flex;
+	    border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
             align-items: center;
             justify-content: center;
             background-color: #f8f9fa;
-            min-height: 250px;
+            min-height: 200px;
         }
 
         .paper-cover-fallback {
@@ -112,6 +116,14 @@
             color: #3498db;
         }
 
+	/* Publication Date */
+        .paper-date {
+            font-size: 1rem;
+            color: #7f8c8d;
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+
         /* Paper Authors */
         .paper-authors {
             font-size: 1rem;
@@ -119,6 +131,7 @@
             margin-bottom: 1rem;
             font-style: italic;
             line-height: 1.4;
+            font-weight: 500;
         }
 
         /* Paper Metadata */
@@ -138,14 +151,9 @@
 
         .journal {
             font-weight: 600;
-        }
-
-        .year {
-            background: #3498db;
-            color: white;
-            padding: 0.2rem 0.8rem;
-            border-radius: 12px;
-            font-size: 0.8rem;
+            background: #ecf0f1;
+            padding: 0.3rem 1rem;
+            border-radius: 20px;
         }
 
         /* Paper Abstract */
@@ -259,7 +267,13 @@
             {{ range $papers }}
             <div class="paper-block">
                 <!-- Paper Cover -->
-                <div class="paper-cover" style="background-image: url('{{ .cover }}');">
+                <div class="paper-cover">
+			 {{ if .cover }}
+                        <img src="{{ .cover | absURL }}" 
+                             alt="Cover image for {{ .title }}" 
+                             loading="lazy"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        {{ end }}
                     {{ if not .cover }}
                     <div class="paper-cover-fallback">
                         <span>📄</span>
@@ -295,10 +309,17 @@
                             <span class="journal">{{ .journal }}</span>
                             {{ end }}
                             
-                            {{ if .year }}
-                            <span class="year">{{ .year }}</span>
-                            {{ end }}
-                        </div>
+                   <!-- Publication Date -->
+                    {{ if .date }}
+                    <div class="paper-date">
+                        Published: {{ time.Format "January 2, 2006" .date }}
+                    </div>
+                    {{ else if .year }}
+                    <div class="paper-date">
+                        Published: {{ .year }}
+                    </div>
+                    {{ end }}
+
                         
                         <!-- Paper Abstract -->
                         {{ if .abstract }}
