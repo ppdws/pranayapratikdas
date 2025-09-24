@@ -7,297 +7,159 @@
     <div class="post-content">
         {{ .Content }}
         
-        <!-- Category Navigation -->
-        <div class="category-nav">
-            {{ $categories := dict 
-                "novels" "Novels"
-                "physics" "Physics" 
-                "history" "History"
-            }}
-            
-            {{ range $key, $name := $categories }}
-            <button class="category-btn" data-category="{{ $key }}">
-                {{ $name }}
-            </button>
-            {{ end }}
-            <button class="category-btn active" data-category="all">All Books</button>
-        </div>
-        
-        <!-- Books Grid by Category -->
-        {{ $categories := dict 
-            "novels" "Novels"
-            "physics" "Physics" 
-            "history" "History"
-        }}
-        
-        {{ range $category, $books := $.Site.Data.books }}
-        <section class="category-section" id="{{ $category }}">
-            <h2 class="category-title">{{ index $categories $category }}</h2>
-            <div class="books-grid">
-                {{ range $books }}
-                <div class="book-card" data-category="{{ $category }}">
-                    <!-- Book Cover -->
-                    <div class="book-cover-container" 
-                         style="background-image: url('{{ .cover }}');">
-                        {{ if not .cover }}
-                        <div class="book-cover-fallback">
-                            <div class="fallback-content">
-                                📚<br>
-                                <small>{{ .title }}</small>
-                            </div>
-                        </div>
+        <!-- Books Grid -->
+        <div class="books-grid" style="
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        ">
+            {{ range .Pages }}
+            <div class="book-card" style="
+                text-align: center;
+                transition: transform 0.3s ease;
+            ">
+                <a href="{{ .Permalink }}" style="text-decoration: none; color: inherit;">
+                    <!-- Book Cover with Error Handling -->
+                    <div class="book-cover" style="
+                        margin-bottom: 1rem;
+                        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+                        border-radius: 8px;
+                        overflow: hidden;
+                        height: 300px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: #f5f5f5;
+                    ">
+                        {{ if .Params.cover }}
+                            {{ if reflect.IsMap .Params.cover }}
+                                {{ if .Params.cover.image }}
+                                    <img src="{{ .Params.cover.image | absURL }}" 
+                                         alt="{{ if .Params.cover.alt }}{{ .Params.cover.alt }}{{ else }}{{ .Title }} cover{{ end }}"
+                                         style="
+                                             width: 100%;
+                                             height: 100%;
+                                             object-fit: cover;
+                                             transition: transform 0.3s ease;
+                                         "
+                                         onmouseover="this.style.transform='scale(1.05)'"
+                                         onmouseout="this.style.transform='scale(1)'">
+                                {{ else }}
+                                    <div style="color: #999; padding: 1rem;">No cover image</div>
+                                {{ end }}
+                            {{ else }}
+                                <!-- Handle case where cover is a string instead of object -->
+                                <img src="{{ .Params.cover | absURL }}" 
+                                     alt="{{ .Title }} cover"
+                                     style="
+                                         width: 100%;
+                                         height: 100%;
+                                         object-fit: cover;
+                                         transition: transform 0.3s ease;
+                                     "
+                                     onmouseover="this.style.transform='scale(1.05)'"
+                                     onmouseout="this.style.transform='scale(1)'">
+                            {{ end }}
+                        {{ else }}
+                            <div style="color: #999; padding: 1rem;">No cover available</div>
                         {{ end }}
                     </div>
                     
-                    <!-- Book Info -->
-                    <div class="book-info">
-                        <h3>{{ .title }}</h3>
-                        <p class="book-author">By {{ .author }}</p>
-                        
-                        {{ if .description }}
-                        <p class="book-description">{{ .description }}</p>
-                        {{ end }}
-                        
-                        {{ if .link }}
-                        <a href="{{ .link }}" target="_blank" class="book-link">Find this book</a>
-                        {{ end }}
+                    <!-- Book Title -->
+                    <h3 style="
+                        margin: 0.5rem 0;
+                        font-size: 1.1rem;
+                        font-weight: 600;
+                        line-height: 1.3;
+                    ">{{ .Title }}</h3>
+                    
+                    <!-- Book Author -->
+                    <p style="
+                        margin: 0;
+                        color: #666;
+                        font-size: 0.9rem;
+                    ">
+                        By {{ if .Params.author }}{{ .Params.author }}{{ else }}Unknown Author{{ end }}
+                    </p>
+                    
+                    <!-- Rating (Optional) -->
+                    {{ if .Params.rating }}
+                    <div class="rating" style="margin-top: 0.5rem;">
+                        {{ range seq .Params.rating }}⭐{{ end }}
                     </div>
-                </div>
-                {{ end }}
+                    {{ end }}
+                    
+                    <!-- Genre (Optional) -->
+                    {{ if .Params.genre }}
+                    <div style="margin-top: 0.25rem;">
+                        <span style="background-color: #e9ecef; padding: 0.2rem 0.5rem; border-radius: 12px; font-size: 0.8rem; color: #495057;">
+                            {{ .Params.genre }}
+                        </span>
+                    </div>
+                    {{ end }}
+                </a>
             </div>
-        </section>
-        {{ end }}
+            {{ else }}
+            <div style="grid-column: 1 / -1; text-align: center; padding: 2rem;">
+                <p>No books added yet. Check back soon!</p>
+            </div>
+            {{ end }}
+        </div>
     </div>
 </article>
 
 <style>
-/* Category Navigation */
-.category-nav {
-    display: flex;
-    gap: 1rem;
-    margin: 2rem 0;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.category-btn {
-    padding: 0.7rem 1.5rem;
-    border: 2px solid #007cba;
-    background: white;
-    color: #007cba;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-weight: 500;
-}
-
-.category-btn:hover,
-.category-btn.active {
-    background: #007cba;
-    color: white;
-    transform: translateY(-2px);
-}
-
-/* Category Sections */
-.category-section {
-    margin: 3rem 0;
-}
-
-.category-title {
-    border-bottom: 3px solid #007cba;
-    padding-bottom: 0.5rem;
-    margin-bottom: 2rem;
-    color: #333;
-    font-size: 1.8rem;
-}
-
-/* Books Grid */
 .books-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 2rem;
-}
-
-.book-card {
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-radius: 12px;
-    padding: 1.5rem;
-    background: white;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    border: 1px solid #eaeaea;
+    margin-top: 2rem;
 }
 
 .book-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+   transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(255,183,0,0.6);
 }
 
 .book-cover-container {
-    height: 320px;
-    margin-bottom: 1.5rem;
+    height: 300px;
+    margin-bottom: 1rem;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
-    background-color: #f8f9fa;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    box-shadow: 0 4px 8px rgba(241,183,0,0.4);
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
 }
 
-.book-cover-fallback {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #666;
-    text-align: center;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+.book-rating {
+    margin: 0.5rem 0;
 }
 
-.fallback-content {
-    padding: 2rem;
-    color: white;
-    font-weight: 500;
-}
-
-.book-info h3 {
-    margin: 1rem 0 0.5rem;
-    font-size: 1.2rem;
-    font-weight: 600;
-    line-height: 1.4;
-    color: #2c3e50;
-}
-
-.book-author {
-    margin: 0;
-    color: #7f8c8d;
-    font-size: 1rem;
-    font-style: italic;
-}
-
-.book-description {
-    font-size: 0.95rem;
-    line-height: 1.5;
-    margin: 1rem 0;
-    color: #555;
-    text-align: left;
-}
-
-.book-link {
+.book-genre {
+    background-color: #e9ecef;
+    padding: 0.2rem 0.5rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    color: #495057;
     display: inline-block;
-    margin-top: 1rem;
-    padding: 0.6rem 1.2rem;
-    background: linear-gradient(135deg, #007cba, #005a87);
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    font-size: 0.9rem;
-    font-weight: 500;
-    transition: all 0.3s ease;
-}
-
-.book-link:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0,123,186,0.3);
-}
-
-/* Responsive Design */
-@media (max-width: 1024px) {
-    .books-grid {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        gap: 1.5rem;
-    }
+    margin-top: 0.5rem;
 }
 
 @media (max-width: 768px) {
-    .category-nav {
-        gap: 0.5rem;
-    }
-    
-    .category-btn {
-        padding: 0.5rem 1rem;
-        font-size: 0.9rem;
-    }
-    
     .books-grid {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        gap: 1rem;
-    }
-    
-    .book-cover-container {
-        height: 280px;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 1.5rem;
     }
 }
 
 @media (max-width: 480px) {
     .books-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
     }
-    
-    .category-nav {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .category-btn {
-        width: 200px;
-    }
-}
-
-/* Animation for category filtering */
-.category-section {
-    transition: opacity 0.3s ease;
-}
-
-.category-section.hidden {
-    display: none;
 }
 </style>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const categoryButtons = document.querySelectorAll('.category-btn');
-    const categorySections = document.querySelectorAll('.category-section');
-    const bookCards = document.querySelectorAll('.book-card');
-    
-    categoryButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            // Remove active class from all buttons
-            categoryButtons.forEach(btn => btn.classList.remove('active'));
-            // Add active class to clicked button
-            this.classList.add('active');
-            
-            const selectedCategory = this.getAttribute('data-category');
-            
-            if (selectedCategory === 'all') {
-                // Show all categories
-                categorySections.forEach(section => {
-                    section.classList.remove('hidden');
-                });
-                bookCards.forEach(card => {
-                    card.style.display = 'block';
-                });
-            } else {
-                // Hide all categories first
-                categorySections.forEach(section => {
-                    section.classList.add('hidden');
-                });
-                
-                // Show selected category
-                const targetSection = document.getElementById(selectedCategory);
-                if (targetSection) {
-                    targetSection.classList.remove('hidden');
-                }
-            }
-        });
-    });
-});
-</script>
 {{ end }}
