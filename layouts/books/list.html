@@ -102,11 +102,6 @@
                     <!-- Genre (Optional) -->
                     {{ if .Params.genre }}
                     <div style="margin-top: 0.25rem;">
-			 {{ if reflect.IsSlice $genres }}
-            		{{ delimit .Params.genre ", " }}
-        			{{ else }}
-        	    	{{ .Params.genre }}
-			{{range  .Params.genre }}
                         <span style="background-color: #e9ecef; padding: 0.2rem 0.5rem; border-radius: 12px; font-size: 0.8rem; color: #495057;">
                             {{ .Params.genre }}
                         </span>
