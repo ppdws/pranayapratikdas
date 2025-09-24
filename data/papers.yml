@@ -2,7 +2,7 @@
 - title: "Dynamics of a charged Thomas oscillator in an external magnetic field"
   authors: ["Vinesh Vijayan", "Pranaya Pratik Das"]
   cover: 
-	image: "/images/paper1.png"
+	image: "paper1.png"
 	alt: "Artistic representation of the attractor with magnetic field lines."
   journal: "Physica Scripta"
   year: 2022
