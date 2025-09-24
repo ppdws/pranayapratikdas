@@ -80,7 +80,7 @@
                         color: #666;
                         font-size: 0.9rem;
                     ">
-                        By {{- if .Params.author -}}{{ .Params.author }}{{ else }}Unknown Author{{ end }}
+                        By {{ if .Params.author }}{{ .Params.author }}{{ else }}Unknown Author{{ end }}
                     </p>
                     
                     <!-- Rating (Optional) -->
