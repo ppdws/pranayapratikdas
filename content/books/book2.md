@@ -11,5 +11,3 @@ cover:
 link: "https://www.amazon.co.uk/dp/0749386061"
 showToc: false
 disableAnchoredHeadin4: false
-
----
