@@ -1,9 +1,6 @@
 - title: "Quantum Entanglement in Nonlinear Systems"
   authors: ["John Smith", "Jane Doe", "Robert Johnson", "Maria Garcia"]
-cover:
-    image: "paper1.png"
-    alt: "Artistic representation of the attractor with magnetic field lines."
-    relative: true
+  cover: "paper1.png"  # Path from static folder
   date: 2024-03-15
   journal: "Physical Review Letters"
   year: 2024
