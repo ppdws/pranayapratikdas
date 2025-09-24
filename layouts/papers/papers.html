@@ -99,7 +99,11 @@
 
         /* Paper Content */
         .paper-content {
-            padding: 2.5rem;
+            flex: 1;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
         /* Paper Title */
@@ -118,6 +122,7 @@
 
         .paper-title a:hover {
             color: #ffbf00;
+            text-decoration: underline;
         }
 
 	/* Publication Date */
@@ -176,6 +181,7 @@
         .paper-actions {
             display: flex;
             gap: 1rem;
+            flex-wrap: wrap;
         }
 
         .doi-link, .pdf-link {
@@ -198,6 +204,7 @@
         .doi-link:hover {
             background: #ffbf00;
             transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
         }
 
         .pdf-link {
@@ -208,6 +215,7 @@
         .pdf-link:hover {
             background: #ffbf00;
             transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(231, 76, 60, 0.3);
         }
 
         /* Responsive Design */
