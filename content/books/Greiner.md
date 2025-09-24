@@ -1,6 +1,6 @@
 ---
 title: "Relativistic Quantum Mechanics" 
-author: ["Greiner"]
+author: ["Walter Greiner"]
 genre: ["Science","Physics"]
 cover:
     image: "Greiner.jpg"
