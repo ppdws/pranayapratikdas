@@ -92,12 +92,35 @@
     {{ end }}
                     </p>
                     
-                    <!-- Rating (Optional) -->
-                    {{ if .Params.rating }}
-                    <div class="rating" style="margin-top: 0.5rem;">
-                        {{ range seq .Params.rating }}⭐{{ end }}
-                    </div>
-                    {{ end }}
+   <!-- Star Rating with Half-Stars -->
+{{ if .Params.rating }}
+<div class="star-rating">
+    {{ $fullStars := int .Params.rating }} <!-- Get integer part (full stars) -->
+    {{ $halfStar := false }}
+    {{ if gt (sub .Params.rating $fullStars) 0 }} <!-- Check for decimal part -->
+        {{ $halfStar = true }}
+    {{ end }}
+    {{ $emptyStars := sub 5 (add $fullStars (cond $halfStar 1 0)) }}
+
+    <!-- Full Stars -->
+    {{ range seq $fullStars }}
+    <span class="star full">⭐</span>
+    {{ end }}
+
+    <!-- Half Star -->
+    {{ if $halfStar }}
+    <span class="star half">⭐</span>
+    {{ end }}
+
+    <!-- Empty Stars -->
+    {{ range seq $emptyStars }}
+    <span class="star empty">⭐</span>
+    {{ end }}
+
+    <!-- Optional: Display the numeric value -->
+    <span class="rating-value">({{ .Params.rating }})</span>
+</div>
+{{ end }}
                     
                     <!-- Genre (Optional) -->
                     {{ if .Params.genre }}
