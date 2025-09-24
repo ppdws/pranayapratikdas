@@ -17,32 +17,5 @@
   doi: "https://doi.org/10.1103/PhysRevD.110.024068"
   abstract: "We study the relationship between the standard or extended thermodynamic phase structure of various anti–de Sitter black holes and the Lyapunov exponents associated with the null and timelike geodesics. We consider dyonic, Bardeen, Gauss-Bonnet, and Lorentz-symmetry breaking massive gravity black holes and calculate the Lyapunov exponents of massless and massive particles in unstable circular geodesics close to the black hole. We find that the thermal profile of the Lyapunov exponents exhibits distinct behavior in the small and large black hole phases and can encompass certain aspects of the van der Waals type small/large black hole phase transition. We further analyze the properties of Lyapunov exponents as an order parameter and find that its critical exponent is 1/2, near the critical point for all black holes considered here."
 
-- title: "Out-of-Time-Order Correlation in perturbed quantum wells"
-  authors: ["Pranaya Patik Das", "Biplab Ganguli"]
-  cover: "paper3.png"
-  journal: "The European Physical Journal D"
-  date: 2025-06-28
-  pdf: "https://link.springer.com/content/pdf/10.1140/epjd/s10053-025-01025-7.pdf"
-  doi: "https://link.springer.com/article/10.1140/epjd/s10053-025-01025-7"
-  abstract: "Out-of-Time-Order Correlator (OTOC) and Loschmidt Echo (LE) are commonly regarded as diagnostic tools for chaos, although they may yield misleading results, as we observe. Previous studies have concluded that OTOC shows exponential growth in the neighbourhood of a local maximum. If this statement holds true, the exponential growth should break off once the local maximum is no longer present within the system. By applying a small symmetry-breaking perturbation, we notice that the behaviour of the OTOCs remains remarkably resilient even in the absence of a maximum. Besides this, we also notice that with the increase in perturbation strength, the broken symmetric region expands, causing a broader range of eigenstates to engage in the exponential growth of OTOCs. Therefore, the critical factor lies not in the presence of a local maximum, but in the dynamic nature of the density of states in the broken symmetry regions. Our examination, spanning diverse one- dimensional potential landscapes, reveals the universality of this phenomenon. We also use other chaos diagnostic tool, LE. Interestingly, it also gives a false signal of chaos."
-
-- title: "Cyclically symmetric Thomas oscillators as swarmalators: a model for active fluids and pattern formation"
-  authors: ["Vinesh Vijayan", "Pranaya Pratik Das","K Hariprasad","P Sathish Kumar"]
-  cover: "paper4.png"
-  journal: "Communications in Nonlinear Science and Numerical Simulation"
-  date: 2025-08-14
-  pdf: "https://www.sciencedirect.com/science/article/pii/S1007570425006276/pdfft?md5=38fd121c9033562ac4ca2a48a1309b3d&pid=1-s2.0-S1007570425006276-main.pdf"
-  doi: "https://doi.org/10.1016/j.cnsns.2025.109216"
-  abstract: "In this study, we demonstrate that cyclically symmetric Thomas oscillators can serve as swarmalators— agents exhibiting both swarming and phase synchronization— when coupled with Kuramoto-type phase dynamics. The resulting model represents a nonlinear particle aggregation system, characterised by cyclic spatial symmetry and position-dependent phase evolution. This coupling gives rise to rich spatio-temporal phenomena, including pre-hexatic or hexatic $2D$ structures, as well as chaotic turbulence under extreme parameter regimes. These emergent patterns result from nonlinear self-organization, manifesting as a form of active turbulence. Our analysis reveals that the nature and strength of inter-particle interactions, controlled by key system parameters, dictate the organization and dynamical behavior of the swarm. As a representative active, non-equilibrium system, this framework provides insights into the fundamental mechanisms of collective motion and offers applications in the design of synthetic active materials and coordinated microscale systems."
-
-- title: "Manifestations of chaos in billiards: the role of mixed curvature"
-  authors: ["Pranaya Patik Das", "Tanmayee Patra", "Biplab Ganguli"]
-  cover: "paper5.png"
-  journal: ""
-  date: 2025-01-15
-  pdf: ""
-  doi: "https://doi.org/10.48550/arXiv.2501.08839"
-  abstract: "The boundary of a billiard system plays a crucial role in shaping its dynamics, which may be integrable, mixed, or fully chaotic. When a boundary has varying curvature, it offers a unique setting to study the relation between classical chaos and quantum behaviour. In this study, we introduce two geometrically distinct billiards: a bean-shaped boundary and a peanut-shaped variant of Cassini ovals. These systems incorporate both focusing and defocusing walls with no neutral segments. Our study reveals a strong correlation between classical and quantum dynamics. Analysis of billiard flow diagrams confirms sensitivity to initial conditions—a defining feature of chaos. Poincar´e maps further show the phase space intricately woven with regions of chaotic motion and stability islands. Moving to the quantum domain, we employ nearest-neighbour spacing distribution and level spacing ratio as statistical measures to characterise chaos. Early time saturation in spectral complexity also supports an ergodic hierarchy in these systems. We observe a striking quantum phenomenon, i.e. eigenfunction scarring. This work bridges geometric boundary effects, classical hyperbolicity, and quantum ergodicity, offering a framework to engineer chaos in confined systems."
-
 
 
