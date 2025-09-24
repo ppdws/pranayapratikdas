@@ -267,17 +267,18 @@
             {{ range $papers }}
             <div class="paper-block">
                 <!-- Paper Cover -->
-                <div class="paper-cover"y">
+                <div class="paper-cover">
                         {{ if .cover }}
                         <img src="{{ .cover | absURL }}" 
                              alt="Cover image for {{ .title }}" 
                              loading="lazy"
-                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        {{ end }}
-   <div class="cover-placeholder" style="display: {{ if .cover }}none{{ else }}flex{{ end }};">
-                            📄 Research Paper
-                        </div>
+ {{ if not .cover }}
+                    <div class="paper-cover-fallback">
+                        <span>📄</span>
+                        Research Paper
                     </div>
+                    {{ end }}
+                </div>
 
                 
                 <!-- Paper Content -->
