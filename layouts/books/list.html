@@ -157,17 +157,35 @@
     margin-top: 0.5rem;
 }
 
+@media (max-width: 1200px) {
+    .books-grid {
+        grid-template-columns: repeat(4, 1fr); /* 4 columns on medium-large screens */
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .books-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns on tablets */
+        gap: 1.5rem;
+    }
+}
+
 @media (max-width: 768px) {
     .books-grid {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-        gap: 1.5rem;
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on small tablets */
+        gap: 1rem;
     }
 }
 
 @media (max-width: 480px) {
     .books-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr; /* 1 column on mobile */
         gap: 1rem;
+    }
+    
+    .book-cover-container {
+        height: 250px; /* Slightly smaller on mobile */
     }
 }
 </style>
