@@ -6,7 +6,7 @@ cover:
     image: "Haake.jpg"
     alt: "quantum mechanics"
     relative: true
-rating: 4.5
+rating: 4
 showToc: false
 disableAnchoredHeadin4: false
 
