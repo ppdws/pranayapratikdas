@@ -1,23 +1,7 @@
 # data/papers.yml
-- title: "Quantum Entanglement in Nonlinear Systems"
-  authors: ["John Smith", "Jane Doe", "Robert Johnson", "Maria Garcia"]
-  cover: "/images/papers/quantum-entanglement.jpg"
-  journal: "Physical Review Letters"
-  year: 2024
-  doi: "https://doi.org/10.1103/PhysRevLett.132.123456"
-  abstract: "This paper explores quantum entanglement phenomena in nonlinear dynamical systems..."
-
-- title: "Chaos Theory Applications in Climate Modeling"
-  authors: ["Alice Brown", "David Wilson", "Sarah Chen"]
-  cover: "/images/papers/chaos-climate.jpg"
-  journal: "Nature Climate Change"
-  year: 2023
-  doi: "https://doi.org/10.1038/s41558-023-01614-7"
-  abstract: "Application of chaos theory to improve long-term climate prediction models..."
-
 - title: "Dynamics of a charged Thomas oscillator in an external magnetic field"
   authors: ["Vinesh Vijayan", "Pranaya Pratik Das"]
-  cover: "./paper1.png"
+  cover: "/static/paper1.png"
   journal: "Physica Scripta"
   year: 2022
   doi: "https://iopscience.iop.org/article/10.1088/1402-4896/ac99ab"
