@@ -267,11 +267,7 @@
             {{ range $papers }}
             <div class="paper-block">
                 <!-- Paper Cover -->
-                <div class="paper-cover">
- {{ if .cover }}
-                        <img src="{{ .cover | absURL }}" 
-                             alt="Cover image for {{ .title }}" 
-                             loading="lazy"
+                <div class="paper-cover" style="background-image: url('{{ .cover }}');">
                     {{ if not .cover }}
                     <div class="paper-cover-fallback">
                         <span>📄</span>
