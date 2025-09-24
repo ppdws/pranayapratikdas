@@ -1,0 +1,24 @@
+# data/papers.yml
+- title: "Quantum Entanglement in Nonlinear Systems"
+  authors: ["John Smith", "Jane Doe", "Robert Johnson", "Maria Garcia"]
+  cover: "/images/papers/quantum-entanglement.jpg"
+  journal: "Physical Review Letters"
+  year: 2024
+  doi: "https://doi.org/10.1103/PhysRevLett.132.123456"
+  abstract: "This paper explores quantum entanglement phenomena in nonlinear dynamical systems..."
+
+- title: "Chaos Theory Applications in Climate Modeling"
+  authors: ["Alice Brown", "David Wilson", "Sarah Chen"]
+  cover: "/images/papers/chaos-climate.jpg"
+  journal: "Nature Climate Change"
+  year: 2023
+  doi: "https://doi.org/10.1038/s41558-023-01614-7"
+  abstract: "Application of chaos theory to improve long-term climate prediction models..."
+
+- title: "Machine Learning for Turbulence Prediction"
+  authors: ["Michael Zhang", "Emily Davis", "Thomas Anderson"]
+  cover: "/images/papers/ml-turbulence.jpg"
+  journal: "Journal of Fluid Mechanics"
+  year: 2024
+  doi: "https://doi.org/10.1017/jfm.2024.123"
+  abstract: "Novel machine learning approaches for predicting turbulent flows..."
