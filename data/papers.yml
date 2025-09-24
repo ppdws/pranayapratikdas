@@ -1,6 +1,9 @@
 - title: "Quantum Entanglement in Nonlinear Systems"
   authors: ["John Smith", "Jane Doe", "Robert Johnson", "Maria Garcia"]
-  cover: "/images/papers/paper1.png"  # Path from static folder
+cover:
+    image: "paper1.png"
+    alt: "Artistic representation of the attractor with magnetic field lines."
+    relative: true
   date: 2024-03-15
   journal: "Physical Review Letters"
   year: 2024
@@ -8,20 +11,3 @@
   pdf: "/papers/quantum-entanglement.pdf"
   abstract: "This paper explores quantum entanglement phenomena in nonlinear dynamical systems, presenting new findings about quantum correlations in chaotic systems."
 
-- title: "Chaos Theory Applications in Climate Modeling"
-  authors: ["Alice Brown", "David Wilson", "Sarah Chen"]
-  cover: "/images/papers/chaos-climate.jpg"
-  date: 2023-11-20
-  journal: "Nature Climate Change"
-  year: 2023
-  doi: "https://doi.org/10.1038/s41558-023-01614-7"
-  abstract: "Application of chaos theory to improve long-term climate prediction models, demonstrating significant improvements in forecasting accuracy."
-
-- title: "Machine Learning for Turbulence Prediction"
-  authors: ["Michael Zhang", "Emily Davis", "Thomas Anderson"]
-  cover: "/images/papers/ml-turbulence.jpg"
-  date: 2024-01-10
-  journal: "Journal of Fluid Mechanics"
-  year: 2024
-  doi: "https://doi.org/10.1017/jfm.2024.123"
-  abstract: "Novel machine learning approaches for predicting turbulent flows with applications in aerospace engineering and climate science."
