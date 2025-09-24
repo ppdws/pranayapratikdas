@@ -189,11 +189,14 @@
             font-size: 0.9rem;
             font-weight: 500;
             transition: all 0.3s ease;
+  	    display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
         }
 
         .doi-link {
             background: #3498db;
-            color: white;
+            color: #ffb700;
         }
 
         .doi-link:hover {
@@ -203,7 +206,7 @@
 
         .pdf-link {
             background: #e74c3c;
-            color: white;
+            color: #ffb700;
         }
 
         .pdf-link:hover {
@@ -299,6 +302,17 @@
                             {{ end }}
                         </h2>
                         
+                    <!-- Publication Date -->
+                    {{ if .date }}
+                    <div class="paper-date">
+                        Published: {{ time.Format "January 2, 2006" .date }}
+                    </div>
+                    {{ else if .year }}
+                    <div class="paper-date">
+                        Published: {{ .year }}
+                    </div>
+                    {{ end }}
+
                         <!-- Paper Authors -->
                         <div class="paper-authors">
                             {{ if reflect.IsSlice .authors }}
