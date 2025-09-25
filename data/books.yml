@@ -12,6 +12,37 @@ novels:
     link: "https://example.com"
 
 physics:
+  - title: "Classical Mechanics"
+    author: ["H. Goldstein", "Charles P. Poole", "John Safko"]
+    cover: "Goldstein.jpg"
+    description: ""
+    link: ""
+
+  - title: "Introduction to Quantum Mechanics"
+    author:  ["David J. Griffiths", "Darrell F. Schroeter"]
+    cover: "Griffiths.jpg"
+    description: ""
+    link: ""
+
+  - title: "Quantum Signatures of Chaos"
+    author: ["Fitz Haake", "Darrell F. Schroeter"]
+    cover: "Haake.jpg"
+    description: ""
+    link: ""
+
+  - title: "Nonlinear Dynamics and Chaos"
+    author: "Steven H. Strogatz"
+    cover: "Strogatz.jpg"
+    description: ""
+    link: ""
+
+  - title: "Nonlinear Dynamics and Quantum Chaos"
+    author: "Sandro Wimberger"
+    cover: "Wimberger.jpg"
+    description: ""
+    link: ""
+
+popular science:
   - title: "Chaos: Making a New Science"
     author: "James Gleick"
     cover: "chaos.jpg"
@@ -22,7 +53,7 @@ physics:
     author: "Stephen Hawking"
     cover: "Hawking.jpg"
     description: "Popular science book about cosmology."
-    link: "https://example.com"
+    link: ""
 
 history:
   - title: "Sapiens: A Brief History of Humankind"

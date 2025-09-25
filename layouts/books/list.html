@@ -13,6 +13,7 @@
                 "novels" "Novels"
                 "physics" "Physics" 
                 "history" "History"
+		"popular science" "Popular Science"
             }}
             
             {{ range $key, $name := $categories }}
@@ -28,6 +29,7 @@
             "novels" "Novels"
             "physics" "Physics" 
             "history" "History"
+	    "popular science" "Popular Science"
         }}
         
         {{ range $category, $books := $.Site.Data.books }}
@@ -55,7 +57,12 @@
                     <!-- Book Info -->
                     <div class="book-info">
                         <h3>{{ .title }}</h3>
-                        <p class="book-author">By {{ .author }}</p>
+                        <p class="book-author">By 
+	{{ if .author }}
+        {{ if reflect.IsSlice .author }}
+            {{ delimit .author ", " " and " }}
+        {{ else }}
+        {{ .author }}</p>
                         
                         {{ if .description }}
                         <p class="book-description">{{ .description }}</p>
