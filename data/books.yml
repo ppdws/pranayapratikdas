@@ -30,6 +30,7 @@ history:
     cover: "Harari.jpg"
     description: "Exploration of the history of human species."
     link: "https://example.com"
+    rating: 5
 
   - title: "Guns, Germs, and Steel"
     author: "Jared Diamond"
