@@ -27,7 +27,7 @@ physics:
 history:
   - title: "Sapiens: A Brief History of Humankind"
     author: "Yuval Noah Harari"
-    cover: "Harai.jpg"
+    cover: "Harari.jpg"
     description: "Exploration of the history of human species."
     link: "https://example.com"
 
