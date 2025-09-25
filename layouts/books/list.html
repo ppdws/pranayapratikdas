@@ -56,15 +56,8 @@
                         
                         {{ if .description }}
                         <p class="book-description">{{ .description }}</p>
-
-
-  <!-- Rating (Optional) -->
-                    {{ if .Params.rating }}
-                    <div class="rating" style="margin-top: 0.5rem;">
-                        {{ range seq .Params.rating }}⭐{{ end }}
-                    </div>
-                    {{ end }}
-                       
+                        {{ end }}
+                        
                         {{ if .link }}
                         <a href="{{ .link }}" target="_blank" class="book-link">Find this book</a>
                         {{ end }}
