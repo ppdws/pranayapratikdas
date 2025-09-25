@@ -36,17 +36,20 @@
             <div class="books-grid">
                 {{ range $books }}
                 <div class="book-card" data-category="{{ $category }}">
-                    <!-- Book Cover -->
-                    <div class="book-cover-container" 
-                         style="background-image: url('{{ .cover }}');">
-                        {{ if not .cover }}
-                        <div class="book-cover-fallback">
+                   <!-- Book Cover - UPDATED WITH IMG TAG -->
+                    <div class="book-cover-container">
+                        {{ if .cover }}
+                            <img src="{{ .cover | absURL }}" 
+                                 alt="Cover of {{ .title }}"
+                                 class="book-cover-image"
+                                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        {{ end }}
+                        <div class="book-cover-fallback" style="display: {{ if .cover }}none{{ else }}flex{{ end }};">
                             <div class="fallback-content">
                                 📚<br>
                                 <small>{{ .title }}</small>
                             </div>
                         </div>
-                        {{ end }}
                     </div>
               
                     <!-- Book Info -->
@@ -212,7 +215,7 @@
 /* Responsive Design */
 @media (max-width: 1024px) {
     .books-grid {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 1.rem;
     }
 }
@@ -228,12 +231,12 @@
     }
     
     .books-grid {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
     }
     
     .book-cover-container {
-        height: 280px;
+        height: 200px;
     }
 }
 
