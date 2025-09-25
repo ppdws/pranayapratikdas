@@ -42,7 +42,7 @@ physics:
     description: ""
     link: ""
 
-popular science:
+science:
   - title: "Chaos: Making a New Science"
     author: "James Gleick"
     cover: "chaos.jpg"
