@@ -38,7 +38,7 @@
         <section class="category-section" id="{{ $category }}">
             <h2 class="category-title">{{ index $categories $category }}</h2>
             <div class="books-grid">
-                {{ range $books }}
+                {{ range sort $books "title" }}
                 <div class="book-card" data-category="{{ $category }}">
                    <!-- Book Cover - UPDATED WITH IMG TAG -->
                     <div class="book-cover-container">
