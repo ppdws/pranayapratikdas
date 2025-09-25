@@ -1,13 +1,7 @@
 novels:
-  - title: ""
-    author: ""
-    cover: ""
-    description: ""
-    link: ""
-
-  - title: ""
-    author: ""
-    cover: ""
+  - title: "Harry Potter"
+    author: "J. K. Rowling"
+    cover: "HP.jpg"
     description: ""
     link: ""
 
@@ -121,24 +115,11 @@ history:
     cover: "Harari.jpg"
     description: "Exploration of the history of human species."
     link: "https://example.com"
-    rating: 5
-
-  - title: ""
-    author: ""
-    cover: ""
-    description: ""
-    link: ""
 
 self-help:
   - title: "The Laws of Human Nature"
     author: "Robert Greene"
     cover: "Green.jpg"
-    description: ""
-    link: ""
-
-  - title: ""
-    author: ""
-    cover: ""
     description: ""
     link: ""
 
