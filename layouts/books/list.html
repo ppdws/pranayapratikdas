@@ -48,9 +48,7 @@
                         </div>
                         {{ end }}
                     </div>
-
-
-                    
+              
                     <!-- Book Info -->
                     <div class="book-info">
                         <h3>{{ .title }}</h3>
@@ -82,13 +80,6 @@
     justify-content: center;
 }
 
-  <!-- Rating (Optional) -->
-                    {{ if .Params.rating }}
-                    <div class="rating" style="margin-top: 0.5rem;">
-                        {{ range seq .Params.rating }}⭐{{ end }}
-                    </div>
-                    {{ end }}
-
 .category-btn {
     padding: 0.7rem 1.5rem;
     border: 2px solid #007cba;
@@ -119,6 +110,14 @@
     color: #333;
     font-size: 1.8rem;
 }
+
+
+  <!-- Rating (Optional) -->
+                    {{ if .Params.rating }}
+                    <div class="rating" style="margin-top: 0.5rem;">
+                        {{ range seq .Params.rating }}⭐{{ end }}
+                    </div>
+                    {{ end }}
 
 /* Books Grid */
 .books-grid {
