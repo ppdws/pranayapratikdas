@@ -67,7 +67,7 @@ physics:
     link: ""
 
   - title: "Classical Dynamics of Particles and Systems"
-    author:["Thornton","Marion"]
+    author: ["Thornton","Marion"]
     cover: "Marion.jpg"
     description: ""
     link: ""
