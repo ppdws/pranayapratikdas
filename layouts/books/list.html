@@ -14,7 +14,6 @@
                 "physics" "Physics" 
                 "history" "History"
                 "pop-sci" "Pop-Sci"
-                "self-help" "Self-Help"
             }}
             
             {{ range $key, $name := $categories }}
@@ -31,14 +30,13 @@
             "physics" "Physics" 
             "history" "History"
             "pop-sci" "Popular Science"
-            "self-help" "Self-Help"
         }}
         
         {{ range $category, $books := $.Site.Data.books }}
         <section class="category-section" id="{{ $category }}">
             <h2 class="category-title">{{ index $categories $category }}</h2>
             <div class="books-grid">
-                {{ range $books }}
+                {{ range $books.ByTitle }}
                 <div class="book-card" data-category="{{ $category }}">
                    <!-- Book Cover - UPDATED WITH IMG TAG -->
                     <div class="book-cover-container">
