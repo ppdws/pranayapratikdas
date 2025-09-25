@@ -1,15 +1,15 @@
 novels:
-  - title: "The Great Gatsby"
-    author: "F. Scott Fitzgerald"
-    cover: "/images/great-gatsby.jpg"
-    description: "A classic American novel about the Jazz Age."
-    link: "https://example.com"
+  - title: ""
+    author: ""
+    cover: ""
+    description: ""
+    link: ""
 
-  - title: "1984"
-    author: "George Orwell"
-    cover: "/images/1984.jpg"
-    description: "Dystopian social science fiction novel."
-    link: "https://example.com"
+  - title: ""
+    author: ""
+    cover: ""
+    description: ""
+    link: ""
 
 physics:
   - title: "Classical Mechanics"
@@ -36,9 +36,69 @@ physics:
     description: ""
     link: ""
 
-  - title: "Nonlinear Dynamics and Quantum Chaos"
-    author: "Sandro Wimberger"
-    cover: "Wimberger.jpg"
+  - title: "Quantum Field Theory for the Gifted Amateur"
+    author: ["Tom Lancaster", "Stephen J. Blundell"]
+    cover: "Lancaster.jpg"
+    description: ""
+    link: ""
+
+  - title: "Classical Electrodynamics"
+    author: "John David Jackson"
+    cover: "JDJ.jpg"
+    description: ""
+    link: ""
+
+  - title: "Statistical Mechanics"
+    author: "Kerson Huang"
+    cover: "Huang.jpg"
+    description: ""
+    link: ""
+
+  - title: "GRAVITY An Introduction to Einstein's General Relativity"
+    author: "James B. Hartle"
+    cover: "Hartle.jpg"
+    description: ""
+    link: ""
+
+  - title: "The Transition to Chaos"
+    author: "Linda Reichl"
+    cover: "Linda.jpeg"
+    description: ""
+    link: ""
+
+  - title: "An Introduction of Quantum Field Theory"
+    author: ["Michael E. Peskin", "Daniel V. Schroeder"]
+    cover: "Peskin.jpg"
+    description: ""
+    link: ""
+
+  - title: "Classical Dynamics of Particles and Systems"
+    author:["Thornton","Marion"]
+    cover: "Marion.jpg"
+    description: ""
+    link: ""
+
+  - title: "Introduction to Electrodynamics"
+    author: "David J. Griffiths"
+    cover: "ED_Griffiths.jpg"
+    description: ""
+    link: ""
+
+  - title: "Quantum Mechanics Comcept and Applications"
+    author: "Nouredine Zettili"
+    cover: "Zettili.jpg"
+    description: ""
+    link: ""
+
+  - title: "Modern Quantum Mechanics"
+    author: ["J. J. Sakurai","Jim Napolitano"]
+    cover: "Sakurai1.jpg"
+    description: ""
+    link: ""
+
+  - title: "Relativistic Quantum Mechanics"
+    author: "Walter Greiner"
+    cover: "Greiner.jpg"
     description: ""
     link: ""
 
@@ -63,8 +123,22 @@ history:
     link: "https://example.com"
     rating: 5
 
-  - title: "Guns, Germs, and Steel"
-    author: "Jared Diamond"
-    cover: "/images/guns-germs-steel.jpg"
-    description: "Geographical and environmental history."
-    link: "https://example.com"
+  - title: ""
+    author: ""
+    cover: ""
+    description: ""
+    link: ""
+
+self-help:
+  - title: "The Laws of Human Nature"
+    author: "Robert Greene"
+    cover: "Green.jpg"
+    description: ""
+    link: ""
+
+  - title: ""
+    author: ""
+    cover: ""
+    description: ""
+    link: ""
+
