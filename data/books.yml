@@ -80,7 +80,7 @@ physics:
 
   - title: "Quantum Mechanics Comcept and Applications"
     author: "Nouredine Zettili"
-    cover: "Zettili.jpg"
+    cover: "Zettli.jpg"
     description: ""
     link: ""
 
@@ -92,7 +92,7 @@ physics:
 
   - title: "Relativistic Quantum Mechanics"
     author: "Walter Greiner"
-    cover: "Greiner.jpg"
+    cover: "Greiner.jpeg"
     description: ""
     link: ""
 
@@ -100,21 +100,21 @@ pop-sci:
   - title: "Chaos: Making a New Science"
     author: "James Gleick"
     cover: "chaos.jpg"
-    description: "Introduction to chaos theory and nonlinear dynamics."
+    description: ""
     link: ""
 
   - title: "A Brief History of Time"
     author: "Stephen Hawking"
     cover: "Hawking.jpg"
-    description: "Popular science book about cosmology."
+    description: ""
     link: ""
 
 history:
   - title: "Sapiens: A Brief History of Humankind"
     author: "Yuval Noah Harari"
     cover: "Harari.jpg"
-    description: "Exploration of the history of human species."
-    link: "https://example.com"
+    description: ""
+    link: ""
 
 self-help:
   - title: "The Laws of Human Nature"
