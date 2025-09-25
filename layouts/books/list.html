@@ -57,12 +57,7 @@
                     <!-- Book Info -->
                     <div class="book-info">
                         <h3>{{ .title }}</h3>
-                        <p class="book-author">By 
-	{{ if .author }}
-        {{ if reflect.IsSlice .author }}
-            {{ delimit .author ", " " and " }}
-        {{ else }}
-        {{ .author }}</p>
+                        <p class="book-author">By {{ .author }}</p>
                         
                         {{ if .description }}
                         <p class="book-description">{{ .description }}</p>
