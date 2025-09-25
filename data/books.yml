@@ -42,19 +42,6 @@ physics:
     description: ""
     link: ""
 
-science:
-  - title: "Chaos: Making a New Science"
-    author: "James Gleick"
-    cover: "chaos.jpg"
-    description: "Introduction to chaos theory and nonlinear dynamics."
-    link: "https://www.amazon.co.uk/dp/0749386061"
-
-  - title: "A Brief History of Time"
-    author: "Stephen Hawking"
-    cover: "Hawking.jpg"
-    description: "Popular science book about cosmology."
-    link: ""
-
 history:
   - title: "Sapiens: A Brief History of Humankind"
     author: "Yuval Noah Harari"
