@@ -155,9 +155,9 @@
 }
 
 .book-cover-container {
-    height: 180px;
+    height: 150px;
     margin-bottom: 1.0rem;
-    border-radius: 8px;
+    border-radius: 5px;
     overflow: hidden;
     box-shadow: 0 6px 15px rgba(255,173,238,0.5);
     background-color: #f8f9fa;
@@ -229,6 +229,14 @@
 }
 
 /* Responsive Design */
+@media (max-width: 1200px) {
+    .books-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.rem;
+    }
+}
+
+
 @media (max-width: 1024px) {
     .books-grid {
         grid-template-columns: repeat(3, 1fr);
