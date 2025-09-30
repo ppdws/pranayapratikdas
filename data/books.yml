@@ -115,6 +115,54 @@ pop-sci:
     description: ""
     link: ""
 
+  - title: "A Brief History of Time"
+    author: "Stephen Hawking"
+    cover: "Hawking.jpg"
+    description: ""
+    link: ""
+
+  - title: "The Grand Design"
+    author: "Stephen Hawking"
+    cover: "Hawking5.jpg"
+    description: ""
+    link: ""
+
+  - title: "The Theory of Everything"
+    author: "Stephen Hawking"
+    cover: "Hawking4.jpg"
+    description: ""
+    link: ""
+
+  - title: "The Univverse in a Nutshell"
+    author: "Stephen Hawking"
+    cover: "Hawking2.jpg"
+    description: ""
+    link: ""
+
+  - title: "The Greatest Show on Earth"
+    author: "Richard Dawkins"
+    cover: "Dawkins4.jpg"
+    description: ""
+    link: ""
+
+  - title: "The Magic of Reality"
+    author: "Richard Dawkins"
+    cover: "Dawkins3.jpg"
+    description: ""
+    link: ""
+
+  - title: "The GOD Delusion"
+    author: "Richard Dawkins"
+    cover: "Dawkins2.jpg"
+    description: ""
+    link: ""
+
+  - title: "The Selfish Gene"
+    author: "Richard Dawkins"
+    cover: "Dawkins1.jpg"
+    description: ""
+    link: ""
+
 history:
   - title: "Sapiens: A Brief History of Humankind"
     author: "Yuval Noah Harari"
@@ -126,6 +174,30 @@ self-help:
   - title: "The Laws of Human Nature"
     author: "Robert Greene"
     cover: "Green.jpg"
+    description: ""
+    link: ""
+
+  - title: "Atomic Habits"
+    author: "James Clear"
+    cover: "Clear.jpg"
+    description: ""
+    link: ""
+
+  - title: "Thinking, Fast and Slow"
+    author: "Daniel Kahneman"
+    cover: "Kahneman.jpg"
+    description: ""
+    link: ""
+
+  - title: "The Anatomy of STORY"
+    author: "John Truby"
+    cover: "Truby.jpg"
+    description: ""
+    link: ""
+
+  - title: "The Anatomy of GENRES"
+    author: "John Truby"
+    cover: "59808662.jpg"
     description: ""
     link: ""
 
