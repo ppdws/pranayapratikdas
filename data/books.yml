@@ -96,6 +96,12 @@ physics:
     description: ""
     link: ""
 
+  - title: "Nonlinear Dynamics and Quantum Chaos"
+    author: "Sandro Wimberger"
+    cover: "Wimberger.jpg"
+    description: ""
+    link: "https://doi.org/10.1007/978-3-031-01249-5"
+
 pop-sci:
   - title: "Chaos: Making a New Science"
     author: "James Gleick"
