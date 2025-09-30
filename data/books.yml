@@ -10,13 +10,13 @@ physics:
     author: ["H. Goldstein", "Charles P. Poole", "John Safko"]
     cover: "Goldstein.jpg"
     description: ""
-    link: ""
+    link: "https://a.co/d/1IQMGjf"
 
   - title: "Introduction to Quantum Mechanics"
     author:  ["David J. Griffiths", "Darrell F. Schroeter"]
     cover: "Griffiths.jpg"
     description: ""
-    link: ""
+    link: "https://amzn.in/d/1oIwoFI"
 
   - title: "Quantum Signatures of Chaos"
     author: ["Fitz Haake", "Darrell F. Schroeter"]
@@ -67,7 +67,7 @@ physics:
     link: ""
 
   - title: "Classical Dynamics of Particles and Systems"
-    author: ["Thornton","Marion"]
+    author: ["Stephen T. Thornton","Jerry B. Marion"]
     cover: "Marion.jpg"
     description: ""
     link: ""
