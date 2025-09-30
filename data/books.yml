@@ -137,16 +137,14 @@ mathematica:
     link: ""
 
   - title: "Mathematica for Theoretical Physics"
-    subtitle: "Classical Mechanics and Nonlinear Dynamics"
     author: "Gerd Bauman"
     cover: "Bauman1.jpg"
-    description: ""
+    description: "Classical Mechanics and Nonlinear Dynamics"
     link: ""
 
   - title: "Mathematica for Theoretical Physics"
-    subtitle: "Electrodynamics, Quantum Mechanics, General Relativity and Fractals"
     author: "Gerd Bauman"
     cover: "Bauman2.jpg"
-    description: ""
+    description: "Electrodynamics, Quantum Mechanics, General Relativity and Fractals"
     link: ""
 
