@@ -123,3 +123,24 @@ self-help:
     description: ""
     link: ""
 
+mathematica:
+  - title: "Introduction to Mathematica for Physicists"
+    author: "Andrey Grozin"
+    cover: "Grozin.jpeg"
+    description: ""
+    link: ""
+
+  - title: "Mathematica for Theoretical Physics"
+    subtitle: "Classical Mechanics and Nonlinear Dynamics"
+    author: "Gerd Bauman"
+    cover: "Bauman1.jpg"
+    description: ""
+    link: ""
+
+  - title: "Mathematica for Theoretical Physics"
+    subtitle: "Electrodynamics, Quantum Mechanics, General Relativity and Fractals"
+    author: "Gerd Bauman"
+    cover: "Bauman2.jpg"
+    description: ""
+    link: ""
+
