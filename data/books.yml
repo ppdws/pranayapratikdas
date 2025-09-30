@@ -170,6 +170,18 @@ history:
     description: ""
     link: ""
 
+  - title: "Dinosaurs Rediscovered: The Scientific Revolution in Paleontology"
+    author: "Michael J. Benton"
+    cover: "Benton.jpg"
+    description: ""
+    link: ""
+
+  - title: "The Rise and Fall of the Dinosaurs: A New History of Their Lost World The Rise and Fall of the Dinosaurs"
+    author: "Steve Brusatte"
+    cover: "Brusatte.jpg"
+    description: " A New History of Their Lost World"
+    link: ""
+
 self-help:
   - title: "The Laws of Human Nature"
     author: "Robert Greene"
