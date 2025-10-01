@@ -38,6 +38,7 @@ params:
     hideFooter: false
     disableThemeToggle: false
     ShowShareButtons: true
+    ShareButtons: ["twitter", "whatsapp", "linkedin"]
     ShowReadingTime: true
     disableSpecial1stPost: true
     disableAnchoredHeadings: true
