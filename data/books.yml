@@ -5,6 +5,12 @@ novels:
     description: ""
     link: ""
 
+  - title: "The Lord of the Rings"
+    author: "J. R. R. Tolkien"
+    cover: "HP.jpg"
+    description: ""
+    link: ""
+
 physics:
   - title: "Classical Mechanics"
     author: ["H. Goldstein", "Charles P. Poole", "John Safko"]
@@ -157,6 +163,19 @@ pop-sci:
     description: ""
     link: ""
 
+  - title: "The Big Picture: On the Origins of Life, Meaning, and the Universe Itself"
+    author: "Sean M. Carroll"
+    cover: "Carroll.jpg"
+    description: ""
+    link: ""
+
+- title: ""
+    author: ""
+    cover: ""
+    description: ""
+    link: ""
+
+
 history:
   - title: "Sapiens: A Brief History of Humankind"
     author: "Yuval Noah Harari"
@@ -226,3 +245,27 @@ mathematica:
     description: "Electrodynamics, Quantum Mechanics, General Relativity and Fractals"
     link: ""
 
+  - title: "Mathematica Cookbook"
+    author: "Sal Mangano"
+    cover: "Bauman2.jpg"
+    description: ""
+    link: ""
+
+  - title: "Complex Analysis with Mathematica"
+    author: "William T. Shaw"
+    cover: "Shaw.jpg"
+    description: ""
+    link: ""
+
+mathematics:
+  - title: "Visual Comlex Analysis"
+    author: "Tristan Needham"
+    cover: "Needham.jpg"
+    description: ""
+    link: ""
+
+- title: "Visual Differential Geometry and Forms"
+    author: "Tristan Needham"
+    cover: "Needham2.jpg"
+    description: ""
+    link: ""
