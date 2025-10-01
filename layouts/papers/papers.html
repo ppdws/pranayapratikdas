@@ -33,7 +33,6 @@
     padding: 0.5rem 1rem;
     font-size: 0.75rem;
     font-weight: 600;
-    text-transform: uppercase;
     letter-spacing: 0.5px;
     border-radius: 22px;
     transform: rotate(-45deg);
@@ -261,7 +260,6 @@
     padding: 0.5rem 1rem;
     font-size: 0.75rem;
     font-weight: 600;
-    text-transform: uppercase;
     letter-spacing: 0.5px;
     border-radius: 22px;
     transform: rotate(-45deg);
@@ -281,7 +279,7 @@
 .category-badge.arxiv {
     background: #e32636;
     top: 15px;
-    left: -15px;
+    left: -10px;
     text-transform: full-width;
 }
 
@@ -380,7 +378,7 @@
                 
                 <!-- Paper Content -->
 			{{ if .peer_reviewed }}
-                        <span class="category-badge peer-reviewed">Peer Reviewed</span>
+                        <span class="category-badge peer-reviewed">PEER REVIEWED</span>
                         {{ else if .arxiv }}
                         <span class="category-badge arxiv">arXiv</span>
                         {{ end }}
