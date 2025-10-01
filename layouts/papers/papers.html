@@ -407,7 +407,7 @@
                         <!-- Paper Authors -->
                         <div class="paper-authors">
                             {{ if reflect.IsSlice .authors }}
-                                {{ delimit .authors ", " }}
+                                {{ delimit .authors ", " " and "}}
                             {{ else }}
                                 {{ .authors }}
                             {{ end }}
