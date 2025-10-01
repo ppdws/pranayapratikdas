@@ -19,13 +19,22 @@
 }
 
 .category-badge {
-    padding: 0.3rem 0.8rem;
-    border-radius: 15px;
+    position: absolute;
+    top: 20px;
+    right: -30px;
+    background: #27ae60;
+    color: white;
+    padding: 0.5rem 1rem;
     font-size: 0.75rem;
     font-weight: 600;
-    margin-right: 0.5rem;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    border-radius: 4px;
+    transform: rotate(45deg);
+    transform-origin: center;
+    z-index: 2;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    white-space: nowrap;
 }
 
 .category-badge.peer-reviewed {
