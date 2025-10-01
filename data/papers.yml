@@ -8,7 +8,7 @@
   doi: "https://doi.org/10.48550/arXiv.2501.08839"
   abstract: ""
   peer_reviewed: false
-  arxiv: ""
+  arxiv: true
 
 - title: "Cyclically symmetric Thomas oscillators as swarmalators: a model for active fluids and pattern formation"
   authors: ["Vinesh Vijayan", "Pranaya Pratik Das","K Hariprasad","P Sathish Kumar"]
