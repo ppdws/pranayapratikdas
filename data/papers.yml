@@ -19,7 +19,7 @@
   doi: "https://doi.org/10.1016/j.cnsns.2025.109216"
   abstract: ""
   peer_reviewed: true
-  arxiv: ""
+  arxiv: false
 
 - title: "Out-of-Time-Order Correlation in perturbed quantum wells"
   authors: ["Pranaya Patik Das", "Biplab Ganguli"]
@@ -30,7 +30,7 @@
   doi: "https://link.springer.com/article/10.1140/epjd/s10053-025-01025-7"
   abstract: ""
   peer_reviewed: true
-  arxiv: ""
+  arxiv: false
 
 - title: "Interplay between the Lyapunov exponents and phase transitions of charged AdS black holes"
   authors: ["Bhaskar Shukla", " Pranaya Pratik Das",  "David Dudal", "Subhash Mahapatra"]
@@ -41,7 +41,7 @@
   doi: "https://doi.org/10.1103/PhysRevD.110.024068"
   abstract: ""
   peer_reviewed: true
-  arxiv: ""
+  arxiv: false
 
 - title: "Dynamics of a charged Thomas oscillator in an external magnetic field"
   authors: ["Vinesh Vijayan", "Pranaya Pratik Das"]
@@ -52,5 +52,5 @@
   doi: "https://iopscience.iop.org/article/10.1088/1402-4896/ac99ab"
   abstract: ""
   peer_reviewed: true
-  arxiv: ""
+  arxiv: false
 
