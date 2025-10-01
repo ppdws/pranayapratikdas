@@ -405,13 +405,21 @@
                     {{ end }}
 
                         <!-- Paper Authors -->
-                        <div class="paper-authors">
-                            {{ if reflect.IsSlice .authors }}
-                                {{ delimit .authors ", " " and "}}
-                            {{ else }}
-                                {{ .authors }}
-                            {{ end }}
-                        </div>
+<div class="paper-authors">
+    {{ if reflect.IsSlice .authors }}
+        {{ $total := len .authors }}
+        {{ range $index, $name := .authors }}
+            {{ if eq $name "Pranaya Patik Das" }}
+                <span class="highlighted-author">{{ $name }}</span>
+            {{ else }}
+                {{ $name }}
+            {{ end }}
+            {{ if lt (add $index 1) $total }}, {{ end }}
+        {{ end }}
+    {{ else }}
+        {{ .authors }}
+    {{ end }}
+</div>
                         
                         <!-- Paper Metadata -->
                         <div class="paper-meta">
