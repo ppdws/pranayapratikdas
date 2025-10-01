@@ -36,6 +36,8 @@ params:
     DateFormat: "January 2006"
     defaultTheme: light
     hideFooter: false
+    hideMeta: false
+    hideSummary: false
     disableThemeToggle: false
     ShowShareButtons: true
     ShareButtons: ["twitter", "whatsapp", "linkedin"]
