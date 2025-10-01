@@ -1,4 +1,4 @@
 ---
-title: "Published Papers"
+title: "Papers"
 layout: "papers"
 ---
