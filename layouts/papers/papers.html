@@ -312,7 +312,7 @@
                 <!-- Paper Content -->
 			{{ if .peer_reviewed }}
                         <span class="category-badge peer-reviewed">Peer Reviewed</span>
-                        {{ else .arxiv }}
+                        {{ else if .arxiv }}
                         <span class="category-badge arxiv">arXiv</span>
                         {{ end }}
                     <div>
