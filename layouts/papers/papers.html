@@ -13,6 +13,52 @@
             box-sizing: border-box;
         }
         
+	/* Category Badges */
+.paper-categories {
+    margin-bottom: 1rem;
+}
+
+.category-badge {
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-right: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.category-badge.peer-reviewed {
+    background: #27ae60;
+    color: white;
+}
+
+.category-badge.arxiv {
+    background: #e67e22;
+    color: white;
+}
+
+/* arXiv Link */
+.arxiv-link {
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.7rem;
+    font-weight: 300;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #e67e22;
+    color: #000000;
+}
+
+.arxiv-link:hover {
+    background: #ffbf00;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(230, 126, 34, 0.3);
+}
+
         /* Papers Container - Single Column */
         .papers-container {
             display: flex;
@@ -66,7 +112,7 @@
 
         .paper-cover-placeholder {
             width: 100%;
-            height: 100%;
+            height: 180px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -258,7 +304,7 @@
     <div class="papers-container">
         {{ $papers := .Site.Data.papers }}
         {{ if $papers }}
-            {{ range $papers }}
+            {{ range sort $papers ".date" "desc"}}
             <div class="paper-block">
                 <!-- Paper Cover -->
                 <div class="paper-cover">
@@ -274,7 +320,12 @@
                     </div>
                 
                 <!-- Paper Content -->
-                <div class="paper-content">
+			{{ if .peer_reviewed }}
+                        <span class="category-badge peer-reviewed">Peer Reviewed</span>
+                        {{ end }}
+                        {{ if .arxiv }}
+                        <span class="category-badge arxiv">arXiv</span>
+                        {{ end }}
                     <div>
                         <!-- Paper Title -->
                         <h2 class="paper-title">
@@ -337,6 +388,14 @@
                             Download PDF
                         </a>
                         {{ end }}
+
+                    <!-- arXiv Link -->
+                    {{ if .arxiv }}
+                    <a href="{{ .arxiv }}" target="_blank" rel="noopener" class="arxiv-link">
+                        View arXiv
+                    </a>
+                    {{ end }}
+
                     </div>
                 </div>
             </div>
