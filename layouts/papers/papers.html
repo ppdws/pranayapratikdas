@@ -13,8 +13,7 @@
             box-sizing: border-box;
         }
         
-.category-badge, 
-.arxiv-badge {
+.category-badge {
     position: absolute;
     top: 20px;
     left: -30px;
@@ -24,6 +23,24 @@
     font-size: 0.75rem;
     font-weight: 600;
     text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-radius: 4px;
+    transform: rotate(-45deg);
+    transform-origin: center;
+    z-index: 10;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    white-space: nowrap;
+}
+
+.arxiv-badge {
+    position: absolute;
+    top: 20px;
+    left: -25px;
+    background: #27ae60;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+    font-weight: 600;
     letter-spacing: 0.5px;
     border-radius: 4px;
     transform: rotate(-45deg);
