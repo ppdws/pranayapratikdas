@@ -67,14 +67,14 @@ params:
               url: books/
             - name: Courses
               url: courses/
-            - name: Tags
-              url: tags/
-            - name: Archive
-              url: archive/
+#            - name: Tags
+#              url: tags/
+#            - name: Archive
+#              url: archive/
             - name: News
               url: projects/
-#	    - name: Location
-#	      url: location/
+	    - name: Location
+	      url: location/
 
     socialIcons:
         - name: CV
