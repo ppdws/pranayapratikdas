@@ -315,6 +315,12 @@
         {{ if $papers }}
             {{ range sort $papers ".date" "desc"}}
             <div class="paper-block">
+   			 <!-- Peer Reviewed Badge -->
+   			 {{ if .peer_reviewed }}
+   			 <div class="peer-reviewed-badge">
+   			     Peer Reviewed
+  			  </div>
+  			  {{ end }}
                 <!-- Paper Cover -->
                 <div class="paper-cover">
                    {{ if .cover }}
