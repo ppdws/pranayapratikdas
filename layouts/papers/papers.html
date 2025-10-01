@@ -21,7 +21,7 @@
 .category-badge {
     position: absolute;
     top: 20px;
-    right: -30px;
+    left: -30px;
     background: #27ae60;
     color: white;
     padding: 0.5rem 1rem;
@@ -30,11 +30,14 @@
     text-transform: uppercase;
     letter-spacing: 0.5px;
     border-radius: 4px;
-    transform: rotate(45deg);
+    transform: translate(-50%) rotate(-90deg);
     transform-origin: center;
-    z-index: 2;
+    z-index: 10;
     box-shadow: 0 2px 8px rgba(0,0,0,0.2);
     white-space: nowrap;
+    transition: all 0.3s ease;
+    opacity: 0;
+    pointer-even: none; 
 }
 
 .category-badge.peer-reviewed {
@@ -315,12 +318,6 @@
         {{ if $papers }}
             {{ range sort $papers ".date" "desc"}}
             <div class="paper-block">
-   			 <!-- Peer Reviewed Badge -->
-   			 {{ if .peer_reviewed }}
-   			 <div class="peer-reviewed-badge">
-   			     Peer Reviewed
-  			  </div>
-  			  {{ end }}
                 <!-- Paper Cover -->
                 <div class="paper-cover">
                    {{ if .cover }}
