@@ -48,7 +48,7 @@ params:
     ShowAllPagesInArchive: false
     MainSections: ["books","papers","courses"]
     ShowToc: false
-    disableScrollToTop: true
+    disableScrollToTop: false
     TocOpen: true
     ShowWordCount: false
     UseHugoToc: true
@@ -105,8 +105,6 @@ params:
     cover:
         hiddenInList: false
         hiddenInSingle: true
-	resonsiveImages: false
-	linkFullImages: true
     label:
       text: "Pranaya Pratik Das"
       icon: favicon.ico
