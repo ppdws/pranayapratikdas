@@ -169,7 +169,7 @@ pop-sci:
     description: "On the Origins of Life, Meaning, and the Universe Itself"
     link: ""
 
-- title: "The Elegant Universe"
+  - title: "The Elegant Universe"
     author: "Brian Greene"
     cover: "Greene.jpg"
     description: ""
@@ -263,7 +263,7 @@ mathematics:
     description: ""
     link: ""
 
-- title: "Visual Differential Geometry and Forms"
+  - title: "Visual Differential Geometry and Forms"
     author: "Tristan Needham"
     cover: "Needham2.jpg"
     description: ""
