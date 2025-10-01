@@ -35,16 +35,18 @@
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    border-radius: 4px;
+    border-radius: 22px;
     transform: rotate(-45deg);
     transform-origin: center;
     z-index: 10;
     box-shadow: 0 2px 8px rgba(0,0,0,0.2);
     white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 .category-badge.peer-reviewed {
-    background: #27ae60;
+    background: linear-gradient(#27ae60, #ffffff, #ffbf00);
     color: white;
 }
 
@@ -55,6 +57,11 @@
     left: -25px;
     text-transform: full-width;
 }
+
+        /* Show badges on paper hover */
+        .paper-block:hover .category-badge {
+            opacity: 1;
+        }
 
         /* Individual Paper Block - Horizontal Layout */
         .paper-block {
