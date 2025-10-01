@@ -1,7 +1,7 @@
 <!-- Contents of layouts/_default/_markup/render-image.html -->
 {{- $link := split .Destination "#" }}
 {{- $image := (.Page.Resources.ByType "image").GetMatch (printf "*%s*" (index $link 0)) }}
-{{- $logo := (resources.Get "images/logo.png") }}
+{{- $logo := (resources.Get "logo.png") }}
 
 {{- if and $image $logo }}
     {{- $size := math.Round (mul $image.Height 0.30) }}
