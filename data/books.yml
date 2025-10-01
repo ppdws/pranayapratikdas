@@ -169,12 +169,11 @@ pop-sci:
     description: ""
     link: ""
 
-- title: ""
-    author: ""
-    cover: ""
+- title: "The Elegant Universe"
+    author: "Brian Greene"
+    cover: "Greene.jpg"
     description: ""
     link: ""
-
 
 history:
   - title: "Sapiens: A Brief History of Humankind"
