@@ -255,16 +255,3 @@ mathematica:
     cover: "Shaw.jpg"
     description: ""
     link: ""
-
-mathematics:
-  - title: "Visual Comlex Analysis"
-    author: "Tristan Needham"
-    cover: "Needham.jpg"
-    description: ""
-    link: ""
-
-- title: "Visual Differential Geometry and Forms"
-    author: "Tristan Needham"
-    cover: "Needham2.jpg"
-    description: ""
-    link: ""
