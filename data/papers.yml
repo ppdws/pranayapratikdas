@@ -7,6 +7,8 @@
   pdf: ""
   doi: "https://doi.org/10.48550/arXiv.2501.08839"
   abstract: ""
+  peer_reviewed: false
+  arxiv: ""
 
 - title: "Cyclically symmetric Thomas oscillators as swarmalators: a model for active fluids and pattern formation"
   authors: ["Vinesh Vijayan", "Pranaya Pratik Das","K Hariprasad","P Sathish Kumar"]
@@ -16,6 +18,8 @@
   pdf: "https://www.sciencedirect.com/science/article/pii/S1007570425006276/pdfft?md5=38fd121c9033562ac4ca2a48a1309b3d&pid=1-s2.0-S1007570425006276-main.pdf"
   doi: "https://doi.org/10.1016/j.cnsns.2025.109216"
   abstract: ""
+  peer_reviewed: true
+  arxiv: ""
 
 - title: "Out-of-Time-Order Correlation in perturbed quantum wells"
   authors: ["Pranaya Patik Das", "Biplab Ganguli"]
@@ -25,6 +29,8 @@
   pdf: "https://link.springer.com/content/pdf/10.1140/epjd/s10053-025-01025-7.pdf"
   doi: "https://link.springer.com/article/10.1140/epjd/s10053-025-01025-7"
   abstract: ""
+  peer_reviewed: true
+  arxiv: ""
 
 - title: "Interplay between the Lyapunov exponents and phase transitions of charged AdS black holes"
   authors: ["Bhaskar Shukla", " Pranaya Pratik Das",  "David Dudal", "Subhash Mahapatra"]
@@ -34,6 +40,8 @@
   pdf: "https://journals.aps.org/prd/pdf/10.1103/PhysRevD.110.024068"
   doi: "https://doi.org/10.1103/PhysRevD.110.024068"
   abstract: ""
+  peer_reviewed: true
+  arxiv: ""
 
 - title: "Dynamics of a charged Thomas oscillator in an external magnetic field"
   authors: ["Vinesh Vijayan", "Pranaya Pratik Das"]
@@ -43,4 +51,6 @@
   pdf: "https://iopscience.iop.org/article/10.1088/1402-4896/ac99ab/pdf"
   doi: "https://iopscience.iop.org/article/10.1088/1402-4896/ac99ab"
   abstract: ""
+  peer_reviewed: true
+  arxiv: ""
 
