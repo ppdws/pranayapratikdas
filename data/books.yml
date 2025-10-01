@@ -171,15 +171,15 @@ pop-sci:
 
   - title: "The Elegant Universe"
     author: "Brian Greene"
-    cover: "Greene.jpg"
+    cover: "Greene2.jpg"
     description: ""
     link: ""
 
 history:
-  - title: "Sapiens: A Brief History of Humankind"
+  - title: "Sapiens"
     author: "Yuval Noah Harari"
     cover: "Harari.jpg"
-    description: ""
+    description: "A Brief History of Humankind"
     link: ""
 
   - title: "Dinosaurs Rediscovered"
