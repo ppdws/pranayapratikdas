@@ -133,7 +133,7 @@ pop-sci:
     description: ""
     link: ""
 
-  - title: "The Univverse in a Nutshell"
+  - title: "The Universe in a Nutshell"
     author: "Stephen Hawking"
     cover: "Hawking2.jpg"
     description: ""
@@ -163,10 +163,10 @@ pop-sci:
     description: ""
     link: ""
 
-  - title: "The Big Picture: On the Origins of Life, Meaning, and the Universe Itself"
+  - title: "The Big Picture"
     author: "Sean M. Carroll"
     cover: "Carroll.jpg"
-    description: ""
+    description: "On the Origins of Life, Meaning, and the Universe Itself"
     link: ""
 
 - title: "The Elegant Universe"
@@ -253,5 +253,18 @@ mathematica:
   - title: "Complex Analysis with Mathematica"
     author: "William T. Shaw"
     cover: "Shaw.jpg"
+    description: ""
+    link: ""
+
+mathematics:
+  - title: "Visual Comlex Analysis"
+    author: "Tristan Needham"
+    cover: "Needham.jpg"
+    description: ""
+    link: ""
+
+- title: "Visual Differential Geometry and Forms"
+    author: "Tristan Needham"
+    cover: "Needham2.jpg"
     description: ""
     link: ""
