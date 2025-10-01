@@ -37,12 +37,12 @@ params:
     defaultTheme: light
     hideFooter: false
     disableThemeToggle: false
-    ShowShareButtons: false
-    ShowReadingTime: false
+    ShowShareButtons: true
+    ShowReadingTime: true
     disableSpecial1stPost: true
     disableAnchoredHeadings: true
     ShowPostNavLinks: false
-    ShowBreadCrumbs: false
+    ShowBreadCrumbs: true
     ShowCodeCopyButtons: true
     ShowAllPagesInArchive: false
     MainSections: ["books","papers","courses"]
