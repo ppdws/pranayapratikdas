@@ -25,8 +25,8 @@ menu:
         - name: News
           url: /projects/
           weight: 4
-#	- name: News
-#	  url: news/
+#	- name: Location
+#	  url: location/
 #	  weight: 4
 
 params:
@@ -73,8 +73,8 @@ params:
               url: archive/
             - name: News
               url: projects/
-#	    - name: News
-#	      url: news/
+#	    - name: Location
+#	      url: location/
 
     socialIcons:
         - name: CV
