@@ -244,32 +244,36 @@
             box-shadow: 0 4px 12px rgba(231, 76, 60, 0.3);
         }
 
-        /* Responsive Design */
+/* Responsive Design */
         @media (max-width: 768px) {
             .paper-block {
-                padding: 1.5rem;
+                flex-direction: column;
+                margin: 0 1rem 2rem 1rem;
             }
             
             .paper-cover {
                 flex: 0 0 200px;
                 min-height: 200px;
+                border-right: none;
+                border-bottom: 1px solid #f0f0f0;
             }
             
             .paper-content {
-                padding: 1.2rem;
+                padding: 2rem 1.5rem 1.5rem 1.5rem;
             }
             
             .paper-title {
-                font-size: 1.0rem;
+                font-size: 1.2rem;
+                padding-right: 0;
             }
             
-            .paper-meta {
-                flex-direction: column;
-                gap: 0.8rem;
-            }
-            
-            .paper-actions {
-                flex-direction: column;
+            .category-badge {
+                position: relative;
+                top: auto;
+                right: auto;
+                opacity: 1;
+                align-self: flex-start;
+                margin-bottom: 1rem;
             }
         }
 
@@ -279,23 +283,28 @@
             }
             
             .papers-container {
-                gap: 1.5rem;
+                gap: 2rem;
             }
             
             .paper-content {
-                padding: 1rem;
+                padding: 1.5rem 1rem 1rem 1rem;
+            }
+            
+            body {
+                padding: 15px;
             }
         }
 
         /* Empty State */
         .no-papers {
             text-align: center;
-            padding: 3rem;
+            padding: 4rem;
             color: #7f8c8d;
             font-size: 1.1rem;
+            font-style: italic;
         }
 
-/* Subtle animation for page load */
+        /* Subtle animation for page load */
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -318,6 +327,7 @@
         .paper-block:nth-child(even) {
             animation-delay: 0.2s;
         }
+
 
     </style>
 </head>
