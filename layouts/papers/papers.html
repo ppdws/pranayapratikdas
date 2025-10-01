@@ -31,7 +31,7 @@
     text-transform: uppercase;
     letter-spacing: 0.5px;
     border-radius: 4px;
-    transform: translate(-50%) rotate(-90deg);
+    transform: rotate(45deg);
     transform-origin: center;
     z-index: 10;
     box-shadow: 0 2px 8px rgba(0,0,0,0.2);
@@ -48,25 +48,10 @@
     color: white;
 }
 
-/* arXiv Link */
-.arxiv-link {
-    padding: 0.6rem 1.2rem;
-    border-radius: 6px;
-    text-decoration: none;
-    font-size: 0.7rem;
-    font-weight: 300;
-    transition: all 0.3s ease;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    background: #e67e22;
-    color: #000000;
-}
-
-.arxiv-link:hover {
-    background: #ffbf00;
-    transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(230, 126, 34, 0.3);
+.paper-block:hover .peer-reviewed-badge,
+.paper-block:hover .arxiv-badge {
+    opacity: 1;
+    left: -5px; /* Slide in on hover */
 }
 
         /* Papers Container - Single Column */
@@ -398,13 +383,6 @@
                             Download PDF
                         </a>
                         {{ end }}
-
-                    <!-- arXiv Link -->
-                    {{ if .arxiv }}
-                    <a href="{{ .arxiv }}" target="_blank" rel="noopener" class="arxiv-link">
-                        View arXiv
-                    </a>
-                    {{ end }}
 
                     </div>
                 </div>
