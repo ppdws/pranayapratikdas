@@ -254,7 +254,7 @@
 
 .google-scholar-cta {
     text-align: center;
-    margin: 3rem auto;
+    margin: 2rem auto;
     padding: 2rem;
     border-top: 1px solid var(--border);
 }
@@ -263,23 +263,23 @@
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    padding: 0.8rem 1.5rem;
-    background: #4885ed;
+    padding: 0.8rem 0.5rem;
+    background: #000000;
     color: white;
     text-decoration: none;
-    border-radius: 6px;
+    border-radius: 22px;
     font-weight: 500;
     transition: all 0.3s ease;
 }
 
 .scholar-link:hover {
-    background: #3a6dc8;
+    background: #ffbf00;
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(72, 133, 237, 0.3);
+    box-shadow: 0 4px 12px rgba(255, 183, 0, 0.6);
 }
 
 .scholar-icon {
-    font-size: 1.2rem;
+    font-size: 1.0rem;
 }
 
 /* Responsive Design */
@@ -481,6 +481,7 @@
                         <!-- Paper Abstract -->
                         {{ if .abstract }}
                         <div class="paper-abstract">
+			<p>Abstract:<p>
                             {{ .abstract }}
                         </div>
                         {{ end }}
@@ -499,9 +500,9 @@
 
 <!-- Add this after your papers listing -->
 <div class="google-scholar-cta">
-    <p>Find more of my research on:</p>
+  <!-- <p>Find more of my research on:</p> -->
     <a href="https://scholar.google.com/citations?user=lutErqEAAAAJ&hl=en" target="_blank" class="scholar-link">
-        <span class="scholar-icon">📚</span> 
+        <span class="scholar-icon"></span> 
         Google Scholar
     </a>
 </div>
