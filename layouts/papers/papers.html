@@ -56,7 +56,7 @@
     text-transform: full-width;
 }
 
-.category-badge.on-going-project {
+.category-badge.on-going {
     background: #e32636;
     color: #41fe25;
 }
@@ -290,7 +290,7 @@
     text-transform: full-width;
 }
 
-.category-badge.on-going-project {
+.category-badge.on-going {
     background: #e32636;
     color: #41fe25;
 }
@@ -401,8 +401,8 @@
                         <span class="category-badge peer-reviewed">PEER REVIEWED</span>
                         {{ else if .arxiv }}
                         <span class="category-badge arxiv">arXiv</span>
-			{{ else if .on-going-project }}
-                        <span class="category-badge on-going-project">On Going</span>
+			{{ else if .on-going }}
+                        <span class="category-badge on-going">On Going</span>
                         {{ end }}
                     <div>
 
