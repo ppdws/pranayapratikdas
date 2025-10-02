@@ -94,8 +94,8 @@ params:
           url: https://www.researchgate.net/profile/Pranaya-Das
         - name: ORCID
           url: https://orcid.org/0000-0002-6025-7719
-	- name: arXiv
-	  url: https://arxiv.org/a/das_p_3
+        - name: arXiv
+          url: https://arxiv.org/a/das_p_3
 
     assets:
 #	disableHLJS: true
