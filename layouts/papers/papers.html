@@ -192,13 +192,13 @@
 
         /* Paper Abstract */
         .paper-abstract {
-            font-size: 0.8rem;
+            font-size: 0.7rem;
             color: #555;
-            line-height: 1.6;
+            line-height: 1.25;
 	    padding-left: 15px;
-            margin-bottom: 1rem;
+            margin-bottom: 0.5rem;
             display: -webkit-box;
-            -webkit-line-clamp: 3;
+            -webkit-line-clamp: 2;
             -webkit-box-orient: vertical;
             overflow: hidden;
         }
@@ -436,8 +436,7 @@
                         <!-- Paper Abstract -->
                         {{ if .abstract }}
                         <div class="paper-abstract">
-                          Abstract:
-			  {{ .abstract }}
+                            {{ .abstract }}
                         </div>
                         {{ end }}
                     </div>
