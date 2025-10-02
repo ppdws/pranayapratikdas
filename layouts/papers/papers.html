@@ -56,6 +56,12 @@
     text-transform: full-width;
 }
 
+.category-badge.on-going-project {
+    background: #e32636;
+    color: #41fe25;
+}
+
+
         /* Show badges on paper hover */
         .paper-block:hover .category-badge {
             opacity: 1;
@@ -284,6 +290,11 @@
     text-transform: full-width;
 }
 
+.category-badge.on-going-project {
+    background: #e32636;
+    color: #41fe25;
+}
+
         /* Show badges on paper hover */
         .paper-block:hover .category-badge {
             opacity: 1;
@@ -390,6 +401,8 @@
                         <span class="category-badge peer-reviewed">PEER REVIEWED</span>
                         {{ else if .arxiv }}
                         <span class="category-badge arxiv">arXiv</span>
+			{{ else if .on-going-project }}
+                        <span class="category-badge on-going-project">On Going</span>
                         {{ end }}
                     <div>
 
