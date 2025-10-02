@@ -1,4 +1,16 @@
 # data/papers.yml
+- title: "Harmonic oscillator under nonlinear spatial perturbations: A study via Out-of-Time-Order Correlators"
+  authors: ["Pranaya Patik Das", "Biplab Ganguli"]
+  cover: ""
+  journal: ""
+  date: 2025-10-15
+  pdf: ""
+  doi: ""
+  abstract: ""
+  peer_reviewed: false
+  arxiv: false
+  on_going_project: true
+
 - title: "Manifestations of chaos in billiards: the role of mixed curvature"
   authors: ["Pranaya Patik Das", "Tanmayee Patra", "Biplab Ganguli"]
   cover: "paper5.jpg"
