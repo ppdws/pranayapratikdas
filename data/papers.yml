@@ -30,7 +30,7 @@
   date: 2025-01-15
   pdf: ""
   doi: "https://doi.org/10.48550/arXiv.2501.08839"
-  abstract: ""
+  abstract: "The boundary of a billiard system plays a crucial role in shaping its dynamics, which may be integrable, mixed, or fully chaotic. When a boundary has varying curvature, it offers a unique setting to study the relation between classical chaos and quantum behaviour. In this study, we introduce two geometrically distinct billiards: a bean- and a peanut-shaped billiard. These systems incorporate both focusing and defocusing walls with no neutral segments. Our study reveals a strong correlation between classical and quantum dynamics. Analysis of billiard flow diagrams confirms sensitivity to initial conditions— a defining feature of chaos. Poincaré maps further show the phase space intricately woven with regions of chaotic motion and stability islands. We employ both statistical and dynamical measures to characterise quantum chaos. Statistical indicator includes nearest-neighbour spacing distribution, level spacing ratios, and spectral staircase function, while dynamical measures includes out-of-time-order correlators and spectral complexity. We also observe eigenfunction scarring in both the billiards."
   peer_reviewed: false
   arxiv: true
 
