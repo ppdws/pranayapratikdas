@@ -256,6 +256,12 @@ mathematica:
     description: ""
     link: ""
 
+  - title: "Using Mathematica for Quantum Mechanics"
+    author: "Roman Schmied"
+    cover: "RomanS.jpg"
+    description: ": A Student's Manual"
+    link: "https://arxiv.org/abs/1403.7050v3"
+
 mathematics:
   - title: "Visual Comlex Analysis"
     author: "Tristan Needham"
