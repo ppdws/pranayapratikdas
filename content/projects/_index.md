@@ -12,7 +12,7 @@ Date: 06-12-2025  at 11:00 AM<br>
 Organiser: NIT Rourkela, India  <br>
 
 * ### Synopsis Seminar
-* **Diagnosis of Quantum Chaos in Perturbed Quantum Wells and Billiards** <br>
+Title: **Diagnosis of Quantum Chaos in Perturbed Quantum Wells and Billiards** <br>
 Date: 18-07-2025  at 4:00 PM<br>
 Organiser: NIT Rourkela, India  <br>
 
@@ -24,9 +24,9 @@ Organiser: NIT Rourkela, India  <br>
 
 ## 2021
 * ### Registration Seminar
-Title: **Quantum Butterfly Effect** <br>
-Date: 24-11-2021  at 11:00 AM<br>
-Organiser: NIT Rourkela, India  <br>
+** Title: **Quantum Butterfly Effect** <br>
+** Date: 24-11-2021  at 11:00 AM<br>
+** Organiser: NIT Rourkela, India  <br>
 
 
 ---
