@@ -5,25 +5,25 @@ description: ""
 
 ---
 # PhD 
-## 2025: 
-### Defence Viva Seminar
+## 2025
+* ### Defence Viva Seminar
 * **Diagnosis of Quantum Chaos in Perturbed Quantum Wells and Billiards** <br>
 Date: 06-12-2025  at 11:00 AM<br>
 Organiser: NIT Rourkela, India  <br>
 
-### Synopsis Seminar
+* ### Synopsis Seminar
 * **Diagnosis of Quantum Chaos in Perturbed Quantum Wells and Billiards** <br>
 Date: 18-07-2025  at 4:00 PM<br>
 Organiser: NIT Rourkela, India  <br>
 
 ## 2022
-### Progress Seminar
+* ### Progress Seminar
 * **Quantum Butterfly Effect** <br>
 Date: 03-08-2022  at 9:00 AM<br>
 Organiser: NIT Rourkela, India  <br>
 
 ## 2021
-### Registration Seminar
+* ### Registration Seminar
 * **Quantum Butterfly Effect** <br>
 Date: 24-11-2021  at 11:00 AM<br>
 Organiser: NIT Rourkela, India  <br>
