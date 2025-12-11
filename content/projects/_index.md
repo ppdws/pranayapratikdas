@@ -16,13 +16,15 @@ Organiser: NIT Rourkela, India  <br>
 Date: 18-07-2025  at 4:00 PM<br>
 Organiser: NIT Rourkela, India  <br>
 
-### 2022
-* **Progress Seminar** <br>
+## 2022
+### Progress Seminar
+* **Quantum Butterfly Effect** <br>
 Date: 03-08-2022  at 9:00 AM<br>
 Organiser: NIT Rourkela, India  <br>
 
-### 2021: 
-* **Registration Seminar** <br>
+## 2021
+### Registration Seminar
+* **Quantum Butterfly Effect** <br>
 Date: 24-11-2021  at 11:00 AM<br>
 Organiser: NIT Rourkela, India  <br>
 
