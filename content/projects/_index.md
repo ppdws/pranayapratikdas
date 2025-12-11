@@ -3,6 +3,31 @@ title: "News"
 description: ""
 ---
 
+---
+## PhD Defence Viva Seminar
+### 2025
+* **Diagnosis of Quantum Chaos in Perturbed Quantum Wells and Billiards** <br>
+Date: 06-12-2025  at 11:00 AM<br>
+Organiser: NIT Rourkela, India  <br>
+
+## PhD Synopsis Seminar
+### 2025
+* **Diagnosis of Quantum Chaos in Perturbed Quantum Wells and Billiards** <br>
+Date: 18-07-2025  at 4:00 PM<br>
+Organiser: NIT Rourkela, India  <br>
+
+## PhD Progress Seminar
+### 2022
+* **Diagnosis of Quantum Chaos in Perturbed Quantum Wells and Billiards** <br>
+Date: 03-08-2022  at 9:00 AM<br>
+Organiser: NIT Rourkela, India  <br>
+
+## PhD Registration Seminar
+### 2021
+* **Diagnosis of Quantum Chaos in Perturbed Quantum Wells and Billiards** <br>
+Date: 24-11-2021  at 11:00 AM<br>
+Organiser: NIT Rourkela, India  <br>
+
 
 ---
 ## Conferences & Workshops
