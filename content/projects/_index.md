@@ -24,9 +24,9 @@ Organiser: NIT Rourkela, India  <br>
 
 ## 2021
 * ### Registration Seminar
-** Title: **Quantum Butterfly Effect** <br>
-** Date: 24-11-2021  at 11:00 AM<br>
-** Organiser: NIT Rourkela, India  <br>
+Title: **Quantum Butterfly Effect** <br>
+Date: 24-11-2021  at 11:00 AM<br>
+Organiser: NIT Rourkela, India  <br>
 
 
 ---
