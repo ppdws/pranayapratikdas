@@ -40,7 +40,7 @@ params:
     hideSummary: false
     disableThemeToggle: false
     ShowShareButtons: true
-    ShareButtons: ["twitter", "whatsapp", "linkedin"]
+    ShareButtons: ["twitter", "whatsapp", "linkedin","facebook","telegram"]
     ShowReadingTime: true
     disableSpecial1stPost: true
     disableAnchoredHeadings: true
@@ -48,7 +48,7 @@ params:
     ShowBreadCrumbs: false
     ShowCodeCopyButtons: true
     ShowAllPagesInArchive: false
-    MainSections: ["books","papers","courses"]
+    MainSections: ["books","papers","courses","news"]
     ShowToc: false
     disableScrollToTop: false
     TocOpen: true
