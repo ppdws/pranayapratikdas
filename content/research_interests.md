@@ -12,11 +12,15 @@ More specifically:
 
 
 
-### **Research Philosophy:**
+**| \*\*Left Column\*\* | \*\*Right Column\*\* |**
 
-> ***What we fail to see with our eyes or detectors, we occasionally see with our minds. Such vision is merely accidental; it is cultivated through questions posed strategically and in order.***
+**|-----------------|------------------|**
+
+**| Research focus: Quantum chaos | Publications: 15+ papers |**
+
+**| Tools: Python, Mathematica | Languages: English, Hindi |**
+
+**| Current: PhD candidate | Location: NIT Rourkela |**
 
 
-
-!\\\[Research Philosophy](/static/jigsaw.png)
 
