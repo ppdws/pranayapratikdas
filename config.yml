@@ -101,7 +101,7 @@ params:
 #        - name: "linkedin"
 #          url: https://www.linkedin.com/
         - name: "telegram"
-          url: @pranayapratikdas
+          url: t.me/pranayapratikdas
 
 
     assets:
