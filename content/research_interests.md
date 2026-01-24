@@ -9,10 +9,15 @@ More specifically:
 * Black Hole Phase Transition
 * Billiard Dynamics
 * Quantum Chaos Diagnosis
+* Quantum Information Scrambling
 
 
 
 ### **Research Philosophy:**
 
-**!\[](jigsaw.png "Research Philosophy")**
+**<figure>**
+
+**<img src="jigsaw.png" alt="Research Philosophy">**
+
+**</figure>**
 
