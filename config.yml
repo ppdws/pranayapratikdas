@@ -96,8 +96,11 @@ params:
           url: https://orcid.org/0000-0002-6025-7719
         - name: "arxiv"
           url: https://arxiv.org/a/das_p_3
-	- name: "telegram"
-     	  url: ""
+	- name: Telegram
+     	  url: https://www.telegram.com
+	- name: Linkedin
+     	  url: https://www.linkrin.com
+
 
     assets:
 #	disableHLJS: true
