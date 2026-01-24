@@ -1,4 +1,4 @@
-## **Research Interests:**
+### **Research Interests:**
 
 I am interested in everything related to the intersection of **Chaos Theory** and **Black Hole**.
 
@@ -9,3 +9,10 @@ More specifically:
 * Black Hole Phase Transition
 * Billiard Dynamics
 * Quantum Chaos Diagnosis
+
+
+
+### **Research Philosophy:**
+
+**!\[](jigsaw.png "Research Philosophy")**
+
