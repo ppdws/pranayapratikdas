@@ -12,15 +12,27 @@ More specifically:
 
 
 
-**| \*\*Left Column\*\* | \*\*Right Column\*\* |**
-
-**|-----------------|------------------|**
-
-**| Research focus: Quantum chaos | Publications: 15+ papers |**
-
-**| Tools: Python, Mathematica | Languages: English, Hindi |**
-
-**| Current: PhD candidate | Location: NIT Rourkela |**
 
 
+### **Research Philosophy:**
+
+***What we fail to see with our eyes or detectors, we occasionally see with our minds. Such vision is merely accidental; it is cultivated through questions posed strategically and in order.***
+
+
+
+<figure>
+
+&nbsp;   <img src="/static/jigsaw.png"
+
+&nbsp;        alt="Research Philosophy">
+
+&nbsp;   <figcaption>Research Philosophy</figcaption>
+
+</figure>
+
+
+
+
+
+!\[Research Philosophy](/static/jigsaw.png)
 
