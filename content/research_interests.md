@@ -6,12 +6,12 @@ I am interested in everything related to the intersection of **Chaos Theory** an
 
 More specifically:
 
-* Quantum scars
-* Relativistic Quantum Chaos
-* Black Hole Phase Transition
-* Billiard Dynamics
+|	* Quantum scars
+	* Relativistic Quantum Chaos
+	* Black Hole Phase Transition |
+|* Billiard Dynamics
 * Quantum Chaos Diagnosis
-* Quantum Information Scrambling
+* Quantum Information Scrambling |
 
 ---
 
