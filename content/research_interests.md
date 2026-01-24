@@ -2,7 +2,8 @@
 
 I am interested in everything related to the intersection of  *Chaos Theory* and *Black Hole*.
 
-* More specifically:
+More specifically:
+
 * Quantum scars
 * Black Hole Phase Transition
 * Billiard Dynamics
