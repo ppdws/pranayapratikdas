@@ -13,7 +13,9 @@ I am interested in everything related to the intersection of  *Chaos Theory* and
 
 ### **Research Philosophy:**
 
-> \*\*What we cannot see with our eyes or detectors we occasionally see them with our minds.\*\*
+> ***What we fail to see with our eyes or detectors we occasionally see them with our minds. Such vision is merely accidental; it is cultivated through questions posed strategically and in order.*** 
 
-**!\[Research Philosophy](/static/jigsaw.png)**
+
+
+!\[Research Philosophy](/static/jigsaw.png "Research Philosophy")
 
