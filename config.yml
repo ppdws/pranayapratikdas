@@ -98,6 +98,10 @@ params:
           url: https://arxiv.org/a/das_p_3
         - name: "scopus"
           url: https://www.scopus.com/authid/detail.uri?authorId=57451177800
+#        - name: "linkedin"
+#          url: https://www.linkedin.com/
+        - name: "telegram"
+          url: t.me/pranayapratikdas
 
 
     assets:
