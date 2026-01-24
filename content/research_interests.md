@@ -18,5 +18,5 @@ More specifically:
 
 
 
-!\[Research Philosophy](jigsaw.png)
+![Research Philosophy](jigsaw.png)
 
