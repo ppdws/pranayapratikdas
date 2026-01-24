@@ -1,3 +1,4 @@
+---
 ### **Research Interests:**
 
 I am interested in everything related to the intersection of  <ins>Chaos Theory</ins> and <ins>Black Hole</ins>.
@@ -10,7 +11,7 @@ More specifically:
 * Quantum Chaos Diagnosis
 * Quantum Information Scrambling
 
-
+---
 
 ### **Research Philosophy:**
 
