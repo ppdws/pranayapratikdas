@@ -96,6 +96,9 @@ params:
           url: https://orcid.org/0000-0002-6025-7719
         - name: "arxiv"
           url: https://arxiv.org/a/das_p_3
+        - name: "scopus"
+          url: https://www.scopus.com/authid/detail.uri?authorId=57451177800
+
 
     assets:
 #	disableHLJS: true
