@@ -30,7 +30,7 @@ menu:
 #	  weight: 5
 
 params:
-    description: "I am a Senior Research Fellow in the Department of Physics and Astronomy at NIT Rourkela and I am about to complete my PhD in Theoretical Physics. My research focuses on Quantum Chaos. "
+    description: "I am a theoretical physicist. My research focuses on Quantum Chaos. "
     author: Pranaya Pratik Das
     # googleAnalyticsID: "G-XXXXX"
     DateFormat: "January 2006"
@@ -94,6 +94,8 @@ params:
           url: https://www.researchgate.net/profile/Pranaya-Das
         - name: ORCID
           url: https://orcid.org/0000-0002-6025-7719
+	- name: "scopus"
+     	  url: ""
         - name: "arxiv"
           url: https://arxiv.org/a/das_p_3
 
