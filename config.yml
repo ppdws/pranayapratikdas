@@ -92,14 +92,14 @@ params:
           url: https://scholar.google.com/citations?user=lutErqEAAAAJ&hl=en
         - name: Researchgate
           url: https://www.researchgate.net/profile/Pranaya-Das
-        - name: ORCID
-          url: https://orcid.org/0000-0002-6025-7719
         - name: "arxiv"
           url: https://arxiv.org/a/das_p_3
+        - name: ORCID
+          url: https://orcid.org/0000-0002-6025-7719
         - name: "scopus"
           url: https://www.scopus.com/authid/detail.uri?authorId=57451177800
-#        - name: "linkedin"
-#          url: https://www.linkedin.com/
+        - name: "linkedin"
+          url: https://www.linkedin.com/
 #        - name: "telegram"
 #          url: t.me/pranayapratikdas
 
