@@ -5,16 +5,16 @@ I am interested in everything related to the intersection of  <ins>Chaos Theory<
 More specifically:
 
 * Quantum scars
-* Black Hole Phase Transition
+* Black Hole 
 * Billiard Dynamics
-* Quantum Chaos Diagnosis
+* Quantum Chaos
 * Quantum Information Scrambling
 
 
 
 ### **Research Philosophy:**
 
-<p style="color:blue">  What we fail to see with our eyes or detectors, we occasionally see with our minds. Such vision is merely accidental; it is cultivated through questions posed strategically and in order.  </p>
+<p style="color:blue">  What we fail to see with our eyes or detectors, we occasionally see them with our minds. Such vision is merely accidental; it is cultivated through questions posed strategically and in order.  </p>
 
 
 
