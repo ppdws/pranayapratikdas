@@ -5,7 +5,6 @@ I am interested in everything related to the intersection of  <ins>Chaos Theory<
 More specifically:
 
 * Quantum Chaos
-* Quantum scars
 * Black Hole 
 * Billiard Dynamics
 * Quantum Information Scrambling
