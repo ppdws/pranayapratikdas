@@ -1,6 +1,7 @@
 {{- $pdfName := .Get "pdf" -}}
 {{- $texFile := .Get "tex" -}}
-{{- $aspectRatio := .Get "aspect" | default "1/1" -}}  {{/* Set to e.g., "4/3" for landscape */}}
+{{- $height := .Get "height" | default "500px" -}}
+{{- $width := .Get "width" | default "48%" -}}
 
 {{/* Get PDF resource */}}
 {{- $pdfResource := .Page.Resources.GetMatch $pdfName -}}
@@ -20,16 +21,16 @@
 
 <div style="display: flex; gap: 2%; flex-wrap: wrap;">
   <!-- LaTeX Code Panel -->
-  <div style="flex: 1; min-width: 250px; aspect-ratio: {{ $aspectRatio }};">
+  <div style="flex: 1; min-width: 250px; width: {{ $width }};">
     <h3>LaTeX Source</h3>
-    <div style="height: calc(100% - 2.5rem); overflow-y: auto; border: 1px solid #ddd; border-radius: 5px; background: #f5f5f5;">
+    <div style="height: {{ $height }}; overflow-y: auto; border: 1px solid #ddd; border-radius: 5px; background: #f5f5f5;">
       <pre style="margin: 0; padding: 1rem; overflow-x: auto;"><code class="language-latex">{{ $latexContent | safeHTML }}</code></pre>
     </div>
   </div>
 
   <!-- PDF Output Panel -->
-  <div style="flex: 1; min-width: 250px; aspect-ratio: {{ $aspectRatio }};">
+  <div style="flex: 1; min-width: 250px; width: {{ $width }};">
     <h3>Rendered Output</h3>
-    <iframe src="{{ $pdfResource.RelPermalink }}" style="width:100%; height:calc(100% - 2.5rem); border:1px solid #ddd; border-radius:5px;"></iframe>
+    <iframe src="{{ $pdfResource.RelPermalink }}" style="width:100%; height:{{ $height }}; border:1px solid #ddd; border-radius:5px;"></iframe>
   </div>
 </div>
