@@ -16,6 +16,6 @@ title: "LaTeX Example"
 ## Table of Contents 
 {{< latex-sidebyside pdf="timeline.pdf" tex="timeline.tex" >}}
 
-## Time Line
+## Time Lines
 {{< latex-sidebyside pdf="Arrows.pdf" tex="Arrows.tex" >}}
 
