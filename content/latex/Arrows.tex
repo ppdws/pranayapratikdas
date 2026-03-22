@@ -1,6 +1,6 @@
 \documentclass{beamer}
 \usepackage{geometry}
-\geometry{paperwidth=21cm,paperheight=5cm}
+\geometry{paperwidth=21cm,paperheight=7cm}
 \setbeamertemplate{navigation symbols}{}
 \usepackage{ragged2e}
 %\usepackage{fourier}
@@ -174,7 +174,12 @@
 	\tikz[remember picture, overlay] {%
 		\draw[gray, thick] ([xshift = 1cm, yshift = -1.2cm]current page.north west) -- ([xshift = -1cm, yshift = -1.2cm, xshift = \paperwidth]current page.north west);}}
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usetikzlibrary{calc, arrows.meta, intersections, patterns, positioning, shapes.misc, fadings, through,decorations.pathreplacing}
 
+%\definecolor{ColorOne}{named}{MidnightBlue}
+%\definecolor{ColorTwo}{named}{Dandelion}
+%\definecolor{ColorThree}{named}{Plum}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 		\begin{frame}[c]
 		\definecolor{arrowcolor}{RGB}{144,168,65}
@@ -205,6 +210,86 @@
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\begin{frame}[c]
+
+\tikzstyle{descript} = [text = black,align=center, minimum height=1.25cm, align=center, outer sep=0pt,font = \footnotesize]
+\tikzstyle{activity} =[align=center,outer sep=1pt]
+
+\begin{tikzpicture}[very thick, black]
+	
+	%% Coordinates
+	\coordinate (O) at (-3,0); % Origin
+	\coordinate (P1) at (3,0);
+	\coordinate (P2) at (7,0);
+	\coordinate (P3) at (11,0);
+	\coordinate (F) at (15,0); %End
+	\coordinate (E1) at (4,0); %Event
+	\coordinate (E2) at (-0.5,0); %Event
+	\coordinate (X0) at (-1,0);
+	\coordinate (X1) at (3,0);
+	\coordinate (X2) at (6,0);
+	\coordinate (X3) at (7,0);
+	\coordinate (X4) at (10,0);
+	
+	
+	%% Filled regions
+	%\fill[color=ColorOne!20] rectangle (O) -- (X0) -- ($(X0)+(0,1)$) -- ($(O)+(0,1)$); % Studies
+	\shade[right color=black!50, left color=white] rectangle (O) -- (X0) -- ($(X0)+(0,1)$) -- ($(O)+(0,1)$); % Current work
+	\fill[color=violet!50] rectangle (X0) -- (X1) -- ($(X1)+(0,1)$) -- ($(X0)+(0,1)$); %
+	\fill[color=blue!50] rectangle (X1) -- (X2) -- ($(X2)+(0,1)$) -- ($(X1)+(0,1)$); % 
+	\fill[color=cyan!50] rectangle (X2) -- (X3) -- ($(X3)+(0,1)$) -- ($(X2)+(0,1)$); % Work
+	\fill[color=red!50] rectangle (X3) -- (X4) -- ($(X4)+(0,1)$) -- ($(X3)+(0,1)$); % Work
+	\fill[color=yellow!50] rectangle (X4) -- (P3) -- ($(P3)+(0,1)$) -- ($(X4)+(0,1)$); % Work
+	\shade[left color=green, right color=white] rectangle (P3) -- (F) -- ($(F)+(0,1)$) -- ($(P3)+(0,1)$); % Current work
+	
+	\path [pattern color=red, pattern=north east lines, line width = 1pt, very thick] rectangle ($(X0)+(0,0)$) -- ($(X0)+(0.0,0)$) -- ($(X0)+(-0.5,1)$) -- ($(X0)+(0.5,1)$); % Something else
+	\path [pattern color=black, pattern=north east lines, line width = 1pt, very thick] rectangle ($(X1)+(0.0,0)$) -- ($(X1)+(0.0,0)$) -- ($(X1)+(-0.5,1)$) -- ($(X1)+(0.5,1)$); % Something else
+	\path [pattern color=yellow, pattern=north east lines, line width = 1pt, very thick] rectangle ($(X2)+(0.0,0)$) -- ($(X2)+(0.0,0)$) -- ($(X2)+(-0.5,1)$) -- ($(X2)+(0.5,1)$); % Something else		
+	\path [pattern color=blue, pattern=north east lines, line width = 1pt, very thick] rectangle ($(X3)+(0.0,0)$) -- ($(X3)+(0.0,0)$) -- ($(X3)+(-0.5,1)$) -- ($(X3)+(0.5,1)$); % Something else		
+	\path [pattern color=magenta, pattern=north east lines, line width = 1pt, very thick] rectangle ($(X4)+(0.0,0)$) -- ($(X4)+(0.0,0)$) -- ($(X4)+(-0.5,1)$) -- ($(X4)+(0.5,1)$); % Something else		
+	\path [pattern color=violet!50!green, pattern=north east lines, line width = 1pt, very thick] rectangle ($(P3)+(0.0,0)$) -- ($(P3)+(0.0,0)$) -- ($(P3)+(-0.5,1)$) -- ($(P3)+(0.5,1)$); % Something else	
+	
+	%% Description
+	\node[descript,fill=red!15,text=black](D0) at ($(X0)+(-2,-2.5)$) {TEXT red};
+	
+	\node[descript,fill=gray!60,text=black](D2) at ($(X1)+(-4,3)$) {TEXT gray};
+	
+	\node[descript,fill=yellow!60,text=black](D3) at ($(X2)+(-4,-2.5)$) {TEXT yellow};
+	
+	\node[descript,fill=blue!15,text=black](D4) at ($(X3)+(-4.8,3)$) {TEXT blue};		
+	
+	\node[descript,fill=green!20,text=black](D5) at ($(X4)+(-3,-2.5)$) {TEXT Green};
+	
+	\node[descript,fill=magenta!40,text=black](D6) at ($(P3)+(-2.2,3)$){TEXT Mgenta};
+	
+	\node[descript,fill=orange!25,text=black](D7) at ($(P3)+(2,-2.5)$) {TEXT Orange};
+	
+	\node[descript,fill=violet!25,text=black](D8) at ($(P3)+(3,3)$) {TEXT Purple};		
+	
+	%% Arrows
+	\path[->,color=red, line width=1.5mm] ($(X0)$) edge [out=-50, in=90]  ($(D0)+(0,1)$);
+	\path[->,color=black, line width=1.5mm] ($(X1)$) edge [out=70, in=-130]  ($(D2)+(0,-1)$);
+	\path[->,color=yellow!70!black, line width=1.5mm]($(X2)$)  edge [out=-50, in=90]  ($(D3)+(0,1)$);
+	\path[->,color=blue, line width=1.5mm]($(X3)$)  edge [out=100, in=-90]  ($(D4)+(0,-1)$);	
+	\path[->,color=green, line width=1.5mm]($(X4)$)  edge [out=-70, in=90]  ($(D5)+(0,1)$);	
+	\path[->,color=magenta, line width=1.5mm]($(P3)$)  edge [out=70, in=-90]  ($(D6)+(0,-1)$);
+	\path[->,color=orange, line width=1.5mm]($(P3)$)  edge [out=-70, in=90]  ($(D7)+(0,1)$);	
+	\path[->,color=violet, line width=1.5mm]($(P3)$)  edge [out=70, in=-90]  ($(D8)+(0,-1)$);	
+	
+	%% Arrow
+	\draw[->>, pattern=crosshatch, line width=1.5mm] ($(O)+(0,0.2)$) -- ($(F)+(0,0.2)$);
+	%% Ticks
+	\foreach \x in {-4,-3,...,17}
+	\draw(\x cm,6pt) -- (\x cm,0pt);
+	%% Labels
+	\foreach \i \j in {0/\textbf{\large Yr 1},3/\textbf{\large Yr 2},7/\textbf{\large Yr 3},9/\textbf{\large Yr 4},11/\textbf{\large Yr 5},12.1/\textbf{\large Yr 6},13.5/\textbf{\large Yr 7}}{
+		\draw (\i,0) node[below=3pt] {\j} ;
+	}
+	
+\end{tikzpicture}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[c]
 	%\frametitle{\color{light_red}\textbf{Background}}
 %	\topline
