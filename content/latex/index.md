@@ -12,3 +12,7 @@ title: "LaTeX Example"
 ## Curvature using Tikz:
 
 {{< latex-sidebyside pdf="focusing.pdf" tex="focusing.tex" >}}
+
+## Time Lines
+{{< latex-sidebyside pdf="timeline.pdf" tex="timeline.tex" >}}
+
