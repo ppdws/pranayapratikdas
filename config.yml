@@ -28,9 +28,9 @@ menu:
 #	- name: Location
 #	  url: location/
 #	  weight: 5
-	- name: LaTeX Examples
-	  url: latex/
-	  weight: 5
+#	- name: LaTeX Examples
+#	  url: latex/
+#	  weight: 5
 
 params:
     description: "I am a theoretical physicist. My research focuses on Quantum Chaos. "
