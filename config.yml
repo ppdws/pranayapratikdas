@@ -25,11 +25,11 @@ menu:
         - name: News
           url: /projects/
           weight: 4
+	- name: LaTeX Examples
+	  url: /latex/
+	  weight: 10
 #	- name: Location
 #	  url: location/
-#	  weight: 5
-#	- name: LaTeX Examples
-#	  url: latex/
 #	  weight: 5
 
 params:
