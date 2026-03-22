@@ -29,7 +29,7 @@ menu:
 #	  url: location/
 #	  weight: 5
         - name: LaTeX Examples
-          url: latex/
+          url: /latex/
 	  weight: 5
 
 params:
