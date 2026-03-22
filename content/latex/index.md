@@ -8,3 +8,7 @@ title: "LaTeX Example"
 ## Gantt Chart:
 
 {{< latex-sidebyside pdf="ganttchart.pdf" tex="ganttchart.tex" >}}
+
+## Curvature using Tikz:
+
+{{< latex-sidebyside pdf="focusing.pdf" tex="focusing.tex" >}}
