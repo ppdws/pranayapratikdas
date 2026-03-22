@@ -1,0 +1,176 @@
+\documentclass[tikz]{standalone}
+\usepackage{pgfgantt}
+\usepackage{smartdiagram}
+\usepackage{soul}
+
+\usetikzlibrary{arrows, shapes, chains, positioning, shapes.symbols}
+\usetikzlibrary{shadows}
+\usetikzlibrary{shadings}
+
+\usepackage[dvipsnames]{xcolor}
+\usepackage{color}
+\definecolor{BlueGreen}{RGB}{0, 154, 166}
+\definecolor{groupblue}{RGB}{51,102,254}
+\definecolor{orange}{HTML}{FF7F00} 
+\definecolor{RubineRed}{RGB}{204, 0, 102}%0-255
+% \definecolor{RubineRed}{rgb}{0.8, 0.0, 0.4}%0-1
+
+\title{Gantt Charts}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+	\begin{ganttchart}[
+	canvas/.append style={fill=none, draw=black!5, line width=.75pt,dashed},
+	hgrid style/.style={draw=black!15, line width=.75pt, dashed},
+	vgrid={*1{draw=black!5, line width=.75pt}},
+%	y unit title = 1cm,
+%	y unit chart = 0.6cm,
+	today=6,
+	today label=$\frac{1}{2}$ Year,
+	today rule/.style={
+		draw=black!70,
+		dotted,
+%		dash pattern=on 3.5pt off 4.5pt,
+		line width=1.5pt
+	},
+	%		today label font=\small\bfseries,
+	title/.style={draw=none, fill=none},
+	%		title label font=\bfseries\footnotesize,
+	title label node/.append style={below=1pt},
+	include title in canvas=false,
+	%		bar label font=\mdseries\small\color{black!70},
+	bar label node/.append style={left=0.5cm},
+	bar/.append style={draw=BlueGreen, fill=lime,rounded corners=2mm},
+	bar incomplete/.append style={fill=orange,rounded corners=2pt},
+	%		bar progress label font=\mdseries\footnotesize\color{black!70},
+	group/.append style={draw=BlueGreen, fill=lime,rounded corners=1mm,drop shadow},
+	group incomplete/.append style={fill=groupblue,rounded corners=1mm},
+	group left shift=0,
+	group right shift=0,
+	group height=.5,
+	group peaks tip position=0,
+	group label node/.append style={left=0.5cm,fill=groupblue!20,rounded corners=2mm, drop shadow},
+	milestone/.append style={fill=BlueGreen,rounded corners=0.5mm},
+	milestone label node/.style={left=0.5cm},
+	%		group progress label font=\bfseries\small,
+	link/.style={-to, %line width=1.5pt,
+		RubineRed, rounded corners=1mm, very thick},
+	%		link label font=\tiny\color{white},
+	link label node/.append style={below left=-2pt and 0pt}
+	]{1}{12}
+	\gantttitle[
+	title label node/.append style={below left=1pt and 0pt}
+	]{\textbf{Months:}\quad1}{1}
+	\gantttitlelist{2,...,12}{1} \\
+	\ganttgroup[progress=19]{OBJECTIVE$\mathbf{-1}$ \& $\mathbf{-2}$}{1}{5} \\
+	\ganttmilestone[name=1A]{Project Setup}{0} \\
+	\ganttbar[
+	progress=40,
+	name=1B
+	]{Literature Review}{1}{4} \\
+	\ganttbar[
+	progress=50,
+	name=1C
+	]{Setup Computational Frameworks}{1}{1} \\
+	\ganttbar[
+	progress=80,
+	name=1D
+	]{Benchmark Numerical Methods}{1}{2}\\
+	\ganttbar[
+	progress=20,
+	name=1E
+	]{Obj.1a}{2}{4}\\
+	\ganttbar[
+	progress=0,
+	name=1F
+	]{Obj. 1b}{2}{4} \\
+	\ganttbar[
+	progress=0,
+	name=1G
+	]{Obj. 1 \& 2a}{2}{4} \\
+	\ganttbar[
+	progress=0,
+	name=1H
+	]{Obj. 2b}{3}{5}\\
+	\ganttlink[link bulge=0.5]{1A}{1B}
+	\ganttlink[
+	link type=s-s,
+	link label node/.append style=right
+	]{1B}{1C}
+	\ganttlink{1C}{1D}
+	\ganttlink[
+	link label node/.append style=right,
+	link bulge=0.5,
+	link mid=0.5
+	]{1D}{1E} 
+	\ganttlink[
+	link label node/.append style=right,
+	link bulge=0.5,
+	link mid=0.25
+	]{1D}{1F} 
+	\ganttlink[
+	link label node/.append style=right,
+	link bulge=0.5,
+	link mid=0.16
+	]{1D}{1G}
+	\ganttlink{1G}{1H} 
+	\ganttbar[progress=0, name=1I]{\textit{Manuscript Preparation \& Submission}}{3}{6}\\
+	\ganttbar[progress=0,name=1J]{\textit{Present findings in conferences \& workshops}}{3}{9}
+	\ganttlink[
+	link label node/.append style=right,
+	link bulge=0.4,
+	link mid=0.5
+	]{1H}{1I}
+	\ganttlink[
+	link label node/.append style=right,
+	link bulge=0.4,
+	link mid=0.25
+	]{1H}{1J}  
+	\\[grid]
+	
+	\ganttgroup[progress=4]{OBJECTIVE$\mathbf{-3}$}{3}{8} \\
+	\ganttbar[progress=20,name=2A]{Literature Review}{3}{7} \\
+	\ganttbar[progress=0,name=2B]{Obj. 3a}{3}{6} \\
+	\ganttbar[progress=0,name=2C]{Obj. 3b}{4}{6} \\
+	\ganttbar[progress=0,name=2D]{Obj. 3c}{5}{7}\\
+	\ganttlink[
+	link type=s-s,
+	link label node/.append style=right,
+	]{2A}{2B} 
+	\ganttlink{2B}{2C} 
+	\ganttlink{2C}{2D} 
+	\ganttlink[
+	link label node/.append style=right,
+	link bulge=0.6,
+	link mid=0.37
+	]{1D}{2B}
+	\ganttbar[progress=0,name=2E]{\textit{Manuscript Preparation \& Submission}}{6}{8}
+	\ganttlink{2D}{2E} 
+	\\[grid]
+	
+	\ganttgroup[progress=2]{OBJECTIVE$\mathbf{-4}$}{4}{9} \\
+	\ganttbar[progress=10,name=3A]{Literature Review}{4}{8} \\
+	\ganttbar[progress=0,name=3B]{Obj. 4a}{4}{4} \\
+	\ganttbar[progress=0,name=3C]{Obj. 4b}{5}{8} \\
+	\ganttbar[progress=0,name=3D]{\textit{Manuscript Preparation \& Submission}}{7}{9}\\
+	\ganttbar[progress=0,name=3E]{\textit{Present findings in conferences \& workshops}}{7}{11}
+	\ganttlink[
+	link type=s-s,
+	link label node/.append style=right
+	]{3A}{3B} 
+	\ganttlink{3B}{3C} 
+	\ganttlink[
+	link label node/.append style=right,
+	link bulge=0.5,
+	link mid=0.5
+	]{3C}{3D} 
+	\ganttlink[
+	link label node/.append style=right,
+	link bulge=0.5,
+	link mid=0.25
+	]{3C}{3E} 
+	
+\end{ganttchart}
+	
+\end{document}
