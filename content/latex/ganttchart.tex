@@ -1,26 +1,22 @@
-\documentclass[tikz]{standalone}
-\usepackage{pgfgantt}
-\usepackage{smartdiagram}
-\usepackage{soul}
+\documentclass[tikz]{standalone}  % Creates a standalone PDF with tight bounding box
 
-\usetikzlibrary{arrows, shapes, chains, positioning, shapes.symbols}
+\usepackage{pgfgantt}              % Core package for Gantt charts
+
+
 \usetikzlibrary{shadows}
-\usetikzlibrary{shadings}
 
-\usepackage[dvipsnames]{xcolor}
-\usepackage{color}
+\usepackage[dvipsnames]{xcolor}    % Extended color definition
 \definecolor{BlueGreen}{RGB}{0, 154, 166}
 \definecolor{groupblue}{RGB}{51,102,254}
 \definecolor{orange}{HTML}{FF7F00} 
 \definecolor{RubineRed}{RGB}{204, 0, 102}%0-255
 % \definecolor{RubineRed}{rgb}{0.8, 0.0, 0.4}%0-1
 
-\title{Gantt Charts}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 
 	\begin{ganttchart}[
+		    % Chart dimensions and grid
 	canvas/.append style={fill=none, draw=black!5, line width=.75pt,dashed},
 	hgrid style/.style={draw=black!15, line width=.75pt, dashed},
 	vgrid={*1{draw=black!5, line width=.75pt}},
