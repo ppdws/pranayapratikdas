@@ -27,7 +27,7 @@ menu:
           weight: 4
         - name: LaTeX Examples
           url: /latex/
-	  weight: 10
+          weight: 10
 #	- name: Location
 #	  url: location/
 #	  weight: 5
