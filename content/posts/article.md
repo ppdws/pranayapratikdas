@@ -4,5 +4,5 @@ cover:
   hidden: false
   linkFullImages: false   # ← this removes the hyperlink
 
-![Entire History](EntireHistrory.png)
+{{< figure src="/EntireHistrory.png" alt="Alt text" caption="Your caption here." >}}
 ---
