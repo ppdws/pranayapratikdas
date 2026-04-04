@@ -1,5 +1,4 @@
 ---
-params:
 cover:
   image: EntireHistrory.png
   hidden: false
