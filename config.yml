@@ -85,7 +85,7 @@ params:
             - name: LaTeX Examples
               url: latex/
             - name: Archive
-              url: /posts/
+              url: posts/
 #            - name: Abstract
 #              url: posts/
 
