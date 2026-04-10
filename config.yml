@@ -28,9 +28,9 @@ menu:
         - name: LaTeX Examples
           url: /latex/
           weight: 10
-        - name: Posts
+        - name: Archive
           url: /posts/
-          weight: 5
+          weight: 11
 #	- name: Location
 #	  url: location/
 #	  weight: 5
@@ -78,14 +78,14 @@ params:
               url: courses/
 #            - name: Tags
 #              url: tags/
-#            - name: Archive
-#              url: archive/
             - name: News
               url: projects/
 #	    - name: Location
 #	      url: location/
             - name: LaTeX Examples
               url: latex/
+            - name: Archive
+              url: /posts/
 #            - name: Abstract
 #              url: posts/
 
