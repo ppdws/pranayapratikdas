@@ -31,9 +31,9 @@ menu:
         - name: Archive
           url: /posts/
           weight: 11
-#	- name: Location
-#	  url: location/
-#	  weight: 5
+	- name: Location
+	  url: image/
+	  weight: 15
 
 params:
     description: "I am a theoretical physicist. My research focuses on Quantum Chaos. "
