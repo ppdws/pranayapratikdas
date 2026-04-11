@@ -154,7 +154,13 @@
 		
 		
 		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		\usetikzlibrary{overlay-beamer-styles}
+		\tikzset{
+			highlight on/.style={alt={#1{fill=red!80!black,color=red!80!black}{fill=gray!30!white,color=gray!30!white}}},
+		}
 		
+		\usepackage{multicol}
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage[utf8]{inputenc}
 
 %\usepackage{geometry}
@@ -205,9 +211,11 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[c]
 	\begin{tikzpicture}[font=\sffamily]
-	\pic{blurred arrow={color=lime,amplitude=2.5mm,drop factor=0.005}};
+	\pic{blurred arrow={color=lime!50!cyan,amplitude=2.5mm,drop factor=0.005}};
 \end{tikzpicture}
 \end{frame}
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}[c]
@@ -674,7 +682,28 @@
 	\noindent\rule[1ex]{\linewidth}{5pt}
 \end{frame}
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[t]
+	\frametitle{A time line}
+	\begin{tikzpicture}
+		\draw[line width=2mm,-latex,red!20] (-0.2,0) -- (9,0);
+		\foreach \X [evaluate=\X as \Y using int(\X-2000),count=\Z] in {2000,2001,2002,2005}
+		{
+			\draw[highlight on=<\Z>] ({\Y-0.2},-0.5) -- ({\Y+0.2},-0.5) -- (\Y,-0.1) -- cycle;
+			\node[anchor=south,highlight on=<\Z>,fill=white] at (\Y,0.2) {\X};
+		}
+	\end{tikzpicture}
+	\begin{multicols}{2}
+		\begin{itemize}
+			\item<1-> November 2000: marmots start hibernating
+			\item<2-> August 2001: marmots eat
+			\item<2-> Semptember 2001: marmots eat
+			\item<3-> July 2002: marmots eat
+			\item<4-> May 2005: marmots awake from hibernation
+			\item<4-> November 2005: marmots start hibernating again
+		\end{itemize}
+	\end{multicols}
+\end{frame}
 \end{document}
 
 

@@ -1,0 +1,36 @@
+\documentclass[x11names, svgnames, dvipsnames,tikz,border=3.14mm]{standalone}
+\begin{document}
+	\tikzset{pics/.cd,
+		image jigsaw/.style args={img at #1 and #2/#3/#4/#5}{
+			code={%
+				\draw[path picture={%
+					\node at #1
+					{\edef\temp{\noexpand\includegraphics[\pgfkeysvalueof{/tikz/jigsaw/img options}]{\pgfkeysvalueof{/tikz/jigsaw/img}}}
+						\temp};}] (-2,-0.35) to[out=90,in={90+#2*45}] ({-2+0.5*#2},-0.45) 
+				arc({-135-(#2-1)*45}:{(#2-1)*180+135+(#2-1)*45}:0.6 and
+				{0.45*sqrt(2)}) to[out=-90-#2*45,in=-90] (-2,0.35) |- (-0.35,2)
+				to[out=0,in={0+#3*45}] (-0.45,2-0.5*#3) arc(180-#3*45:{(#3+1)*180+#3*45}:{0.45*sqrt(2)} and 0.6)
+				to[out=-180-#3*45,in=180] (0.35,2) -| (2,0.35) 
+				to[out=-90,in=270+#4*45] (2-#4*0.5,0.45) 
+				arc(90-#4*45:{(#4+1)*180-90+#4*45}:0.6 and {0.45*sqrt(2)})
+				to[out=90-#4*45,in=90] (2,-0.35) |- (0.35,-2)
+				to[out=180,in=-180+#5*45] (0.45,-2+#5*0.5) arc(-#5*45:{(#5-1)*180+180+#5*45}:{0.45*sqrt(2)} and 0.6) 
+				to[out=-#5*45,in=0] (-0.35,-2) -| cycle;
+		}},
+		/tikz/jigsaw/.cd,img/.initial={example-image-duck},img options/.initial={}
+	}
+	% order : left/top/right/bottom and -1 is out, 1 is in, 0 none
+	\foreach \X in {0,0.1,...,1,0.9,0.8,...,0.1}
+	{\begin{tikzpicture}
+			\path[use as bounding box] (-3,-3) rectangle (3,3);
+			\draw (-1-\X,-1-\X) pic[scale=0.25]{image jigsaw=img at {(4,4)} and 0/-1/1/0}
+			(0,-1-\X) pic[scale=0.25]{image jigsaw=img at {(0,4)} and -1/-1/1/0}
+			(1+\X,-1-\X) pic[scale=0.25]{image jigsaw=img at {(-4,4)} and -1/1/0/0}
+			(-1-\X,0) pic[scale=0.25]{image jigsaw=img at {(4,0)} and 0/1/-1/1}
+			(0,0) pic[scale=0.25]{image jigsaw=img at {(0,0)} and 1/-1/1/1}
+			(1+\X,0) pic[scale=0.25]{image jigsaw=img at {(-4,0)} and -1/1/0/-1}
+			(-1-\X,1+\X) pic[scale=0.25]{image jigsaw=img at {(4,-4)} and 0/0/1/-1}
+			(0,1+\X) pic[scale=0.25]{image jigsaw=img at {(0,-4)} and -1/0/1/1}
+			(1+\X,1+\X) pic[scale=0.25]{image jigsaw=img at {(-4,-4)} and -1/0/0/-1};
+	\end{tikzpicture}}
+\end{document}
