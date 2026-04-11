@@ -1,9 +1,3 @@
-/* Disable clicking on ALL images */
-.post-content img {
-  pointer-events: none;
-}
-
-/* Disable clicking on cover images specifically */
-.post-cover a {
+.post-content img.no-click {
   pointer-events: none;
 }
