@@ -38,3 +38,8 @@ date: 2026-04-12
 
 ## Mandala 
 {{< latex-sidebyside pdf="Mandala.pdf" tex="Mandala.tex" >}}
+
+## Jigsaw 
+{{< latex-sidebyside pdf="jigsaw.pdf" tex="jigsaw.tex" >}}
+
+
