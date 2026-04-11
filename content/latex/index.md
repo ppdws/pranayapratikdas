@@ -19,10 +19,10 @@ title: "LaTeX Example"
 ## Time Lines
 {{< latex-sidebyside pdf="Arrows.pdf" tex="Arrows.tex" >}}
 
-## Pyramid-1
+## Pyramid 1
 {{< latex-sidebyside pdf="Pyramid1.pdf" tex="Pyramid1.tex" >}}
 
-## Pyramid-2
+## Pyramid 2
 {{< latex-sidebyside pdf="Pyramid2.pdf" tex="Pyramid2.tex" >}}
 
 ## Thesis Structure
