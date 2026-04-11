@@ -25,3 +25,5 @@ title: "LaTeX Example"
 ## Thesis Structure
 {{< latex-sidebyside pdf="Chapters.pdf" tex="Chapters.tex" >}}
 
+## Annotate Equation
+{{< latex-sidebyside pdf="Equation_marking.pdf" tex="Equation_marking.tex" >}}
