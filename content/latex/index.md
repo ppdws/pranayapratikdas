@@ -21,3 +21,7 @@ title: "LaTeX Example"
 
 ## Pyramid
 {{< latex-sidebyside pdf="Pyramid.pdf" tex="Pyramid.tex" >}}
+
+## Thesis Structure
+{{< latex-sidebyside pdf="Chapters.pdf" tex="Chapters.tex" >}}
+
