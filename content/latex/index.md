@@ -19,3 +19,5 @@ title: "LaTeX Example"
 ## Time Lines
 {{< latex-sidebyside pdf="Arrows.pdf" tex="Arrows.tex" >}}
 
+## Pyramid
+{{< latex-sidebyside pdf="Pyramid.pdf" tex="Pyramid.tex" >}}

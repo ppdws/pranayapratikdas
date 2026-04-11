@@ -1,0 +1,170 @@
+\documentclass[tikz, border=10mm]{standalone}
+\usetikzlibrary{calc}
+\usepackage{bm}% bold math
+\def\pyramidwidth{1.0cm}
+\def\pyramiddepth{0.5cm}
+\def\pyramidheight{.35cm}
+\def\levels{6}
+\def\levelsep{0.05}
+\usetikzlibrary{calc,shadings,shadows,fadings}
+\usetikzlibrary{shadows.blur, positioning}
+\usetikzlibrary{shapes.geometric} % Cylinder
+\usetikzlibrary{shapes.symbols} 
+\usetikzlibrary{shapes.callouts} 
+\usetikzlibrary{shapes.misc} 
+\usetikzlibrary{arrows.meta,bending,positioning} 
+\begin{document}
+	\sffamily
+	\begin{tikzpicture}[ line width=1pt, every node/.style={scale=3},
+		level 1/.style={fill=blue, draw=white, ball color=blue},
+		level 2/.style={fill=red, draw=white, ball color=red},
+		level 3/.style={fill=gray, draw=white, ball color= gray},
+		level 4/.style={fill=yellow!90!black, draw=white, ball color=yellow!90!black},
+		level 5/.style={fill=green!90!black, draw=white, ball color=green!90!black},
+		level 6/.style={fill=green!90!black, draw=white, ball color=green!90!black},
+		x={(3.5mm,-1mm)}]
+		
+		\coordinate[alias=A1b] (A) at (0,0,0);
+		\coordinate[alias=C1b] (C) at (\pyramidwidth,0,\pyramiddepth);
+		\coordinate[alias=B1b] (B) at (0,0,\pyramiddepth);
+		\coordinate[alias=D1b] (D) at (\pyramidwidth,0,0);
+		\coordinate (H) at (\pyramidwidth/2,\pyramidheight,\pyramiddepth/2);
+		\foreach \n in {A,B,C,D}{%
+			\foreach \level[remember=\level as \lastlevel (initially 1)] in {2,...,\levels}{%
+				\coordinate (\n\lastlevel t) at ($(\n)!\lastlevel/\levels-\levelsep/2!(H)$);
+				\coordinate (\n\level b) at ($(\n)!\lastlevel/\levels+\levelsep/2!(H)$);}}
+		\foreach \n in {A,B,C,D}{\coordinate (\n\levels t) at (H);}
+		\foreach \level in {1,...,\levels}{%
+			\foreach \i/\j in {D/A, A/B, B/C, C/D}{%
+				\draw[level \level, line join=round] (\i\level b) -- (\j\level b) -- (\j\level t) -- (\i\level t) -- cycle;};
+			\draw[level \level, line join=round] (A\level t) -- (B\level t) -- (C\level t) -- (D\level t) -- cycle;};
+			
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% First level
+\path[%drop shadow={shadow scale=0.99, shadow xshift=.1ex, shadow yshift=-4ex, opacity=.5, fill=gray},
+ blur shadow={shadow blur steps=10,
+	shadow blur extra rounding=10pt, 
+	shadow xshift=1ex,
+	shadow yshift=-4ex}] (B1b) -- (C1b) -- (D1b) -- (A1b);		
+\draw[line join=round, draw=white, ultra thick] (D1b) -- (A1b) -- (A1t) -- (D1t) -- cycle;
+\draw[line join=round, draw=white, ultra thick] (A1b) -- (B1b) -- (B1t) -- (A1t) -- cycle;
+\shade[line join=round, upper right=blue!10, lower left=blue, upper left=blue, lower right=blue, draw=white, ultra thick,ball color=blue] (B1b) -- (C1b) -- (C1t) -- (B1t) -- cycle;%F
+\shade[line join=round, upper left=blue!10, lower right=blue!50, upper right=blue, lower left=blue, draw=white, ultra thick] (C1b) -- (D1b) -- (D1t) -- (C1t) -- cycle;
+\shade[line join=round, lower right=black, upper right=black, lower left=black, upper left=black, draw=white, ultra thick] (A1t) -- (B1t) -- (C1t) -- (D1t) -- cycle;
+
+%2nd
+%\path[drop shadow={shadow scale=0.9, shadow xshift=.5ex, shadow yshift=-4ex, opacity=.5, fill=gray}] (B2b) -- (C2b) -- (D2b) -- (A2b);
+\draw[line join=round, draw=white, ultra thick] (D2b) -- (A2b) -- (A2t) -- (D2t) -- cycle;
+\draw[line join=round, draw=white, ultra thick] (A2b) -- (B2b) -- (B2t) -- (A2t) -- cycle;
+\shade[line join=round, upper right=red!10, lower left=red, upper left=red, lower right=red, draw=white, ultra thick, ball color=red] (B2b) -- (C2b) -- (C2t) -- (B2t) -- cycle;
+\shade[line join=round, upper left=red!10, lower right=red!50, upper right=red, lower left=red, draw=white, ultra thick] (C2b) -- (D2b) -- (D2t) -- (C2t) -- cycle;
+\shade[line join=round, lower right=black, upper right=black, lower left=black, upper left=black, draw=white, ultra thick] (A2t) -- (B2t) -- (C2t) -- (D2t) -- cycle;
+
+%3rd
+%\path[drop shadow={shadow scale=0.9, shadow xshift=.5ex, shadow yshift=-4ex, opacity=.5, fill=gray}] (B2b) -- (C2b) -- (D2b) -- (A2b);
+\draw[line join=round, draw=white, ultra thick] (D3b) -- (A3b) -- (A3t) -- (D3t) -- cycle;
+\draw[line join=round, draw=white, ultra thick] (A3b) -- (B3b) -- (B3t) -- (A3t) -- cycle;
+\shade[line join=round, upper right=orange!10, lower left=orange, upper left=orange, lower right=orange, draw=white, ultra thick, ball color=orange] (B3b) -- (C3b) -- (C3t) -- (B3t) -- cycle;
+\shade[line join=round, upper left=orange!10, lower right=orange!50, upper right=orange, lower left=orange, draw=white, ultra thick] (C3b) -- (D3b) -- (D3t) -- (C3t) -- cycle;
+\shade[line join=round, lower right=black, upper right=black, lower left=black, upper left=black, draw=white, ultra thick] (A3t) -- (B3t) -- (C3t) -- (D3t) -- cycle;
+
+%4th
+%\path[drop shadow={shadow scale=0.9, shadow xshift=.5ex, shadow yshift=-4ex, opacity=.5, fill=gray}] (B4b) -- (C4b) -- (D4b) -- (A4b);
+\draw[line join=round, draw=white, ultra thick] (D4b) -- (A4b) -- (A4t) -- (D4t) -- cycle;
+\draw[line join=round, draw=white, ultra thick] (A4b) -- (B4b) -- (B4t) -- (A4t) -- cycle;
+\shade[line join=round, upper right=gray!10, lower left=gray, upper left=gray, lower right=gray, draw=white, ultra thick, ball color=cyan] (B4b) -- (C4b) -- (C4t) -- (B4t) -- cycle;
+\shade[line join=round, upper left=cyan!70!black, lower right=cyan!50, upper right=cyan, lower left=cyan, draw=white, ultra thick] (C4b) -- (D4b) -- (D4t) -- (C4t) -- cycle;
+\shade[line join=round, lower right=black, upper right=black, lower left=black, upper left=black, draw=white, ultra thick] (A4t) -- (B4t) -- (C4t) -- (D4t) -- cycle;
+
+%5th
+%\path[drop shadow={shadow scale=0.9, shadow xshift=.5ex, shadow yshift=-4ex, opacity=.5, fill=gray}] (B4b) -- (C4b) -- (D4b) -- (A4b);
+\draw[line join=round, draw=white, ultra thick] (D5b) -- (A5b) -- (A5t) -- (D5t) -- cycle;
+\draw[line join=round, draw=white, ultra thick] (A5b) -- (B5b) -- (B5t) -- (A5t) -- cycle;
+\shade[line join=round, upper right=yellow!10, lower left=yellow!90!black, upper left=yellow!90!black, lower right=yellow!70!black, draw=white, ultra thick, ball color=yellow!70!black] (B5b) -- (C5b) -- (C5t) -- (B5t) -- cycle;
+\shade[line join=round, upper left=yellow!10, lower right=yellow!70, upper right=yellow!70!black, lower left=yellow!70!black, draw=white, ultra thick] (C5b) -- (D5b) -- (D5t) -- (C5t) -- cycle;
+\shade[line join=round, lower right=black, upper right=black, lower left=black, upper left=black, draw=white, ultra thick] (A5t) -- (B5t) -- (C5t) -- (D5t) -- cycle;
+
+%6th
+%\path[drop shadow={shadow scale=0.9, shadow xshift=.5ex, shadow yshift=-4ex, opacity=.5, fill=gray}] (B5b) -- (C5b) -- (D5b) -- (A5b);
+\draw[line join=round, draw=white, ultra thick] (D6b) -- (A6b) -- (A6t) -- (D6t) -- cycle;
+\draw[line join=round, draw=white, ultra thick] (A6b) -- (B6b) -- (B6t) -- (A6t) -- cycle;
+\shade[line join=round, upper right=green!10, lower left=green!90!black, upper left=green!90!black, lower right=green!90!black, draw=white, ultra thick, ball color=green!70!black] (B6b) -- (C6b) -- (C6t) -- (B6t) -- cycle;
+\shade[line join=round, upper left=green!10, lower right=green!50, upper right=green!70!black, lower left=green!70!black, draw=white, ultra thick] (C6b) -- (D6b) -- (D6t) -- (C6t) -- cycle;
+\shade[line join=round, lower right=green!10, upper right=green!90!black, lower left=green!90!black, upper left=green!90!black, draw=white, ultra thick] (A6t) -- (B6t) -- (C6t) -- (D6t) -- cycle;	
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%		\begin{scope}[every node/.style={rotate=-16, xslant=.1, above, inner sep=3pt, font=\bfseries, text=white}]
+%			\node[scale=4] at ($(B1b)!.5!(C1b)$) {$\bm\lambda=0$};
+%			\node[scale=3] at ($(B2b)!.5!(C2b)$) {$\bm\lambda = 0$};
+%			\node[scale=2] at ($(B3b)!.5!(C3b)$) {$\bm\lambda \geq 0$};
+%			\node[scale=1.4] at ($(B4b)!.5!(C4b)$) {$\bm\lambda > 0$};
+%			\node[scale=1.4] at ($(B5b)!.5!(C5b)$) {$\bm \lambda > 0$};
+%			\node[scale=1.2] at ($(B6b)!.5!(C6b)$) {$\bm\lambda \gg 0$};
+%		\end{scope}
+		
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{scope}[x=2cm]
+\draw[green!70!black, arrows = -{Kite[]Kite[length=6mm, round,  green!70!black]}, ultra thick, blur shadow={shadow blur steps=10,
+	shadow blur extra rounding=2pt, 
+	shadow xshift=1ex,
+	shadow yshift=-1ex}] ($(D6b)!.5!(D6t)$) -- +(1,0) node[right, text=white, draw=white, text=white, rounded rectangle, ball color=green!70!black, shading=ball, scale=0.75, shading=ball, blur shadow={shadow blur steps=10,
+	shadow blur extra rounding=2pt, 
+	shadow xshift=1ex,
+	shadow yshift=-1ex}] {Bernoulli};
+
+\draw[yellow!70!black, arrows = -{Kite[]Kite[length=6mm, round,  yellow!70!black]},ultra thick, blur shadow={shadow blur steps=10,
+	shadow blur extra rounding=2pt, 
+	shadow xshift=1ex,
+	shadow yshift=-1ex}] ($(D5b)!.5!(D5t)$) -- +(1,0) node[right, text=white, scale=0.7, draw=white, rounded rectangle, rounded rectangle west arc=convex, draw, fill=yellow!20, ball color=yellow!70!black, shading=ball, blur shadow={shadow blur steps=10,
+	shadow blur extra rounding=2pt, 
+	shadow xshift=1ex,
+	shadow yshift=-1ex}] {Completely Hyperbolic};
+
+\draw[cyan, arrows = -{Kite[]Kite[length=6mm, round,  cyan!90!black]}, ultra thick, blur shadow={shadow blur steps=10,
+	shadow blur extra rounding=2pt, 
+	shadow xshift=1ex,
+	shadow yshift=-1ex}] ($(D4b)!.5!(D4t)$) -- +(1,0) node[right, scale=0.75, text=white, draw=white, rounded rectangle, ball color=cyan!70!black, shading=ball, blur shadow={shadow blur steps=10,
+	shadow blur extra rounding=2pt, 
+	shadow xshift=1ex,
+	shadow yshift=-1ex}] {Kolmogorov};
+
+\draw[orange, arrows = -{Kite[]Kite[length=6mm, round,  orange]},% -{Stealth[length=5mm,round, red]},
+ultra thick, blur shadow={shadow blur steps=10,
+	shadow blur extra rounding=2pt, 
+	shadow xshift=1ex,
+	shadow yshift=-1ex}] ($(D3b)!.5!(D3t)$) -- +(1,0) node[right, scale=0.75, text=white, draw=white, rounded rectangle, ball color=orange, shading=ball, blur shadow={shadow blur steps=10,
+	shadow blur extra rounding=2pt, 
+	shadow xshift=1ex,
+	shadow yshift=-1ex}] {Strong Mixing};
+
+\draw[red, arrows = -{Kite[]Kite[length=6mm, round,  red]},% -{Stealth[length=5mm,round, red]},
+ ultra thick, blur shadow={shadow blur steps=10,
+	shadow blur extra rounding=2pt, 
+	shadow xshift=1ex,
+	shadow yshift=-1ex}] ($(D2b)!.5!(D2t)$) -- +(1,0) node[right, scale=0.75, text=white, draw=white, rounded rectangle, ball color=red, shading=ball, blur shadow={shadow blur steps=10,
+	shadow blur extra rounding=2pt, 
+	shadow xshift=1ex,
+	shadow yshift=-1ex}] {Weak Mixing};
+
+\draw[blue, arrows = -{Kite[]Kite[length=6mm, round,  blue]}, ultra thick, blur shadow={shadow blur steps=10,
+	shadow blur extra rounding=2pt, 
+	shadow xshift=1ex,
+	shadow yshift=-1ex}] ($(D1b)!.5!(D1t)$) -- +(1,0) node[right, scale=0.75, text=white, draw=white, rounded rectangle, ball color=blue, shading=ball, blur shadow={shadow blur steps=10,
+	shadow blur extra rounding=2pt, 
+	shadow xshift=1ex,
+	shadow yshift=-1ex}] {Ergodic};
+\end{scope}
+
+\draw[black, arrows = -{Circle[open]Diamond[]Kite[length=10mm, round,  black]}, ultra thick, blur shadow={shadow blur steps=10,shadow blur extra rounding=2pt, shadow xshift=1ex,shadow yshift=-1ex}] (-15,-5)--(1,5)
+node[left, scale=0.8, text=black, rotate=56, xshift=-3ex, yshift=1ex] {Degree of Ergodicity};
+
+\draw (12,-8) node[below, scale=0.55, text=black, draw=white, rounded rectangle, ultra thick, 
+%ball color=black, shading=ball, 
+blur shadow={shadow blur steps=10, shadow blur extra rounding=2pt, shadow xshift=1ex, shadow yshift=-1ex},
+ fill=black,align=center, text width=14.5cm, text height=10pt
+ ] {\Large \textbf{ \color{green} B-System \color{white} $\bm\subset$ \color{yellow} C-System \color{white}$\bm\subset$ \color{gray!10} K-System \color{white}$\bm\subset$ \color{orange} SM \color{white}$\bm\subset$ \color{red} WM \color{white}$\bm\subset$ \color{blue!50} E-System}};
+	\end{tikzpicture}
+%	\begin{tikzpicture}
+%		\path[draw=red]circle (5pt) (0,0) -- (0.5,0.5) -- (2,1)circle (10pt);
+%	\end{tikzpicture}
+\end{document}
