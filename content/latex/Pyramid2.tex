@@ -1,0 +1,48 @@
+\documentclass[%aspectratio=43,%2013,
+compress]{beamer}
+
+\usepackage{graphicx}
+\usepackage{geometry}
+\geometry{paperwidth=13cm,paperheight=10.75cm}
+%\geometry{paperwidth=16cm,paperheight=12cm}
+\usepackage{xcolor,color}
+
+\usepackage[labelfont=bf,list=true]{subcaption}
+\usepackage[many]{tcolorbox}
+\setbeamertemplate{navigation symbols}{}
+
+%\setbeamersize{text margin left=13pt,text margin right=0pt, sidebar width left=0pt,sidebar width right=0pt}
+
+\usepackage{tikz}
+\usetikzlibrary{calc}
+
+
+
+\begin{document}
+	\begin{frame}
+		\Large
+		\begin{figure}
+			\centering
+\includegraphics[width=\linewidth]{Hierarchy of Ergodicity}
+		\end{figure}
+		
+		\begin{tikzpicture}[overlay]
+			%Setting up coordinates
+			\coordinate (o) at (5.5, 1.75);
+			\coordinate (x) at (5.5, 3.25);
+			\coordinate (y) at (5.5, 4.75);
+			\coordinate (z) at (5.5, 6.25);
+			\coordinate (r) at (5.5, 7.5);
+			
+			%draw graph system
+			\draw[text=black]  (o) node [below] {\textbf{Ergodicity}} (x) node [below] {\textbf{Weak Mixing}} (y) node [below] {\textbf{Strong Mixing}} (z) node [below] {\textbf{Multiple Mixing}};
+			\draw [text=red] (r) node [below] {\textbf{Bernoulli}};
+			
+		%	\draw [text=red] (7.25,9.75) node [below] {\textit{\textbf{z}}} (2,3.5) node [below] {\textit{\textbf{x}}} (6.75,1.5) node [below] {\textit{\textbf{y}}};
+			
+		%	\draw [text=gray!75!black] (9.25,2.25) node [below, rotate=338] {\textbf{Poincaré Section}};
+		\end{tikzpicture}	
+	\end{frame}	
+	
+	
+\end{document}
