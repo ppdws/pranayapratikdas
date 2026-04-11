@@ -1,4 +1,4 @@
 ---
-![My Image](/EntireHistrory.png){.no-click}
+![My Image](/EntireHistrory.png)
 ---
 
