@@ -1,5 +1,6 @@
 ---
 title: "LaTeX Example"
+date: 2026-04-12T10:00:00+05:30
 ---
 ## Circular Image Arrangement:
 
