@@ -20,16 +20,16 @@ title: "LaTeX Example"
 {{< latex-sidebyside pdf="Arrows.pdf" tex="Arrows.tex" >}}
 
 ## Pyramid - 1
-{{< latex-sidebyside pdf="Pyramid_x.pdf" tex="Pyramid_y.tex" >}}
+{{< latex-sidebyside pdf="TPyramid.pdf" tex="TPyramid.tex" >}}
 
 ## Pyramid - 2
-{{< latex-sidebyside pdf="Pyramid_y.pdf" tex="Pyramid_y.tex" >}}
+{{< latex-sidebyside pdf="CPyramid.pdf" tex="CPyramid.tex" >}}
 
 ## Thesis Structure
 {{< latex-sidebyside pdf="Chapters.pdf" tex="Chapters.tex" >}}
 
 ## Annotate Equation
-{{< latex-sidebyside pdf="Equation_marking.pdf" tex="Equation_marking.tex" >}}
+{{< latex-sidebyside pdf="EquationMarking.pdf" tex="EquationMarking.tex" >}}
 
 ## Figure Shadow
 {{< latex-sidebyside pdf="Shadow.pdf" tex="Shadow.tex" >}}
