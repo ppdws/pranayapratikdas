@@ -1,7 +1,6 @@
 ---
 title: "LaTeX Example"
 ---
-
 ## Circular Image Arrangement:
 
 {{< latex-sidebyside pdf="CiruclarImageArrangement.pdf" tex="CiruclarImageArrangement.tex" >}}
