@@ -1,9 +1,19 @@
 {{- $images := .Params -}}
 <div class="gallery-grid">
   {{- range $images }}
-    {{- $img := . | safeHTML }}
-    <a href="{{ $img | relURL }}" target="_blank" class="gallery-item">
-      <img src="{{ $img | relURL }}" loading="lazy" alt="Gallery image">
-    </a>
+    {{- $parts := split . "|" -}}
+    {{- $path := index $parts 0 | safeHTML -}}
+    {{- $caption := "" -}}
+    {{- if gt (len $parts) 1 -}}
+      {{- $caption = index $parts 1 -}}
+    {{- end -}}
+    <div class="gallery-item">
+      <a href="{{ $path | relURL }}" target="_blank">
+        <img src="{{ $path | relURL }}" loading="lazy" alt="{{ $caption }}">
+      </a>
+      {{- with $caption }}
+      <div class="gallery-caption">{{ . | markdownify }}</div>
+      {{- end }}
+    </div>
   {{- end }}
 </div>
