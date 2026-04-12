@@ -7,4 +7,5 @@ layout: "page"
 {{< gallery 
   "EntireHistrory.png"
   "FourForces.png"
+  "StandardModel.png"
 >}}
