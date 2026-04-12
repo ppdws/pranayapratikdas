@@ -1,6 +1,6 @@
 /* ===== Two‑Column Gallery (50% / 50%) ===== */
 
-.split-gallery {
+.gallery {
   display: flex;
   gap: 1.5rem;
   margin: 2rem 0;
@@ -8,13 +8,13 @@
 }
 
 /* Left column – exactly 50% width */
-.split-gallery__left {
+.gallery__left {
   flex: 0 0 calc(50% - 0.75rem);  /* Half of container minus half the gap */
   max-width: calc(50% - 0.75rem);
 }
 
 /* Right column – exactly 50% width */
-.split-gallery__right {
+.gallery__right {
   flex: 0 0 calc(50% - 0.75rem);
   max-width: calc(50% - 0.75rem);
   display: grid;
@@ -24,7 +24,7 @@
 }
 
 /* Link styling + hover zoom */
-.split-gallery__link {
+.gallery__link {
   display: block;
   border-radius: 8px;
   overflow: hidden;
@@ -33,13 +33,13 @@
   cursor: pointer;
 }
 
-.split-gallery__link:hover {
+.gallery__link:hover {
   transform: scale(1.5);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 /* Images preserve natural aspect ratio */
-.split-gallery__link img {
+.gallery__link img {
   display: block;
   width: 100%;
   height: auto;
@@ -47,11 +47,11 @@
 
 /* Mobile: stack columns */
 @media (max-width: 768px) {
-  .split-gallery {
+  .gallery {
     flex-direction: column;
   }
-  .split-gallery__left,
-  .split-gallery__right {
+  .gallery__left,
+  .gallery__right {
     flex: 1 1 100%;
     max-width: 100%;
   }
