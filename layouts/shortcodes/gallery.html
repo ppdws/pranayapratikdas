@@ -1,19 +1,16 @@
-{{- $images := .Params -}}
+{{- $page := .Page -}}
 <div class="gallery-grid">
-  {{- range $images }}
-    {{- $parts := split . "|" -}}
-    {{- $path := index $parts 0 | safeHTML -}}
-    {{- $caption := "" -}}
-    {{- if gt (len $parts) 1 -}}
-      {{- $caption = index $parts 1 -}}
-    {{- end -}}
+  {{- range $page.Resources.ByType "image" }}
+    {{- $img := . -}}
+    {{- $date := $img.Lastmod | time.Format "1/2/06 3:04 PM" -}}
     <div class="gallery-item">
-      <a href="{{ $path | relURL }}" target="_blank">
-        <img src="{{ $path | relURL }}" loading="lazy" alt="{{ $caption }}">
+      <a href="{{ $img.RelPermalink }}" target="_blank">
+        <img src="{{ $img.RelPermalink }}" loading="lazy" alt="{{ $img.Name }}">
       </a>
-      {{- with $caption }}
-      <div class="gallery-caption">{{ . | markdownify }}</div>
-      {{- end }}
+      <div class="gallery-caption">
+        <span class="filename">{{ $img.Name }}</span>
+        <span class="filedate">{{ $date }}</span>
+      </div>
     </div>
   {{- end }}
 </div>
