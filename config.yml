@@ -32,8 +32,8 @@ menu:
           url: /posts/
           weight: 11
         - name: Gallery
-           url: /gallery/
-          weight: 15
+          url: /gallery/
+          weight: 12
 #	- name: Location
 #	  url: location/
 #	  weight: 5
