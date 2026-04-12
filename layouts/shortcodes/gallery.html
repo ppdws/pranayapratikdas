@@ -2,7 +2,7 @@
 {{- $thumbs := after 1 .Params -}}
 
 <style>
-/* Inline styles for split gallery – guarantees they apply */
+/* Two‑column layout (60% / 40%) with hover zoom */
 .split-gallery {
   display: flex;
   gap: 1.5rem;
@@ -16,10 +16,9 @@
 .split-gallery__right {
   flex: 0 0 calc(40% - 0.9rem) !important;
   max-width: calc(40% - 0.9rem) !important;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: column;
   gap: 1rem;
-  align-items: start;
 }
 .split-gallery__link {
   display: block;
@@ -45,8 +44,11 @@
   border-radius: 8px;
 }
 @media (max-width: 768px) {
-  .split-gallery { flex-direction: column; }
-  .split-gallery__left, .split-gallery__right {
+  .split-gallery {
+    flex-direction: column;
+  }
+  .split-gallery__left,
+  .split-gallery__right {
     flex: 1 1 100% !important;
     max-width: 100% !important;
   }
