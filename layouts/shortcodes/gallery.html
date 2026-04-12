@@ -2,19 +2,19 @@
 {{- $thumbs := after 1 .Params -}}
 
 <div class="split-gallery">
-  <!-- Left Column: Featured Image -->
-  <div class="split-gallery__main">
-    <a href="{{ $main | relURL }}" target="_blank" class="split-gallery__main-link">
-      <img src="{{ $main | relURL }}" alt="Featured image" loading="lazy">
+  <!-- Left Column: One large image -->
+  <div class="split-gallery__left">
+    <a href="{{ $main | relURL }}" target="_blank" class="split-gallery__link">
+      <img src="{{ $main | relURL }}" alt="Main image" loading="lazy">
     </a>
   </div>
 
-  <!-- Right Column: Thumbnail Grid -->
-  <div class="split-gallery__thumbs">
+  <!-- Right Column: Multi‑row grid -->
+  <div class="split-gallery__right">
     {{- range $thumbs }}
       {{- $img := . | safeHTML }}
-      <a href="{{ $img | relURL }}" target="_blank" class="split-gallery__thumb-link">
-        <img src="{{ $img | relURL }}" alt="Gallery thumbnail" loading="lazy">
+      <a href="{{ $img | relURL }}" target="_blank" class="split-gallery__link">
+        <img src="{{ $img | relURL }}" alt="Thumbnail" loading="lazy">
       </a>
     {{- end }}
   </div>
