@@ -73,37 +73,3 @@
   }
 }
 
-/* Make the split gallery break out of the content container */
-.split-gallery {
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  padding: 0 1.5rem;  /* Adds breathing room on edges */
-  box-sizing: border-box;
-}
-
-/* Keep left/right columns proportional at full width */
-.split-gallery__main {
-  flex: 0 0 38%;        /* Fixed width, no shrinking */
-}
-
-.split-gallery__thumbs {
-  flex: 0 0 58%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-}
-
-/* Stack on mobile */
-@media (max-width: 768px) {
-  .split-gallery {
-    padding: 0 1rem;
-  }
-  .split-gallery__main,
-  .split-gallery__thumbs {
-    flex: 1 1 100%;
-  }
-}
