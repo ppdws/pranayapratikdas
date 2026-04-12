@@ -17,7 +17,7 @@
 }
 
 .gallery-item:hover {
-  transform: scale(2.0);
+  transform: scale(1.5);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
