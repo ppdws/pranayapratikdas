@@ -86,6 +86,8 @@ params:
               url: latex/
             - name: Archive
               url: posts/
+            - name: Gallery
+              url: gallery/
 #            - name: Abstract
 #              url: posts/
 
