@@ -31,6 +31,9 @@ menu:
         - name: Archive
           url: /posts/
           weight: 11
+        - name: Gallery
+           url: /gallery/
+          weight: 15
 #	- name: Location
 #	  url: location/
 #	  weight: 5
@@ -86,8 +89,6 @@ params:
               url: latex/
             - name: Archive
               url: posts/
-            - name: Gallery
-              url: gallery/
 #            - name: Abstract
 #              url: posts/
 
