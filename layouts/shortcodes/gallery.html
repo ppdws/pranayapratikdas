@@ -1,9 +1,21 @@
-{{- $images := .Params -}}
-<div class="gallery-grid">
-  {{- range $images }}
-    {{- $img := . | safeHTML }}
-    <a href="{{ $img | relURL }}" target="_blank" class="gallery-item">
-      <img src="{{ $img | relURL }}" loading="lazy" alt="Gallery image">
+{{- $main := .Get 0 -}}
+{{- $thumbs := after 1 .Params -}}
+
+<div class="split-gallery">
+  <!-- Left Column: Featured Image -->
+  <div class="split-gallery__main">
+    <a href="{{ $main | relURL }}" target="_blank" class="split-gallery__main-link">
+      <img src="{{ $main | relURL }}" alt="Featured image" loading="lazy">
     </a>
-  {{- end }}
+  </div>
+
+  <!-- Right Column: Thumbnail Grid -->
+  <div class="split-gallery__thumbs">
+    {{- range $thumbs }}
+      {{- $img := . | safeHTML }}
+      <a href="{{ $img | relURL }}" target="_blank" class="split-gallery__thumb-link">
+        <img src="{{ $img | relURL }}" alt="Gallery thumbnail" loading="lazy">
+      </a>
+    {{- end }}
+  </div>
 </div>
