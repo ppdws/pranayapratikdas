@@ -1,6 +1,6 @@
 /* ===== Two‑Column Gallery (50% / 50%) ===== */
 
-.gallery {
+.split-gallery {
   display: flex;
   gap: 1.5rem;
   margin: 2rem 0;
@@ -8,15 +8,15 @@
 }
 
 /* Left column – exactly 50% width */
-.gallery__left {
-  flex: 0 0 calc(50% - 0.75rem);  /* Half of container minus half the gap */
-  max-width: calc(50% - 0.75rem);
+.split-gallery__left {
+  flex: 0 0 calc(60% - 0.75rem);  /* Half of container minus half the gap */
+  max-width: calc(60% - 0.75rem);
 }
 
 /* Right column – exactly 50% width */
-.gallery__right {
-  flex: 0 0 calc(50% - 0.75rem);
-  max-width: calc(50% - 0.75rem);
+.split-gallery__right {
+  flex: 0 0 calc(40% - 0.75rem);
+  max-width: calc(40% - 0.75rem);
   display: grid;
   grid-template-columns: repeat(2, 1fr);  /* Two images per row inside right column */
   gap: 1rem;
@@ -24,7 +24,7 @@
 }
 
 /* Link styling + hover zoom */
-.gallery__link {
+.split-gallery__link {
   display: block;
   border-radius: 8px;
   overflow: hidden;
@@ -33,13 +33,13 @@
   cursor: pointer;
 }
 
-.gallery__link:hover {
+.split-gallery__link:hover {
   transform: scale(1.5);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 /* Images preserve natural aspect ratio */
-.gallery__link img {
+.split-gallery__link img {
   display: block;
   width: 100%;
   height: auto;
@@ -47,11 +47,11 @@
 
 /* Mobile: stack columns */
 @media (max-width: 768px) {
-  .gallery {
+  .split-gallery {
     flex-direction: column;
   }
-  .gallery__left,
-  .gallery__right {
+  .split-gallery__left,
+  .split-gallery__right {
     flex: 1 1 100%;
     max-width: 100%;
   }
