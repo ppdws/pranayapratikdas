@@ -7,18 +7,18 @@
   align-items: flex-start;
 }
 
-/* Left column – exactly 50% width */
+/* Left column – 60% width */
 .split-gallery__left {
-  flex: 0 0 calc(60% - 0.75rem);  /* Half of container minus half the gap */
-  max-width: calc(60% - 0.75rem);
+  flex: 0 0 calc(60% - 0.6rem);    /* 60% minus proportional gap share */
+  max-width: calc(60% - 0.6rem);
 }
 
-/* Right column – exactly 50% width */
+/* Right column – 40% width */
 .split-gallery__right {
-  flex: 0 0 calc(40% - 0.75rem);
-  max-width: calc(40% - 0.75rem);
+  flex: 0 0 calc(40% - 0.9rem);    /* 40% minus proportional gap share */
+  max-width: calc(40% - 0.9rem);
   display: grid;
-  grid-template-columns: repeat(2, 1fr);  /* Two images per row inside right column */
+  grid-template-columns: repeat(2, 1fr);  /* or adjust as desired */
   gap: 1rem;
   align-items: start;
 }
