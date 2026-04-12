@@ -1,23 +1,9 @@
-{{- $images := .Get "images" -}}
-{{- $colWidth := .Get "colWidth" | default "48%" -}}
-{{- $zoom := .Get "zoom" | default "1.05" -}}
-
-{{/* Split the images string into a slice */}}
-{{- $imageList := split $images "," -}}
-
-<div style="display: flex; flex-wrap: wrap; gap: 2%; justify-content: space-between;">
-  {{- range $imageList }}
-    {{- $img := trim . " " }}
-    <div style="flex: 1; min-width: 200px; width: {{ $colWidth }}; margin-bottom: 20px;">
-      <a href="{{ $img | relURL }}" target="_blank" style="display: block; overflow: hidden;">
-        <img src="{{ $img | relURL }}" alt="Gallery image" style="width: 100%; height: auto; transition: transform 0.3s ease;">
-      </a>
-    </div>
+{{- $images := .Params -}}
+<div class="gallery-grid">
+  {{- range $images }}
+    {{- $img := . | safeHTML }}
+    <a href="{{ $img | relURL }}" target="_blank" class="gallery-item">
+      <img src="{{ $img | relURL }}" loading="lazy" alt="Gallery image">
+    </a>
   {{- end }}
 </div>
-
-<style>
-  .gallery img:hover {
-    transform: scale({{ $zoom }});
-  }
-</style>

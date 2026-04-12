@@ -1,5 +1,9 @@
 ---
 title: "Image Gallery"
+date: 2026-04-12
+layout: "page"
 ---
-
-{{< gallery images="/EntireHistrory.png, /FourFources.png" colWidth="48%" zoom="2.0" >}}
+{{< gallery 
+  "/EntireHistrory.png"
+  "/FourFources.png"
+>}}
