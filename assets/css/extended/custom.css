@@ -8,7 +8,7 @@
 
 /* Left Column: Main Image */
 .split-gallery__main {
-  flex: 1 1 40%;               /* Takes 40% of width, can shrink/grow */
+  flex: 1 1 48%;               /* Takes 40% of width, can shrink/grow */
   max-width: 50%;
 }
 
@@ -35,7 +35,7 @@
 
 /* Right Column: Thumbnail Grid */
 .split-gallery__thumbs {
-  flex: 1 1 55%;
+  flex: 1 1 48%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);  /* 2 columns, adjust as needed */
   gap: 1rem;
