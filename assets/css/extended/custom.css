@@ -1,4 +1,4 @@
-/* ===== Two‑Column Gallery (50% / 50%) ===== */
+/* ===== Two‑Column Gallery (60% / 40%) ===== */
 
 .split-gallery {
   display: flex;
@@ -9,33 +9,36 @@
 
 /* Left column – 60% width */
 .split-gallery__left {
-  flex: 0 0 calc(60% - 0.6rem);    /* 60% minus proportional gap share */
+  flex: 0 0 calc(60% - 0.6rem);
   max-width: calc(60% - 0.6rem);
 }
 
 /* Right column – 40% width */
 .split-gallery__right {
-  flex: 0 0 calc(40% - 0.9rem);    /* 40% minus proportional gap share */
+  flex: 0 0 calc(40% - 0.9rem);
   max-width: calc(40% - 0.9rem);
   display: grid;
-  grid-template-columns: repeat(2, 1fr);  /* or adjust as desired */
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   align-items: start;
 }
 
-/* Link styling + hover zoom */
+/* Link styling + hover zoom (FIXED) */
 .split-gallery__link {
   display: block;
   border-radius: 8px;
-  overflow: visible;         /* ✅ Allows the scaled image to overflow */
+  overflow: visible;          /* ⬅️ Key change */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   cursor: pointer;
+  z-index: 1;
+  position: relative;
 }
 
 .split-gallery__link:hover {
   transform: scale(1.5);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  z-index: 10;
 }
 
 /* Images preserve natural aspect ratio */
@@ -43,6 +46,7 @@
   display: block;
   width: 100%;
   height: auto;
+  border-radius: 8px;         /* Match link radius for smooth corners */
 }
 
 /* Mobile: stack columns */
