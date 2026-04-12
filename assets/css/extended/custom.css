@@ -22,7 +22,7 @@
 }
 
 .split-gallery__main-link:hover {
-  transform: scale(1.5);
+  transform: scale(1.1);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
@@ -40,6 +40,7 @@
   grid-template-columns: repeat(2, 1fr);  /* 2 columns, adjust as needed */
   gap: 1rem;
   align-items: start;
+  max-width: 50%;
 }
 
 .split-gallery__thumb-link {
@@ -52,7 +53,7 @@
 }
 
 .split-gallery__thumb-link:hover {
-  transform: scale(1.5);
+  transform: scale(2);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
