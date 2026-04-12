@@ -1,4 +1,4 @@
-/* ===== Two‑Column Gallery (60% / 40%) ===== */
+/* ===== Two‑Column Gallery (60% / 40%) with Working Hover Zoom ===== */
 
 .split-gallery {
   display: flex;
@@ -23,30 +23,33 @@
   align-items: start;
 }
 
-/* Link styling + hover zoom (FIXED) */
+/* Link styling + hover zoom */
 .split-gallery__link {
   display: block;
   border-radius: 8px;
-  overflow: visible;          /* ⬅️ Key change */
+  overflow: visible;                /* ✅ CHANGED: allows scale to overflow */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   cursor: pointer;
-  z-index: 1;
+  transform: scale(1);              /* Explicit base scale */
+  will-change: transform;           /* Performance optimization */
   position: relative;
+  z-index: 1;
 }
 
 .split-gallery__link:hover {
-  transform: scale(1.5);
+  transform: scale(1.05);           /* ✅ Reduced to 1.05 for cleaner zoom; adjust as desired */
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  z-index: 10;
+  z-index: 10;                      /* Bring above neighboring images */
 }
 
-/* Images preserve natural aspect ratio */
+/* Images preserve natural aspect ratio and inherit border-radius */
 .split-gallery__link img {
   display: block;
   width: 100%;
   height: auto;
-  border-radius: 8px;         /* Match link radius for smooth corners */
+  border-radius: 8px;               /* Matches link radius */
+  transition: inherit;              /* Smooth scaling sync */
 }
 
 /* Mobile: stack columns */
