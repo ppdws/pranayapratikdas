@@ -17,14 +17,14 @@
 
 /* Left column – exactly 50% width */
 .split-gallery__left {
-  flex: 0 0 50%;            /* ⬅️ Fixed 50% width */
+  flex: 0 0 55%;            /* ⬅️ Fixed 50% width */
   max-width: 50%;
 }
 
 /* Right column – exactly 50% width */
 .split-gallery__right {
-  flex: 0 0 50%;            /* ⬅️ Fixed 50% width */
-  max-width: 50%;
+  flex: 0 0 45%;            /* ⬅️ Fixed 50% width */
+  max-width: 45%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);  /* Two images per row */
   gap: 1rem;
