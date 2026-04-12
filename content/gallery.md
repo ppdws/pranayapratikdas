@@ -5,6 +5,6 @@ draft: false         # ⬅️ Must be false or removed entirely
 layout: "page"
 ---
 {{< gallery 
-  "/EntireHistrory.png"
-  "/FourFources.png"
+  "EntireHistrory.png"
+  "FourFources.png"
 >}}
