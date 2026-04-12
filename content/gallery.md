@@ -6,5 +6,5 @@ layout: "page"
 ---
 {{< gallery 
   "EntireHistrory.png"
-  "FourFources.png"
+  "FourForces.png"
 >}}
