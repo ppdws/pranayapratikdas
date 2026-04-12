@@ -40,4 +40,7 @@ title: "LaTeX Example"
 ## Jigsaw 
 {{< latex-sidebyside pdf="jigsaw.pdf" tex="jigsaw.tex" >}}
 
+## Periodic Table
+{{< latex-sidebyside pdf="PeriodicTable.pdf" tex="PeriodicTable.tex" >}}
+
 
