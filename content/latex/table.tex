@@ -8,6 +8,7 @@
 \setlength{\tabcolsep}{12pt}
 \usepackage{tabularray}
 \usepackage{multirow}
+\usepackage{multicol}
 \usepackage{float}
 
 
@@ -98,5 +99,109 @@
 	\end{tabular}
 \end{table}
 	\end{frame}
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{With width specified:}
+	\begin{center}
+		\begin{tabular}{ | l | l | l | p{5cm} |}
+			\hline
+			Day & Min Temp & Max Temp & Summary \\ \hline
+			Monday & 11C & 22C & A clear day with lots of sunshine.  
+			However, the strong breeze will bring down the temperatures. \\ \hline
+			Tuesday & 9C & 19C & Cloudy with rain, across many northern regions. Clear spells 
+			across most of Scotland and Northern Ireland, 
+			but rain reaching the far northwest. \\ \hline
+			Wednesday & 10C & 21C & Rain will still linger for the morning. 
+			Conditions will improve by early afternoon and continue 
+			throughout the evening. \\
+			\hline
+		\end{tabular}
+	\end{center}
+\end{frame}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+	\huge
+	\centering
+	\begin{tabular}{l*{6}{c}r}
+		Team              & P & W & D & L & F  & A & Pts \\
+		\hline
+		Manchester United & 6 & 4 & 0 & 2 & 10 & 5 & 12  \\
+		Celtic            & 6 & 3 & 0 & 3 &  8 & 9 &  9  \\
+		Benfica           & 6 & 2 & 1 & 3 &  7 & 8 &  7  \\
+		FC Copenhagen     & 6 & 2 & 1 & 3 &  5 & 8 &  7  \\
+	\end{tabular}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Rows spanning multiple columns}
+	\centering
+	\Large
+\begin{tabular}{ |l|l| }
+	\hline
+	\multicolumn{2}{|c|}{Team sheet} \\
+	\hline
+	GK & Paul Robinson \\
+	LB & Lucas Radebe \\
+	DC & Michael Duberry \\
+	DC & Dominic Matteo \\
+	RB & Dider Domi \\
+	MC & David Batty \\
+	MC & Eirik Bakke \\
+	MC & Jody Morris \\
+	FW & Jamie McMaster \\
+	ST & Alan Smith \\
+	ST & Mark Viduka \\
+	\hline
+\end{tabular}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Columns spanning multiple rows}
+	\centering
+	\Large
+\begin{tabular}{ |l|l|l| }
+	\hline
+	\multicolumn{3}{ |c| }{Team sheet} \\
+	\hline
+	Goalkeeper & GK & Paul Robinson \\ \hline
+	\multirow{4}{*}{Defenders} & LB & Lucas Radebe \\
+	& DC & Michael Duburry \\
+	& DC & Dominic Matteo \\
+	& RB & Didier Domi \\ \hline
+	\multirow{3}{*}{Midfielders} & MC & David Batty \\
+	& MC & Eirik Bakke \\
+	& MC & Jody Morris \\ \hline
+	Forward & FW & Jamie McMaster \\ \hline
+	\multirow{2}{*}{Strikers} & ST & Alan Smith \\
+	& ST & Mark Viduka \\
+	\hline
+\end{tabular}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}{Spanning in both directions simultaneously}
+	\centering
+	\Huge
+\begin{tabular}{cc|c|c|c|c|l}
+	\cline{3-6}
+	& & \multicolumn{4}{ c| }{Primes} \\ \cline{3-6}
+	& & 2 & 3 & 5 & 7 \\ \cline{1-6}
+	\multicolumn{1}{ |c  }{\multirow{2}{*}{Powers} } &
+	\multicolumn{1}{ |c| }{504} & 3 & 2 & 0 & 1 &     \\ \cline{2-6}
+	\multicolumn{1}{ |c  }{}                        &
+	\multicolumn{1}{ |c| }{540} & 2 & 3 & 1 & 0 &     \\ \cline{1-6}
+	\multicolumn{1}{ |c  }{\multirow{2}{*}{Powers} } &
+	\multicolumn{1}{ |c| }{gcd} & 2 & 2 & 0 & 0 & min \\ \cline{2-6}
+	\multicolumn{1}{ |c  }{}                        &
+	\multicolumn{1}{ |c| }{lcm} & 3 & 3 & 1 & 1 & max \\ \cline{1-6}
+\end{tabular}
+\end{frame}
 \end{document}

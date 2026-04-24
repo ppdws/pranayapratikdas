@@ -46,4 +46,7 @@ title: "LaTeX Example"
 ## Periodic Table
 {{< latex-sidebyside pdf="PeriodicTable.pdf" tex="PeriodicTable.tex" >}}
 
+## Time Table
+{{< latex-sidebyside pdf="timetable.pdf" tex="timetable.tex" >}}
+
 
