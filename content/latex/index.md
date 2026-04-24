@@ -37,7 +37,7 @@ title: "LaTeX Example"
 
 {{< latex-sidebyside pdf="Chapters.pdf" tex="Chapters.tex" >}}
 
-## Annotate Equation
+## Annotate Equation:
 
 {{< latex-sidebyside pdf="EquationMarking.pdf" tex="EquationMarking.tex" >}}
 
