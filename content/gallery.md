@@ -8,4 +8,6 @@ layout: "page"
   "EntireHistrory.png"
   "FourForces.png"
   "StandardModel.png"
+  "Ehrenfest time.png"
+  "Characteristic Timescales.png"
 >}}
