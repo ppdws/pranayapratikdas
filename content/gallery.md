@@ -17,4 +17,7 @@ layout: "page"
   "10 Fractals.png"
   "Maps.png"
   "HC.png"
+  "Photoelectric effect.png"
+  "Compton_scattering.png"
+  "Pair Production.png"
 >}}
