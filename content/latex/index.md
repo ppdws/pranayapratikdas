@@ -1,7 +1,8 @@
 ---
 title: "LaTeX Example"
 ---
-## Tables
+## Tables:
+
 {{< latex-sidebyside pdf="table.pdf" tex="table.tex" >}}
 
 ## Circular Image Arrangement:
@@ -16,37 +17,48 @@ title: "LaTeX Example"
 
 {{< latex-sidebyside pdf="focusing.pdf" tex="focusing.tex" >}}
 
-## Table of Contents 
+## Table of Contents:
+
 {{< latex-sidebyside pdf="timeline.pdf" tex="timeline.tex" >}}
 
-## Time Lines 
+## Time Lines:
+
 {{< latex-sidebyside pdf="Arrows.pdf" tex="Arrows.tex" >}}
 
-## Pyramid - 1 
+## Pyramid - 1 :
+
 {{< latex-sidebyside pdf="TPyramid.pdf" tex="TPyramid.tex" >}}
 
-## Pyramid - 2 
+## Pyramid - 2 :
+
 {{< latex-sidebyside pdf="CPyramid.pdf" tex="CPyramid.tex" >}}
 
-## Thesis Structure 
+## Thesis Structure:
+
 {{< latex-sidebyside pdf="Chapters.pdf" tex="Chapters.tex" >}}
 
-## Annotate Equation 
+## Annotate Equation
+
 {{< latex-sidebyside pdf="EquationMarking.pdf" tex="EquationMarking.tex" >}}
 
-## Figure Shadow 
+## Figure Shadow:
+
 {{< latex-sidebyside pdf="Shadow.pdf" tex="Shadow.tex" >}}
 
-## Mandala 
+## Mandala:
+
 {{< latex-sidebyside pdf="Mandala.pdf" tex="Mandala.tex" >}}
 
-## Jigsaw 
+## Jigsaw:
+
 {{< latex-sidebyside pdf="jigsaw.pdf" tex="jigsaw.tex" >}}
 
-## Periodic Table
+## Periodic Table:
+
 {{< latex-sidebyside pdf="PeriodicTable.pdf" tex="PeriodicTable.tex" >}}
 
-## Time Table
+## Time Table:
+
 {{< latex-sidebyside pdf="timetable.pdf" tex="timetable.tex" >}}
 
 
