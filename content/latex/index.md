@@ -1,6 +1,9 @@
 ---
 title: "LaTeX Example"
 ---
+## Tables
+{{< latex-sidebyside pdf="table.pdf" tex="table.tex" >}}
+
 ## Circular Image Arrangement:
 
 {{< latex-sidebyside pdf="CiruclarImageArrangement.pdf" tex="CiruclarImageArrangement.tex" >}}

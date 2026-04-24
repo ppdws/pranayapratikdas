@@ -1,0 +1,102 @@
+\documentclass[11pt]{beamer}
+\usepackage{amssymb}
+\usepackage{threeparttable}
+\usepackage{booktabs}
+%\usepackage{caption}
+\usepackage{siunitx}
+
+\setlength{\tabcolsep}{12pt}
+\usepackage{tabularray}
+\usepackage{multirow}
+\usepackage{float}
+
+
+\setbeamertemplate{navigation symbols}{}
+\geometry{paperwidth=21cm,paperheight=15cm}
+
+\setbeamersize{text margin left=15pt,text margin right=2cm, sidebar width left=0pt,sidebar width right=10pt,}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+	
+	\begin{frame}
+%		{\renewcommand{\arraystretch}{0.75}
+			\begin{table}[hbt!]
+				\centering
+				\caption{\label{table1} Geometrical properties of Bean and Cassini curves}
+				\begin{tabular}{ rcc } 
+					\toprule[0.07cm]
+					\midrule
+					\texttt{Properties} & \texttt{Bean curves} & \texttt{Cassini ovals}\\
+					\midrule
+					\texttt{\textit{Intercepts:}}  & $ (0,~0 ) $, $ (0,~ a_{1}^2)$ & $ (\pm\sqrt{a_{2}^2\pm b_{2}^2},~0 ) $, $ (0,~\pm\sqrt{b_{2}^2-a_{2}^2} ) $\\
+					%		\hline
+					\rule{0pt}{8ex}
+					\multirow[c]{2}{*}{\texttt{\textit{Extrema:}}}  & $ (0,~ a_{1}^2) $, $\bigg(\pm\sqrt{\dfrac{a_{1}^{2}b_{1}^{3}(b_{1}-2a_{1})}{16 (b_{1}-a_{1})^{2}}},~ \dfrac{a_{1} b_{1}^{2}}{4 (b_{1}-a_{1})}\bigg)^{*}$, & $\big(\pm\sqrt{a_{2}^{2}\pm b_{2}^{2}}, 0 \big) $, $ \big(0,~ \pm\sqrt{b_{2}^{2}-a_{2}^2}\big)^{*}$, \\&
+					$\bigg(\pm\sqrt{\dfrac{a_{1}^{2} b_{1}^{2}}{16}(1+2\sqrt{\dfrac{a_{1}}{b_{1}}})},~ \dfrac{a_{1} b_{1}}{4}\bigg)$ & $\bigg(\dfrac{\pm\sqrt{4 a_{2}^{4}-b_{2}^{4}}}{2 a_{2}},~ \pm\dfrac{b_{2}^2}{2 a_{2}}\bigg) $ \\
+					\rule{0pt}{8ex}
+					%		\hline	
+					\texttt{\textit{Symmetries:}}  &  $ x=0 $; $ (0,~0) $ & $ x=0 $; $ y=0 $; $ (0,0) $ \\
+					\rule{0pt}{8ex}
+					%		\hline
+					\multirow[c]{3}{*}{\texttt{\textit{Loops:}}} & a single connected loop for $ (\pm a_{1}, ~ \pm b_{1}) $ & a single loop if $ a_{2}<b_{2} $ \\& three connected loops  for $ (\pm a_{1}, ~ \mp b_{1}) $ & the lemniscate of Bernoulli, if $ a_{2} = b_{2} $ \\& \textemdash & two disconnected loops, if $ a_{2} > b_{2}$\\
+					\rule{0pt}{8ex}
+					%		\hline
+					\texttt{\textit{Nodes:}}  & $ (0,~\dfrac{a_{1}^{2}}{2}) $ if $ a_{1}=b_{1} $ & $ (0,0) $ if $ a_{2}=b_{2} $  \\
+					%\hline
+					\bottomrule[0.07cm]	
+				\end{tabular}
+			\end{table}
+%			}	
+	\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+	\begin{frame}
+		\huge
+\begin{table}[ht]
+	\caption{XYZ}
+	\centering
+	\begin{threeparttable}
+		\begin{tabular}{llllll}\toprule
+			\multicolumn{1}{c}{$ \sigma $ } &   
+			\multicolumn{2}{c}{$\eta$}  
+			\\
+			& $ Model(I) $ & $ Model(II) $ &         
+			\\\midrule
+			0.0  & -5.12 & -2.0
+			\\\addlinespace
+			0.15  & -5.04507 & -1.92518 
+			\\\addlinespace
+			10.0 & -10.3949 & -7.62391
+			\\\addlinespace
+			30.0 & -22.2524 & -21.375
+			\\\addlinespace
+			70.0 & -49.6698 & -55.0179       
+			\\\bottomrule
+		\end{tabular}
+		\begin{tablenotes}
+			\item Eigenvalues $ \omega_0^2 $ and $ \omega_1^2 $ of Eq.(26) for $ r_0=1.1 $ and varying $ B $, for two string configuration
+		\end{tablenotes}
+	\end{threeparttable}
+\end{table}
+	\end{frame}
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{frame}
+\Huge
+\begin{table}[]
+	\begin{tabular}{@{}clclccc@{}}
+		\toprule[0.07cm]
+		\midrule
+		\multicolumn{7}{c}{Apples}                                                                                                                         \\ \midrule
+		\multicolumn{2}{c}{A1}                         & \multirow{2}{*}{a1}    &  & \multicolumn{2}{c}{B1}                        & \multirow{2}{*}{b1}   \\ \cmidrule(r){1-2} \cmidrule(lr){5-6}
+		\multicolumn{1}{l}{Q1} & Q2                    &                        &  & Q1                    & Q2                    &                       \\ \cmidrule(r){1-3} \cmidrule(l){5-7} 
+		1                      & \multicolumn{1}{c}{3} & 4                      &  & \multicolumn{1}{c}{a} & \multicolumn{1}{c}{b} & c                     \\
+		\multicolumn{1}{c}{00} & 22                    & \multicolumn{1}{c}{08} &  & v                     & h                     & \multicolumn{1}{c}{p} \\
+%		 \cmidrule(r){1-3} \cmidrule(l){5-7} 
+		\bottomrule[0.07cm]	
+	\end{tabular}
+\end{table}
+	\end{frame}
+
+\end{document}
