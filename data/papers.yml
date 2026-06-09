@@ -11,17 +11,16 @@
   arxiv: false
   on_going: true
   
-- title: ""
-  authors: ["Pranaya Patik Das", "Biplab Ganguli"]
-  cover: ""
+- title: "Chaos in cymatics-inspired Gaussian landscapes"
+  authors: ["Tanmayee Patra","Pranaya Patik Das", "Biplab Ganguli"]
+  cover: "paper6.png"
   journal: ""
-  date: 2025-10-31
+  date: 2026-06-09
   pdf: ""
-  doi: ""
-  abstract: ""
+  doi: "https://doi.org/10.48550/arXiv.2606.09442"
+  abstract: "This paper presents a focused investigation of a conservative chaotic system, specifically within the context of a two-dimensional harmonic potential well. We analyse the emergence of chaos from a straightforward, non-chaotic harmonic potential well when subjected to perturbations introduced by two Gaussian-like terms in the system’s Hamiltonian. The Gaussian-perturbed system serves as a foundation for further inquiries rooted in the cymatics mechanism. In this study, we examine the effects of deformations arising from Gaussian perturbations on the development of chaotic dynamics. These deformations are produced through various configurations of Gaussian bumps in different geometric shapes, along with the modulation of the amplitude of the perturbed term shifting from positive to negative values."
   peer_reviewed: false
-  arxiv: false
-  on_going: true
+  arxiv: true
 
 - title: "Classical and quantum chaos in bean- and peanut-shaped billiards"
   authors: ["Pranaya Patik Das", "Tanmayee Patra", "Biplab Ganguli"]
