@@ -527,11 +527,25 @@
                         <!-- Paper Abstract -->
                         {{ if .abstract }}
                         <div class="paper-abstract">
-			<p>Abstract:<p>
+			<p>Abstract:</p>
                             {{ .abstract }}
                         </div>
                         {{ end }}
                     </div>
+
+<div class="paper-actions">
+    {{ if .doi }}
+    <a href="{{ .doi }}" target="_blank" rel="noopener" class="doi-link">
+        DOI
+    </a>
+    {{ end }}
+
+    {{ if .pdf }}
+    <a href="{{ .pdf | absURL }}" target="_blank" rel="noopener" class="pdf-link">
+        PDF
+    </a>
+    {{ end }}
+</div>
                     
                    
                 </div>
