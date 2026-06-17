@@ -6,6 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ .Title }} - {{ .Site.Title }}</title>
     <style>
+.page-header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.last-updated {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    white-space: nowrap;
+    text-align: right;
+    font-style: italic;
+}
+
+@media (max-width: 600px) {
+    .page-header-content {
+        flex-direction: column;
+    }
+
+    .last-updated {
+        text-align: left;
+    }
+}
         /* Reset and base styles */
         * {
             margin: 0;
@@ -406,9 +431,30 @@
 </head>
 <body>
     <header class="page-header">
-        <h1 class="page-title">{{ .Title }}</h1>
-        <p class="page-subtitle">Research Papers</p>
-    </header>
+    {{ $papers := .Site.Data.papers }}
+    {{ $latest := "" }}
+
+    {{ range $papers }}
+        {{ if .date }}
+            {{ if or (eq $latest "") (gt (time.AsTime .date) (time.AsTime $latest)) }}
+                {{ $latest = .date }}
+            {{ end }}
+        {{ end }}
+    {{ end }}
+
+    <div class="page-header-content">
+        <div>
+            <h1 class="page-title">{{ .Title }}</h1>
+            <p class="page-subtitle">Research Papers</p>
+        </div>
+
+        {{ if $latest }}
+        <p class="last-updated">
+            Last updated: {{ time.Format "January 2, 2006" $latest }}
+        </p>
+        {{ end }}
+    </div>
+</header>
 
     <div class="papers-container">
         {{ $papers := .Site.Data.papers }}
