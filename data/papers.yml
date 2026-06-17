@@ -38,7 +38,7 @@
   cover: "paper4.jpg"
   journal: "Communications in Nonlinear Science and Numerical Simulation"
   date: 2025-08-14
-  pdf: "https://www.sciencedirect.com/science/article/pii/S1007570425006276/pdfft?md5=38fd121c9033562ac4ca2a48a1309b3d&pid=1-s2.0-S1007570425006276-main.pdf"
+  pdf: "paper4.pdf"
   doi: "https://doi.org/10.1016/j.cnsns.2025.109216"
   abstract: "In this study, we demonstrate that cyclically symmetric Thomas oscillators can serve as swarmalators—agents exhibiting both swarming and phase synchronization—when coupled with Kuramoto-type phase dynamics. The resulting model represents a nonlinear particle aggregation system, characterised by cyclic spatial symmetry and position-dependent phase evolution. This coupling gives rise to rich spatio-temporal phenomena, including pre-hexatic or hexatic 2D structures, as well as chaotic turbulence under extreme parameter regimes. These emergent patterns result from nonl inear self-organization, manifesting as a form of active turbulence. Our analysis reveals that the nature and strength of inter-particle interactions, controlled by key system parameters, dictate the organization and dynamical behavior of the swarm. As a representative active, non-equilibrium system, this framework provides insights into the fundamental mechanisms of collective motion and offers applications in the design of synthetic active materials and coordinated microscale systems."
   peer_reviewed: true
@@ -49,7 +49,7 @@
   cover: "paper3.png"
   journal: "The European Physical Journal D"
   date: 2025-06-28
-  pdf: "https://link.springer.com/content/pdf/10.1140/epjd/s10053-025-01025-7.pdf"
+  pdf: "paper3.pdf"
   doi: "https://link.springer.com/article/10.1140/epjd/s10053-025-01025-7"
   abstract: "Out-of-Time-Order Correlator (OTOC) and Loschmidt Echo (LE) are commonly regarded as diagnostic tools for chaos, although they may yield misleading results, as we observe. Previous studies have concluded that OTOC shows exponential growth in the neighbourhood of a local maximum. If this statement holds true, the exponential growth should break off once the local maximum is no longer present within the system. By applying a small symmetry-breaking perturbation, we notice that the behaviour of the OTOCs remains remarkably resilient even in the absence of a maximum. Besides this, we also notice that with the increase in perturbation strength, the broken symmetric region expands, causing a broader range of eigenstates to engage in the exponential growth of OTOCs. Therefore, the critical factor lies not in the presence of a local maximum, but in the dynamic nature of the density of states in the broken symmetry regions. Our examination, spanning diverse one- dimensional potential landscapes, reveals the universality of this phenomenon. We also use other chaos diagnostic tool, LE. Interestingly, it also gives a false signal of chaos."
   peer_reviewed: true
@@ -60,7 +60,7 @@
   cover: "paper2.png"
   journal: "Physical Review D"
   date: 2024-07-25
-  pdf: "https://journals.aps.org/prd/pdf/10.1103/PhysRevD.110.024068"
+  pdf: "paper2.pdf"
   doi: "https://doi.org/10.1103/PhysRevD.110.024068"
   abstract: "We study the relationship between the standard or extended thermodynamic phase structure of various anti–de Sitter black holes and the Lyapunov exponents associated with the null and timelike geodesics. We consider dyonic, Bardeen, Gauss-Bonnet, and Lorentz-symmetry breaking massive gravity black holes and calculate the Lyapunov exponents of massless and massive particles in unstable circular geodesics close to the black hole. We find that the thermal profile of the Lyapunov exponents exhibits distinct behavior in the small and large black hole phases and can encompass certain aspects of the van der Waals type small/large black hole phase transition. We further analyze the properties of Lyapunov exponents as an order parameter and find that its critical exponent is 1/2, near the critical point for all black holes considered here."
   peer_reviewed: true
@@ -71,7 +71,7 @@
   cover: "paper1.png"
   journal: "Physica Scripta"
   date: 2022-10-27
-  pdf: "https://iopscience.iop.org/article/10.1088/1402-4896/ac99ab/pdf"
+  pdf: "paper1.pdf"
   doi: "https://iopscience.iop.org/article/10.1088/1402-4896/ac99ab"
   abstract: "In this letter, we provide a detailed numerical examination of the dynamics of a charged Thomas oscillator in an external magnetic field. We do so by adopting and then modifying the cyclically symmetric Thomas oscillator to study the dynamics of a charged particle in an external magnetic field. These dynamical behaviours for weak and strong field strength parameters fall under two categories; conservative and dissipative. The system shows a complex quasi-periodic attractor whose topology depends on initial conditions for high field strengths in the conservative regime. There is a transition from adiabatic motion to chaos on decreasing the field strength parameter. In the dissipative regime, the system is chaotic for weak field strength and weak damping but shows a limit cycle for high field strengths. Such behaviour is due to an additional negative feedback loop that comes into action at high field strengths and forces the system dynamics to be stable in periodic oscillations. For weak damping and weak field strength, the system dynamics mimic Brownian motion via chaotic walks. We claim that the modified Thomas oscillator is a prototypical model to understand the dynamics of an active particle."
   peer_reviewed: true
