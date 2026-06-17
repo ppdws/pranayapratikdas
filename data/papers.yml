@@ -1,16 +1,4 @@
 # data/papers.yml
-- title: ""
-  authors: ["Pranaya Patik Das"]
-  cover: ""
-  journal: ""
-  date: 2026-07-15
-  pdf: ""
-  doi: ""
-  abstract: ""
-  peer_reviewed: false
-  arxiv: false
-  on_going: true
-
 - title: "Morphology-resolved scrambling in a chaotic quantum billiard"
   authors: ["Pranaya Patik Das"]
   cover: "paper7.png"
